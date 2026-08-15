@@ -1,0 +1,11 @@
+# 키 파일 — 절대 올라가면 안 됩니다
+.env
+
+# 캐시 (매번 다시 받으므로 저장할 필요 없음)
+.corp_codes.json
+.sec_ciks.json
+
+# 파이썬
+__pycache__/
+*.pyc
+log.txt
