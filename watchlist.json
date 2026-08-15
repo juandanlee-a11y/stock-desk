@@ -1,0 +1,63 @@
+{
+  "_comment": "여기만 고치면 대시보드가 따라옵니다. type이 listed면 자동 수집, private면 manual 값을 그대로 표시합니다.",
+  "stocks": [
+    {
+      "id": "nvda",
+      "name": "엔비디아",
+      "type": "listed",
+      "yahoo": "NVDA",
+      "market": "NASDAQ",
+      "currency": "USD",
+      "sec_ticker": "NVDA"
+    },
+    {
+      "id": "tsla",
+      "name": "테슬라",
+      "type": "listed",
+      "yahoo": "TSLA",
+      "market": "NASDAQ",
+      "currency": "USD",
+      "sec_ticker": "TSLA"
+    },
+    {
+      "id": "005930",
+      "name": "삼성전자",
+      "type": "listed",
+      "yahoo": "005930.KS",
+      "market": "KOSPI",
+      "currency": "KRW",
+      "krx_code": "005930",
+      "manual_target": {
+        "mean": null,
+        "note": "한국 목표주가는 무료 API가 없습니다. 주 1회 직접 적어두세요. 예: {\"mean\": 104000, \"buy\": 28, \"hold\": 3, \"sell\": 0, \"asof\": \"2026-08-14\"}"
+      }
+    },
+    {
+      "id": "035420",
+      "name": "NAVER",
+      "type": "listed",
+      "yahoo": "035420.KS",
+      "market": "KOSPI",
+      "currency": "KRW",
+      "krx_code": "035420",
+      "manual_target": {
+        "mean": null,
+        "note": "위와 동일"
+      }
+    },
+    {
+      "id": "spacex",
+      "name": "SpaceX",
+      "type": "listed",
+      "yahoo": "SPCX",
+      "market": "NASDAQ",
+      "currency": "USD",
+      "sec_ticker": "SPCX",
+      "listed_on": "2026-06-12",
+      "ipo_price": 135,
+      "_comment": "2026-06-12 나스닥 상장. 상장 1년이 안 돼서 52주/3개월/연초 지표는 자동으로 '상장 이후' 기준으로 표시됩니다."
+    }
+  ],
+  "news_feed_size": 12,
+  "dart_lookback_days": 14
+}

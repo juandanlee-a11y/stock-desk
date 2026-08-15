@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY STOCK DESK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0F1A; --panel:#111A2B; --panel2:#16213A; --line:#22304D;
+  --tx:#DDE5F2; --tx2:#9AA9C2; --tx3:#6B7C99;
+  --up:#F0405C; --down:#3B8CFF; --flat:#8798B5;
+  --gold:#F2B441; --teal:#2FC6A8; --violet:#8B7BE8;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --sans:'IBM Plex Sans KR',-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:var(--sans);line-height:1.5;padding-bottom:60px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+.mono{font-family:var(--mono);font-feature-settings:"tnum"}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--flat)}
+
+.topbar{position:sticky;top:0;z-index:20;background:rgba(10,15,26,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 14px}
+.brand{font-weight:700;letter-spacing:.14em;font-size:13px;color:var(--gold)}
+.brand em{color:var(--tx3);font-weight:400;letter-spacing:0;font-style:normal}
+.pill{font-size:11px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);color:var(--tx2);white-space:nowrap}
+.pill.on{border-color:#5B3320;background:#2A1A10;color:var(--gold)}
+.pill.off{border-color:#213A55;background:#0F1E31;color:var(--down)}
+.pill.warn{border-color:#4A3A16;background:#241C08;color:var(--gold)}
+.spacer{flex:1}
+button.refresh{background:var(--panel2);border:1px solid var(--line);color:var(--tx2);
+  font-family:var(--sans);font-size:11px;padding:4px 11px;border-radius:99px;cursor:pointer}
+button.refresh:hover{border-color:var(--gold);color:var(--gold)}
+button.refresh:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+section{margin-top:26px}
+.shead{display:flex;align-items:baseline;gap:10px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:14px;flex-wrap:wrap}
+.snum{font-family:var(--mono);font-size:11px;color:var(--bg);background:var(--tx3);border-radius:3px;padding:1px 5px;font-weight:600}
+.stitle{font-size:15px;font-weight:600;letter-spacing:-.01em}
+.sdesc{font-size:11.5px;color:var(--tx3)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(316px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--flat)}
+.card.is-up::before{background:var(--up)}
+.card.is-down::before{background:var(--down)}
+.card.is-private::before{background:var(--violet)}
+.chead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.nm{font-size:15px;font-weight:600;letter-spacing:-.01em}
+.tk{font-family:var(--mono);font-size:10.5px;color:var(--tx3);margin-top:1px}
+.tag{font-size:10px;padding:2px 6px;border-radius:4px;border:1px solid var(--line);color:var(--tx2);white-space:nowrap}
+.tag.buy{border-color:#4A1C28;background:#2A1119;color:var(--up)}
+.tag.hold{border-color:#4A3A16;background:#241C08;color:var(--gold)}
+.tag.pv{border-color:#3A3168;background:#1C1836;color:var(--violet)}
+.price{display:flex;align-items:baseline;gap:8px;margin-top:10px;flex-wrap:wrap}
+.price .p{font-family:var(--mono);font-size:26px;font-weight:600;letter-spacing:-.02em}
+.price .d{font-family:var(--mono);font-size:13px;font-weight:500}
+.spark{margin:8px 0 4px;height:34px;width:100%;display:block}
+
+.track{margin-top:10px}
+.tlab{display:flex;justify-content:space-between;font-size:10px;color:var(--tx3);font-family:var(--mono);margin-bottom:5px}
+.rail{position:relative;height:6px;border-radius:3px;background:linear-gradient(90deg,#1B2A44,#2B3C5C)}
+.fill{position:absolute;top:0;bottom:0;left:0;border-radius:3px;background:linear-gradient(90deg,rgba(59,140,255,.35),rgba(240,64,92,.65))}
+.mk{position:absolute;top:-5px;width:2px;height:16px;background:var(--tx);border-radius:1px}
+.mk::after{content:attr(data-l);position:absolute;top:17px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:9.5px;color:var(--tx2);white-space:nowrap}
+.mk.goal{background:var(--gold)}
+.mk.goal::after{color:var(--gold)}
+.trkfoot{margin-top:22px;font-size:11px;color:var(--tx3)}
+.trkfoot b{font-family:var(--mono);font-weight:600}
+
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:12px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.metrics div{background:var(--panel2);padding:6px 5px;text-align:center}
+.metrics .k{font-size:9.5px;color:var(--tx3)}
+.metrics .v{font-family:var(--mono);font-size:12.5px;font-weight:500;margin-top:2px}
+.sig{margin-top:10px;font-size:11px;color:var(--tx2);background:var(--panel2);border:1px dashed var(--line);border-radius:6px;padding:7px 9px}
+.sig b{color:var(--tx)}
+
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:600px}
+th,td{padding:9px 10px;text-align:right;font-size:12px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:10.5px;color:var(--tx3);font-weight:500;background:var(--panel2)}
+th:first-child,td:first-child{text-align:left}
+tbody tr:last-child td{border-bottom:none}
+td.cell{font-family:var(--mono);font-weight:500}
+.hm{display:inline-block;min-width:58px;padding:2px 7px;border-radius:4px;text-align:right}
+
+.feed{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.item{background:var(--panel);padding:11px 13px;display:flex;gap:11px;align-items:flex-start}
+.tm{font-family:var(--mono);font-size:10.5px;color:var(--tx3);padding-top:2px;min-width:52px}
+.ibody{flex:1;min-width:0}
+.imeta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:3px}
+.src{font-size:9.5px;padding:1px 6px;border-radius:3px}
+.src.dart{background:#0F2A24;color:var(--teal);border:1px solid #1D4A40}
+.src.news{background:#1C2338;color:#9BB0DA;border:1px solid #2C3A5C}
+.src.sec{background:#2A1A10;color:var(--gold);border:1px solid #513218}
+.who{font-size:11px;color:var(--tx2);font-weight:500}
+.ttl{font-size:13px;line-height:1.45}
+.ttl a{color:var(--tx);text-decoration:none;border-bottom:1px solid transparent}
+.ttl a:hover{border-bottom-color:var(--tx3)}
+
+.note{margin-top:14px;font-size:11.5px;color:var(--tx3);line-height:1.7;border:1px solid var(--line);border-radius:8px;padding:11px 13px;background:var(--panel)}
+.note b{color:var(--tx2)}
+.note.warn{border-color:#4A3A16;background:#1A1508;color:#C9B071}
+.note.err{border-color:#4A1C28;background:#1C0D12;color:#D98A9C}
+.note.err ul{margin:6px 0 0 16px}
+.empty{padding:40px 20px;text-align:center;color:var(--tx3);font-size:13px}
+
+@media(max-width:520px){
+  .price .p{font-size:22px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">MY STOCK DESK <em>／ 관심종목 워크벤치</em></div>
+    <span class="pill off" id="mkKR">한국장 —</span>
+    <span class="pill on" id="mkUS">미국장 —</span>
+    <div class="spacer"></div>
+    <span class="pill mono" id="stamp">불러오는 중</span>
+    <span class="pill warn" id="demoFlag" hidden>샘플 데이터</span>
+    <button class="refresh" onclick="location.reload()">새로고침</button>
+  </div>
+</div>
+
+<div class="wrap" id="app">
+  <div class="empty">데이터를 불러오는 중입니다…</div>
+</div>
+
+<script>
+window.DESK_DATA = {"generated_at": "2026-08-15 16:38", "demo": true, "market": {"kr": "휴장", "us": "휴장"}, "stocks": [{"id": "nvda", "name": "엔비디아", "type": "listed", "market": "NASDAQ", "currency": "USD", "yahoo": "NVDA", "listed_on": null, "price": 234.98, "change_abs": 0.92, "change_pct": 0.39, "returns": {"d1": 0.39, "w1": -2.49, "m1": 11.8, "m3": 24.78, "ytd": 40.12}, "week52": {"low": 145.69, "high": 256.13, "position": 80.9}, "rsi14": 42.5, "above_ma20": true, "above_ma60": true, "sparkline": [214.56, 213.81, 216.83, 221.36, 224.27, 223.09, 227.47, 230.98, 229.36, 226.66, 225.4, 222.86, 225.72, 227.12, 232.06, 231.04, 230.67, 228.7, 234.06, 234.98], "per": 50.4, "market_cap": null, "history_from": "2025-08-15", "is_new_listing": false, "range_label": "52주", "target": {"mean": 274.72, "upside": 16.9, "buy": 19, "hold": 13, "sell": 4, "source": "데모", "asof": "2026-08-14"}}, {"id": "tsla", "name": "테슬라", "type": "listed", "market": "NASDAQ", "currency": "USD", "yahoo": "TSLA", "listed_on": null, "price": 320.48, "change_abs": 2.91, "change_pct": 0.92, "returns": {"d1": 0.92, "w1": 3.02, "m1": -2.3, "m3": -4.83, "ytd": -7.82}, "week52": {"low": 198.7, "high": 349.32, "position": 80.9}, "rsi14": 67.0, "above_ma20": false, "above_ma60": true, "sparkline": [315.07, 320.14, 321.39, 320.44, 320.07, 322.55, 317.21, 317.9, 317.2, 311.72, 315.46, 318.74, 322.92, 327.32, 325.57, 321.16, 325.12, 322.86, 317.57, 320.48], "per": 59.3, "market_cap": null, "history_from": "2025-08-15", "is_new_listing": false, "range_label": "52주", "target": {"mean": 388.23, "upside": 21.1, "buy": 20, "hold": 14, "sell": 3, "source": "데모", "asof": "2026-08-14"}, "stale": true, "stale_since": "2026-08-14 23:30"}, {"id": "005930", "name": "삼성전자", "type": "listed", "market": "KOSPI", "currency": "KRW", "yahoo": "005930.KS", "listed_on": null, "price": 92731.15, "change_abs": -612.32, "change_pct": -0.66, "returns": {"d1": -0.66, "w1": -3.71, "m1": 5.1, "m3": 10.71, "ytd": 17.34}, "week52": {"low": 57493.31, "high": 101076.95, "position": 80.9}, "rsi14": 63.1, "above_ma20": true, "above_ma60": true, "sparkline": [84569.54, 84528.86, 84979.37, 86041.67, 86960.14, 85918.29, 85628.64, 86582.12, 88096.22, 89800.29, 90944.12, 90053.25, 91601.92, 93129.0, 94868.77, 95980.62, 94711.53, 94573.19, 93343.47, 92731.15], "per": 59.2, "market_cap": null, "history_from": "2025-08-15", "is_new_listing": false, "range_label": "52주", "target": {"mean": 103549.21, "upside": 11.7, "buy": 26, "hold": 20, "sell": 0, "source": "데모", "asof": "2026-08-14"}}, {"id": "035420", "name": "NAVER", "type": "listed", "market": "KOSPI", "currency": "KRW", "yahoo": "035420.KS", "listed_on": null, "price": 242523.1, "change_abs": 4163.31, "change_pct": 1.75, "returns": {"d1": 1.75, "w1": -1.39, "m1": 9.2, "m3": 19.32, "ytd": 31.28}, "week52": {"low": 150364.32, "high": 264350.18, "position": 80.9}, "rsi14": 64.6, "above_ma20": true, "above_ma60": true, "sparkline": [221411.4, 221342.98, 220306.62, 219437.33, 220600.26, 222147.69, 222340.24, 226397.87, 226256.83, 228746.78, 232367.37, 234043.67, 232567.26, 231585.43, 231458.18, 231214.76, 233254.75, 234939.72, 238359.79, 242523.1], "per": 29.3, "market_cap": null, "history_from": "2025-08-15", "is_new_listing": false, "range_label": "52주", "target": {"mean": 276423.36, "upside": 14.0, "buy": 36, "hold": 10, "sell": 4, "source": "데모", "asof": "2026-08-14"}}, {"id": "spacex", "name": "SpaceX", "type": "listed", "market": "NASDAQ", "currency": "USD", "yahoo": "SPCX", "listed_on": "2026-06-12", "price": 151.67, "change_abs": 1.38, "change_pct": 0.92, "returns": {"d1": 0.92, "w1": 0.35, "m1": 14.6, "m3": null, "ytd": null}, "week52": {"low": 94.04, "high": 165.32, "position": 80.9}, "rsi14": 54.8, "above_ma20": true, "above_ma60": true, "sparkline": [133.85, 132.87, 132.73, 133.85, 132.67, 134.7, 133.33, 132.82, 134.78, 137.4, 137.85, 141.26, 144.29, 143.94, 143.38, 146.18, 148.27, 151.6, 150.29, 151.67], "per": 46.9, "market_cap": null, "history_from": "2026-06-12", "is_new_listing": true, "range_label": "상장 이후", "ipo_price": 135, "vs_ipo": 12.35, "target": {"mean": 176.61, "upside": 16.4, "buy": 19, "hold": 6, "sell": 1, "source": "데모", "asof": "2026-08-14"}}], "feed": [{"kind": "dart", "source": "DART 공시", "who": "삼성전자", "title": "주요사항보고서 — 신규 시설투자 등", "date": "2026-08-14", "url": "#", "stock_id": ""}, {"kind": "sec", "source": "SEC 8-K", "who": "SpaceX", "title": "8-K 제출 — 주요 경영사항 수시보고", "date": "2026-08-14", "url": "#", "stock_id": ""}, {"kind": "dart", "source": "DART 공시", "who": "NAVER", "title": "기업설명회(IR) 개최 안내", "date": "2026-08-14", "url": "#", "stock_id": ""}, {"kind": "sec", "source": "SEC 4", "who": "테슬라", "title": "4 제출 — 내부자 지분 변동 신고", "date": "2026-08-14", "url": "#", "stock_id": ""}, {"kind": "news", "source": "뉴스", "who": "SpaceX", "title": "보호예수 해제 물량 관련 보도", "date": "2026-08-14", "url": "#", "stock_id": ""}, {"kind": "news", "source": "뉴스", "who": "엔비디아", "title": "데이터센터 GPU 공급 계약 보도", "date": "2026-08-14", "url": "#", "stock_id": ""}], "errors": []};
+</script>
+<script>
+const D = window.DESK_DATA;
+const $ = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstChild; };
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* 한국식 색: 상승 빨강 / 하락 파랑 */
+const cls = (v) => v == null ? 'flat' : (v > 0 ? 'up' : (v < 0 ? 'down' : 'flat'));
+const sign = (v, d = 2) => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(d) + '%';
+const money = (v, cur) => v == null ? '—' :
+  (cur === 'KRW' ? Math.round(v).toLocaleString('ko-KR') : '$' + v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}));
+
+/* 수익률 크기에 따라 배경 진하기를 다르게 — 표를 눈으로 스캔하기 위한 장치 */
+function heat(v) {
+  if (v == null) return '<span class="hm flat">—</span>';
+  const a = Math.min(Math.abs(v) / 25, 1) * 0.5 + 0.10;
+  const rgb = v > 0 ? '240,64,92' : '59,140,255';
+  const col = v > 0 ? 'var(--up)' : 'var(--down)';
+  return `<span class="hm" style="background:rgba(${rgb},${a.toFixed(2)});color:${col}">${sign(v)}</span>`;
+}
+
+function sparkSVG(pts, positive) {
+  if (!pts || pts.length < 2) return '';
+  const lo = Math.min(...pts), hi = Math.max(...pts), span = (hi - lo) || 1;
+  const W = 300, H = 30;
+  const xy = pts.map((p, i) => [(i / (pts.length - 1)) * W, H - ((p - lo) / span) * (H - 4) - 2]);
+  const line = xy.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ');
+  const stroke = positive ? '#F0405C' : '#3B8CFF';
+  const fill = positive ? 'rgba(240,64,92,.09)' : 'rgba(59,140,255,.09)';
+  return `<svg class="spark" viewBox="0 0 ${W} 34" preserveAspectRatio="none" aria-hidden="true">
+    <polyline fill="${fill}" stroke="none" points="0,34 ${line} ${W},34"/>
+    <polyline fill="none" stroke="${stroke}" stroke-width="1.6" points="${line}"/>
+  </svg>`;
+}
+
+function targetTag(t) {
+  if (!t || t.buy == null) return '<span class="tag">의견 집계 없음</span>';
+  const total = t.buy + (t.hold || 0) + (t.sell || 0);
+  const strong = total && t.buy / total >= 0.6;
+  return `<span class="tag ${strong ? 'buy' : 'hold'}">${strong ? '매수 우위' : '의견 분산'} ${t.buy}/${t.hold ?? 0}/${t.sell ?? 0}</span>`;
+}
+
+/* 시그니처: 52주 레인지 위에 현재가와 목표가를 같은 자로 찍습니다 */
+function trackHTML(s) {
+  const w = s.week52; if (!w) return '';
+  const pos = Math.max(0, Math.min(100, w.position));
+  const t = s.target;
+  let goal = '', foot = '<div class="trkfoot">목표주가 데이터 없음 · watchlist.json 에 직접 입력할 수 있습니다</div>';
+  if (t && t.mean) {
+    const gp = Math.max(0, Math.min(100, (t.mean - w.low) / ((w.high - w.low) || 1) * 100));
+    goal = `<div class="mk goal" style="left:${gp.toFixed(1)}%" data-l="목표 ${money(t.mean, s.currency)}"></div>`;
+    const c = cls(t.upside);
+    foot = `<div class="trkfoot">${esc(t.source)} 목표가 ${money(t.mean, s.currency)} · 현재가 대비 <b class="${c}">${sign(t.upside, 1)}</b></div>`;
+  }
+  const rl = s.range_label || '52주';
+  return `<div class="track">
+    <div class="tlab"><span>${rl} 저 ${money(w.low, s.currency)}</span><span>고 ${money(w.high, s.currency)}</span></div>
+    <div class="rail">
+      <div class="fill" style="width:${pos}%"></div>
+      <div class="mk" style="left:${pos}%" data-l="현재"></div>${goal}
+    </div>${foot}
+  </div>`;
+}
+
+function stockCard(s) {
+  if (s.type === 'private') {
+    const m = s.manual || {};
+    return `<div class="card is-private">
+      <div class="chead">
+        <div><div class="nm">${esc(s.name)}</div><div class="tk">비상장 · Private</div></div>
+        <span class="tag pv">시세 없음</span>
+      </div>
+      <div class="price"><span class="p mono" style="color:var(--violet)">${esc(m.valuation ?? '—')}</span>
+        <span class="d flat">${esc(m.valuation_label ?? '')}</span></div>
+      <div class="note" style="margin-top:12px">${esc(m.note ?? '')}</div>
+      <div class="metrics" style="margin-top:12px">
+        <div><div class="k">${esc(m.round_label ?? '기준')}</div><div class="v" style="font-size:11px">${esc(m.round ?? '—')}</div></div>
+        <div><div class="k">주당 기준가</div><div class="v" style="font-size:11px">${esc(m.per_share ?? '—')}</div></div>
+        <div><div class="k">직전 대비</div><div class="v ${cls(m.qoq)}">${sign(m.qoq, 1)}</div></div>
+        <div><div class="k">간접 노출</div><div class="v" style="font-size:11px">${esc(m.proxy ?? '—')}</div></div>
+      </div>
+      <div class="sig"><b>갱신</b> ${esc(m.asof ?? '—')} 기준 · 뉴스 키워드로만 추적</div>
+    </div>`;
+  }
+
+  if (s.price == null) {
+    return `<div class="card">
+      <div class="chead"><div><div class="nm">${esc(s.name)}</div><div class="tk">${esc(s.yahoo ?? '')}</div></div></div>
+      <div class="note err" style="margin-top:12px">시세를 가져오지 못했습니다. 아래 수집 로그를 확인하세요.</div>
+    </div>`;
+  }
+
+  const r = s.returns || {}, up = s.change_pct >= 0;
+  const rl = s.range_label || '52주';
+  const ma = [s.above_ma20 ? '20일선 위' : '20일선 아래', s.above_ma60 ? '60일선 위' : '60일선 아래'].join(' · ');
+
+  /* 신규 상장주는 지표 기간이 짧다는 걸 카드에서 바로 알려줍니다 */
+  const newbie = s.is_new_listing
+    ? `<div class="sig" style="border-style:solid;border-color:#4A3A16;background:#1A1508;color:#C9B071">
+        <b style="color:var(--gold)">신규 상장</b> ${esc(s.listed_on || s.history_from)} 상장 · 이력이 짧아 3개월·연초 지표는 비어 있고 구간은 상장 이후 기준입니다
+        ${s.vs_ipo != null ? ` · 공모가 ${money(s.ipo_price, s.currency)} 대비 <b class="${cls(s.vs_ipo)}">${sign(s.vs_ipo)}</b>` : ''}
+       </div>` : '';
+  /* 이번 수집에서 값을 못 받아 직전 값을 쓰고 있는 경우 */
+  const stale = s.stale
+    ? `<div class="sig" style="border-style:solid;border-color:#4A1C28;background:#1C0D12;color:#D98A9C">
+        <b style="color:var(--up)">갱신 안 됨</b> ${esc(s.stale_since || '')} 기준 값입니다 · 이번 수집에서 시세를 받지 못했습니다
+       </div>` : '';
+
+  return `<div class="card ${up ? 'is-up' : 'is-down'}">
+    <div class="chead">
+      <div><div class="nm">${esc(s.name)}</div><div class="tk">${esc(s.yahoo ?? '')} · ${esc(s.market ?? '')}</div></div>
+      ${targetTag(s.target)}
+    </div>
+    <div class="price">
+      <span class="p mono">${money(s.price, s.currency)}</span>
+      <span class="d ${cls(s.change_pct)}">${sign(s.change_pct)} ${up ? '▲' : '▼'}${money(Math.abs(s.change_abs), s.currency).replace('$','')}</span>
+    </div>
+    ${sparkSVG(s.sparkline, up)}
+    ${trackHTML(s)}
+    <div class="metrics">
+      <div><div class="k">1주</div><div class="v ${cls(r.w1)}">${sign(r.w1)}</div></div>
+      <div><div class="k">1개월</div><div class="v ${cls(r.m1)}">${sign(r.m1)}</div></div>
+      <div><div class="k">RSI</div><div class="v">${s.rsi14 ?? '—'}</div></div>
+      <div><div class="k">PER</div><div class="v">${s.per ?? '—'}</div></div>
+    </div>
+    <div class="sig"><b>위치</b> ${ma} · ${rl} 구간의 ${s.week52 ? s.week52.position + '%' : '—'} 지점</div>
+    ${newbie}
+    ${stale}
+  </div>`;
+}
+
+function heatTable(stocks) {
+  const rows = stocks.map(s => {
+    if (s.type === 'private') {
+      const m = s.manual || {};
+      return `<tr><td>${esc(s.name)} <span class="mono" style="color:var(--tx3);font-size:10px">비상장</span></td>
+        <td class="cell" colspan="5" style="text-align:center;color:var(--tx3);font-size:11px">
+        일별 시세 없음 · 기준 ${esc(m.asof ?? '—')} · 직전 대비 ${sign(m.qoq, 1)}</td>
+        <td class="cell flat">—</td><td class="cell flat">—</td></tr>`;
+    }
+    const r = s.returns || {}, t = s.target || {};
+    /* 기간이 없어서 빈 칸인지, 데이터가 안 와서 빈 칸인지 구분되게 표시 */
+    const short = '<span class="hm" style="color:var(--tx3);font-size:10px;min-width:auto">기간 부족</span>';
+    const cell = (v) => (v == null && s.is_new_listing) ? short : heat(v);
+    const badge = s.is_new_listing
+      ? ' <span class="mono" style="color:var(--gold);font-size:9.5px">신규상장</span>' : '';
+    return `<tr>
+      <td>${esc(s.name)} <span class="mono" style="color:var(--tx3);font-size:10px">${esc(s.yahoo ?? '')}</span>${badge}</td>
+      <td class="cell">${heat(r.d1)}</td><td class="cell">${heat(r.w1)}</td>
+      <td class="cell">${cell(r.m1)}</td><td class="cell">${cell(r.m3)}</td>
+      <td class="cell">${s.vs_ipo != null ? heat(s.vs_ipo) : cell(r.ytd)}</td>
+      <td class="cell">${s.week52 ? s.week52.position + '%' : '—'}</td>
+      <td class="cell ${cls(t.upside)}">${sign(t.upside, 1)}</td>
+    </tr>`;
+  }).join('');
+
+  return `<div class="tblwrap"><table>
+    <thead><tr><th>종목</th><th>1일</th><th>1주</th><th>1개월</th><th>3개월</th><th>연초 이후</th><th>52주 위치</th><th>목표가 대비</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`;
+}
+
+function feedHTML(feed) {
+  if (!feed || !feed.length) return '<div class="feed"><div class="empty">기간 내 새 공시·뉴스가 없습니다.</div></div>';
+  return '<div class="feed">' + feed.map(f => `
+    <div class="item">
+      <div class="tm">${esc((f.date || '').slice(5))}</div>
+      <div class="ibody">
+        <div class="imeta"><span class="src ${esc(f.kind)}">${esc(f.source)}</span><span class="who">${esc(f.who)}</span></div>
+        <div class="ttl">${f.url && f.url !== '#'
+          ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.title)}</a>`
+          : esc(f.title)}</div>
+      </div>
+    </div>`).join('') + '</div>';
+}
+
+function render() {
+  if (!D) {
+    document.getElementById('app').innerHTML =
+      '<div class="empty">data.js 가 없습니다. 먼저 <span class="mono">python fetch.py --demo</span> 를 실행하세요.</div>';
+    return;
+  }
+
+  document.getElementById('stamp').textContent = '갱신 ' + D.generated_at + ' KST';
+  document.getElementById('mkKR').textContent = '한국장 ' + D.market.kr;
+  document.getElementById('mkUS').textContent = '미국장 ' + D.market.us;
+  document.getElementById('mkKR').className = 'pill ' + (D.market.kr === '장중' ? 'on' : 'off');
+  document.getElementById('mkUS').className = 'pill ' + (D.market.us === '장중' ? 'on' : 'off');
+  if (D.demo) document.getElementById('demoFlag').hidden = false;
+
+  const errs = (D.errors || []).length
+    ? `<div class="note err"><b>수집 로그 — ${D.errors.length}건 실패</b>
+        <ul>${D.errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>` : '';
+
+  document.getElementById('app').innerHTML = `
+    <section>
+      <div class="shead"><span class="snum">01</span><span class="stitle">관심종목 스냅샷</span>
+        <span class="sdesc">현재가 · 20일 흐름 · 52주 위치 대비 목표주가</span></div>
+      <div class="grid">${D.stocks.map(stockCard).join('')}
+        <div class="card" style="display:flex;align-items:center;justify-content:center;min-height:200px;border-style:dashed;color:var(--tx3)">
+          <div style="text-align:center"><div style="font-size:26px;line-height:1">＋</div>
+          <div style="font-size:12px;margin-top:8px">watchlist.json 에 한 줄 추가하면<br>카드가 자동 생성됩니다</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><span class="snum">02</span><span class="stitle">기간별 수익률</span>
+        <span class="sdesc">빨강 상승 · 파랑 하락 · 색이 진할수록 변동 폭이 큽니다 · 신규 상장주는 연초 대신 공모가 대비</span></div>
+      ${heatTable(D.stocks)}
+    </section>
+
+    <section>
+      <div class="shead"><span class="snum">03</span><span class="stitle">공시 · 뉴스</span>
+        <span class="sdesc">DART 전자공시 + SEC EDGAR + 뉴스 · 제목을 누르면 원문으로 갑니다</span></div>
+      ${feedHTML(D.feed)}
+      ${errs}
+      <div class="note warn"><b>참고용 수집 화면입니다.</b> 무료 시세는 지연 데이터이고, 목표주가는 증권사의 전망일 뿐 보장이 아닙니다. 이 화면은 자료를 모아 보여줄 뿐 매매 판단을 대신하지 않습니다.</div>
+    </section>`;
+}
+
+render();
+</script>
+</body>
+</html>
