@@ -1,63 +1,78 @@
 {
-  "_comment": "여기만 고치면 대시보드가 따라옵니다. type이 listed면 자동 수집, private면 manual 값을 그대로 표시합니다.",
+  "_comment": "여기만 고치면 대시보드가 따라옵니다. 한국주는 krx_code(DART 공시용), 미국주는 sec_ticker(SEC 공시용)를 넣습니다. ETF는 둘 다 없어도 됩니다.",
   "stocks": [
-    {
-      "id": "nvda",
-      "name": "엔비디아",
-      "type": "listed",
-      "yahoo": "NVDA",
-      "market": "NASDAQ",
-      "currency": "USD",
-      "sec_ticker": "NVDA"
-    },
-    {
-      "id": "tsla",
-      "name": "테슬라",
-      "type": "listed",
-      "yahoo": "TSLA",
-      "market": "NASDAQ",
-      "currency": "USD",
-      "sec_ticker": "TSLA"
-    },
-    {
-      "id": "005930",
-      "name": "삼성전자",
-      "type": "listed",
-      "yahoo": "005930.KS",
-      "market": "KOSPI",
-      "currency": "KRW",
-      "krx_code": "005930",
-      "manual_target": {
-        "mean": null,
-        "note": "한국 목표주가는 무료 API가 없습니다. 주 1회 직접 적어두세요. 예: {\"mean\": 104000, \"buy\": 28, \"hold\": 3, \"sell\": 0, \"asof\": \"2026-08-14\"}"
-      }
-    },
-    {
-      "id": "035420",
-      "name": "NAVER",
-      "type": "listed",
-      "yahoo": "035420.KS",
-      "market": "KOSPI",
-      "currency": "KRW",
-      "krx_code": "035420",
-      "manual_target": {
-        "mean": null,
-        "note": "위와 동일"
-      }
-    },
-    {
-      "id": "spacex",
-      "name": "SpaceX",
-      "type": "listed",
-      "yahoo": "SPCX",
-      "market": "NASDAQ",
-      "currency": "USD",
-      "sec_ticker": "SPCX",
-      "listed_on": "2026-06-12",
-      "ipo_price": 135,
-      "_comment": "2026-06-12 나스닥 상장. 상장 1년이 안 돼서 52주/3개월/연초 지표는 자동으로 '상장 이후' 기준으로 표시됩니다."
-    }
+    { "id": "nvda", "name": "엔비디아", "type": "listed",
+      "yahoo": "NVDA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "NVDA" },
+
+    { "id": "tsla", "name": "테슬라", "type": "listed",
+      "yahoo": "TSLA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "TSLA" },
+
+    { "id": "spacex", "name": "SpaceX", "type": "listed",
+      "yahoo": "SPCX", "market": "NASDAQ", "currency": "USD", "sec_ticker": "SPCX",
+      "listed_on": "2026-06-12", "ipo_price": 135 },
+
+    { "id": "googl", "name": "알파벳 A", "type": "listed",
+      "yahoo": "GOOGL", "market": "NASDAQ", "currency": "USD", "sec_ticker": "GOOGL" },
+
+    { "id": "pltr", "name": "팔란티어", "type": "listed",
+      "yahoo": "PLTR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "PLTR" },
+
+    { "id": "laes", "name": "실스크 SEALSQ", "type": "listed",
+      "yahoo": "LAES", "market": "NASDAQ", "currency": "USD", "sec_ticker": "LAES" },
+
+    { "id": "bmnr", "name": "비트마인 이머전", "type": "listed",
+      "yahoo": "BMNR", "market": "NYSE", "currency": "USD", "sec_ticker": "BMNR" },
+
+    { "id": "ritr", "name": "라이터 로그텍", "type": "listed",
+      "yahoo": "RITR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "RITR" },
+
+    { "id": "qqq", "name": "QQQ 나스닥100", "type": "listed",
+      "yahoo": "QQQ", "market": "NASDAQ · ETF", "currency": "USD" },
+
+    { "id": "005930", "name": "삼성전자", "type": "listed",
+      "yahoo": "005930.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "005930",
+      "manual_target": { "mean": null,
+        "note": "한국 목표주가는 무료 API가 없습니다. 예: {\"mean\": 104000, \"buy\": 28, \"hold\": 3, \"sell\": 0, \"asof\": \"2026-08-14\"}" } },
+
+    { "id": "035420", "name": "NAVER", "type": "listed",
+      "yahoo": "035420.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "035420",
+      "manual_target": { "mean": null } },
+
+    { "id": "377300", "name": "카카오페이", "type": "listed",
+      "yahoo": "377300.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "377300",
+      "manual_target": { "mean": null } },
+
+    { "id": "323410", "name": "카카오뱅크", "type": "listed",
+      "yahoo": "323410.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "323410",
+      "manual_target": { "mean": null } },
+
+    { "id": "120110", "name": "코오롱인더", "type": "listed",
+      "yahoo": "120110.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "120110",
+      "manual_target": { "mean": null } },
+
+    { "id": "019680", "name": "대교", "type": "listed",
+      "yahoo": "019680.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "019680",
+      "manual_target": { "mean": null } },
+
+    { "id": "084680", "name": "이월드", "type": "listed",
+      "yahoo": "084680.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "084680",
+      "manual_target": { "mean": null } },
+
+    { "id": "036620", "name": "감성코퍼레이션", "type": "listed",
+      "yahoo": "036620.KQ", "market": "KOSDAQ", "currency": "KRW", "krx_code": "036620",
+      "manual_target": { "mean": null } },
+
+    { "id": "900290", "name": "GRT", "type": "listed",
+      "yahoo": "900290.KQ", "market": "KOSDAQ", "currency": "KRW", "krx_code": "900290",
+      "_note": "중국계 외국기업 코스닥 상장. DART 공시가 안 잡히면 수집 로그에 표시됩니다",
+      "manual_target": { "mean": null } },
+
+    { "id": "364980", "name": "TIGER 2차전지TOP10", "type": "listed",
+      "yahoo": "364980.KS", "market": "KOSPI · ETF", "currency": "KRW" },
+
+    { "id": "472170", "name": "TIGER 미국테크TOP10채권혼합", "type": "listed",
+      "yahoo": "472170.KS", "market": "KOSPI · ETF", "currency": "KRW" }
   ],
-  "news_feed_size": 12,
+  "news_feed_size": 20,
   "dart_lookback_days": 14
 }

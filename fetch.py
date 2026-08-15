@@ -112,11 +112,24 @@ def pct_ytd(close: pd.Series) -> float | None:
 # 1. 시세 (yfinance) — 미국주/한국주 모두 처리
 # ─────────────────────────────────────────────────────────────
 
-def fetch_quote(stock: dict) -> dict:
-    import yfinance as yf
+_TK_CACHE: dict = {}
 
+
+def ticker(symbol: str):
+    """같은 종목을 두 번 만들지 않습니다.
+
+    시세와 목표주가를 따로 가져오면 종목당 야후 호출이 두 배가 되고,
+    종목이 20개면 그만큼 차단당할 확률이 올라갑니다.
+    """
+    if symbol not in _TK_CACHE:
+        import yfinance as yf
+        _TK_CACHE[symbol] = yf.Ticker(symbol)
+    return _TK_CACHE[symbol]
+
+
+def fetch_quote(stock: dict) -> dict:
     symbol = stock["yahoo"]
-    tk = yf.Ticker(symbol)
+    tk = ticker(symbol)
     hist = tk.history(period="1y", auto_adjust=False)
     if hist.empty:
         raise ValueError(f"{symbol} 히스토리가 비어있음 (티커 오타 확인)")
@@ -195,8 +208,7 @@ def fetch_target(stock: dict, price: float | None) -> dict | None:
     if stock.get("type") != "listed":
         return None
 
-    import yfinance as yf
-    tk = yf.Ticker(stock["yahoo"])
+    tk = ticker(stock["yahoo"])
     mean = None
 
     try:
@@ -304,7 +316,9 @@ def fetch_dart(stock: dict, corp_map: dict, lookback: int) -> list:
 # ─────────────────────────────────────────────────────────────
 
 CIK_CACHE = HERE / ".sec_ciks.json"
-WATCHED_FORMS = {"8-K", "10-Q", "10-K", "4", "S-1", "424B4"}
+# 미국 기업은 8-K/10-Q/10-K, 외국기업(SEALSQ·Reitar 등)은 6-K/20-F 로 제출합니다.
+# 외국기업 서식을 빼면 그 종목만 공시가 통째로 비어 보입니다.
+WATCHED_FORMS = {"8-K", "10-Q", "10-K", "4", "S-1", "424B4", "6-K", "20-F", "40-F"}
 
 
 def sec_cik_map() -> dict:
@@ -361,6 +375,9 @@ FORM_KO = {
     "4": "내부자 지분 변동 신고",
     "S-1": "증권신고서",
     "424B4": "최종 투자설명서",
+    "6-K": "외국기업 수시보고",
+    "20-F": "외국기업 연간 보고서",
+    "40-F": "캐나다 기업 연간 보고서",
 }
 
 
@@ -368,14 +385,12 @@ FORM_KO = {
 # 5. 뉴스 (yfinance) — 비상장 종목은 키워드 검색으로
 # ─────────────────────────────────────────────────────────────
 
-def fetch_news(stock: dict, limit: int = 4) -> list:
-    import yfinance as yf
-
+def fetch_news(stock: dict, limit: int = 3) -> list:
     symbol = stock.get("yahoo")
     if not symbol:
         return []
 
-    raw = yf.Ticker(symbol).news or []
+    raw = ticker(symbol).news or []
     items = []
     for n in raw[:limit]:
         c = n.get("content", n)  # yfinance 버전에 따라 구조가 다릅니다
@@ -400,8 +415,8 @@ def fetch_news(stock: dict, limit: int = 4) -> list:
 # 데모 데이터 (네트워크 없이 화면부터 확인할 때)
 # ─────────────────────────────────────────────────────────────
 
-def demo_quote(base: float, drift: float) -> dict:
-    random.seed(int(base))
+def demo_quote(base: float, drift: float, seed_key: str = "") -> dict:
+    random.seed(f"{seed_key}:{base}")
     series, p = [], base * 0.94
     for _ in range(20):
         p *= 1 + random.uniform(-0.018, 0.018) + drift / 100 / 20
@@ -432,9 +447,24 @@ def demo_quote(base: float, drift: float) -> dict:
 DEMO_SEED = {
     "nvda":   {"base": 225.30, "drift": 11.8},
     "tsla":   {"base": 339.96, "drift": -2.3},
+    "spacex": {"base": 140.00, "drift": 14.6},
+    "googl":  {"base": 346.36, "drift": 4.2},
+    "pltr":   {"base": 178.40, "drift": 8.9},
+    "laes":   {"base": 3.33,   "drift": -6.4},
+    "bmnr":   {"base": 27.59,  "drift": 22.1},
+    "ritr":   {"base": 1.02,   "drift": -12.8},
+    "qqq":    {"base": 648.20, "drift": 3.6},
     "005930": {"base": 88400,  "drift": 5.1},
     "035420": {"base": 236500, "drift": 9.2},
-    "spacex": {"base": 140.00, "drift": 14.6},
+    "377300": {"base": 31450,  "drift": -3.1},
+    "323410": {"base": 24700,  "drift": 2.4},
+    "120110": {"base": 42300,  "drift": 6.7},
+    "019680": {"base": 5380,   "drift": 15.2},
+    "084680": {"base": 1742,   "drift": -4.9},
+    "036620": {"base": 4115,   "drift": 7.3},
+    "900290": {"base": 3000,   "drift": -1.8},
+    "364980": {"base": 8940,   "drift": 5.5},
+    "472170": {"base": 14355,  "drift": 2.1},
 }
 
 
@@ -447,7 +477,7 @@ def build_demo(cfg: dict) -> dict:
             continue
 
         seed = DEMO_SEED.get(s["id"], {"base": 100.0, "drift": 3.0})
-        q = demo_quote(seed["base"], seed["drift"])
+        q = demo_quote(seed["base"], seed["drift"], s["id"])
 
         # 신규 상장주는 데모에서도 짧은 이력으로 취급합니다
         if s.get("listed_on") and s["listed_on"] >= "2025-11-01":
