@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-15 18:13",
+ "generated_at": "2026-08-17 09:02",
  "demo": false,
  "market": {
-  "kr": "휴장",
-  "us": "휴장"
+  "kr": "장중",
+  "us": "개장 전"
  },
  "stocks": [
   {
@@ -66,7 +66,7 @@
     "hold": 2,
     "sell": 1,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -120,16 +120,16 @@
     339.96,
     342.27
    ],
-   "per": 314.0,
+   "per": 311.2,
    "market_cap": 1351811596288,
    "target": {
-    "mean": 396.62,
-    "upside": 15.9,
+    "mean": 395.34,
+    "upside": 15.5,
     "buy": 23,
-    "hold": 18,
-    "sell": 6,
+    "hold": 19,
+    "sell": 5,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -186,15 +186,15 @@
    "vs_ipo": 3.7,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 1844386201600,
+   "market_cap": 1845449195520,
    "target": {
-    "mean": 232.44,
-    "upside": 66.0,
+    "mean": 227.0,
+    "upside": 62.1,
     "buy": 28,
     "hold": 5,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -251,13 +251,13 @@
    "per": 17.4,
    "market_cap": 4230334382080,
    "target": {
-    "mean": 428.04,
-    "upside": 23.7,
+    "mean": 427.52,
+    "upside": 23.6,
     "buy": 58,
     "hold": 6,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -311,7 +311,7 @@
     179.01,
     174.04
    ],
-   "per": 154.0,
+   "per": 148.8,
    "market_cap": 418228273152,
    "target": {
     "mean": 191.68,
@@ -320,7 +320,7 @@
     "hold": 9,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -383,7 +383,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -446,7 +446,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -617,7 +617,7 @@
     "hold": 1,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -680,7 +680,7 @@
     "hold": 2,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -743,7 +743,7 @@
     "hold": 3,
     "sell": 3,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -806,7 +806,7 @@
     "hold": 9,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -869,7 +869,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -932,7 +932,7 @@
     "hold": 1,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -1049,7 +1049,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-08-15"
+    "asof": "2026-08-17"
    }
   },
   {
@@ -1104,7 +1104,7 @@
     3880.0
    ],
    "per": null,
-   "market_cap": 324018765824
+   "market_cap": 359874396160
   },
   {
    "id": "364980",
@@ -1219,182 +1219,182 @@
   {
    "kind": "news",
    "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Billionaires Battle on NVIDIA: David Tepper Bought More. Dan Loeb Sold Every Share. George Soros Bought Puts.",
+   "date": "2026-08-16",
+   "url": "https://247wallst.com/investing/2026/08/16/billionaires-battle-on-nvidia-david-tepper-bought-more-dan-loeb-sold-every-share-george-soros-bought-puts/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
+   "date": "2026-08-16",
+   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
+   "date": "2026-08-16",
+   "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Elon Musk Admits He Underestimated Anthropic's AI -- Why Amazon Investors Should Care",
-   "date": "2026-08-15",
-   "url": "https://www.fool.com/investing/2026/08/15/elon-musk-admits-he-underestimated-anthropics-ai-w/"
+   "title": "Elon Musk’s SpaceX Holdings Revealed. (Hint: It’s A Lot.)",
+   "date": "2026-08-16",
+   "url": "https://www.barrons.com/articles/elon-musk-spacex-holdings-stock-8a935b9d?siteid=yhoof2&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Waymo shipped 3,200 Chinese-built EVs to LA for its robotaxi fleet despite 127.5% tariffs Americans can't get around",
+   "date": "2026-08-16",
+   "url": "https://finance.yahoo.com/technology/articles/waymo-shipped-3-200-chinese-163000266.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "EXCLUSIVE: Ross Gerber Says Tesla Could ‘Double’ Sales Without Elon Musk, Warns Investors on SpaceX Merger",
+   "date": "2026-08-16",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-ross-gerber-says-tesla-140813250.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Nvidia Stock Investors Just Got Good News From SpaceX. Wall Street Says It's Time to Buy.",
-   "date": "2026-08-15",
-   "url": "https://www.fool.com/investing/2026/08/15/nvidia-stock-investors-got-good-news-from-spacex/"
+   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
+   "date": "2026-08-16",
+   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Elon Musk Admits He Underestimated Anthropic's AI -- Why Amazon Investors Should Care",
-   "date": "2026-08-15",
-   "url": "https://www.fool.com/investing/2026/08/15/elon-musk-admits-he-underestimated-anthropics-ai-w/"
+   "title": "Elon Musk Can't Sell SpaceX Stock Until June 2027 -- But 6 Billion More Shares Could Flood the Market Before Then",
+   "date": "2026-08-16",
+   "url": "https://www.fool.com/investing/2026/08/16/elon-musk-cant-sell-spacex-stock-until-june-2027-b/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Nvidia Stock Investors Just Got Good News From SpaceX. Wall Street Says It's Time to Buy.",
-   "date": "2026-08-15",
-   "url": "https://www.fool.com/investing/2026/08/15/nvidia-stock-investors-got-good-news-from-spacex/"
+   "title": "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
+   "date": "2026-08-16",
+   "url": "https://finance.yahoo.com/news/spending-is-leading-to-earnings-wall-street-strategists-see-payoff-from-big-techs-ai-investment-151610093.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Commvault Systems (CVLT) Is Up 8.7% After Shelf Filing and Google Threat Intelligence Integration",
-   "date": "2026-08-15",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/commvault-systems-cvlt-8-7-031844966.html"
+   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
+   "date": "2026-08-16",
+   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
+   "date": "2026-08-16",
+   "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Up Over 35% Since Aug. 3, Is it Too Late to Buy Palantir Stock?",
-   "date": "2026-08-15",
-   "url": "https://www.fool.com/investing/2026/08/15/up-over-35-since-aug-3-is-it-too-late-to-buy-palan/"
+   "title": "Peter Thiel invests $118 million in surging big tech stock",
+   "date": "2026-08-16",
+   "url": "https://www.thestreet.com/investing/stocks/thiel-macro-amazon-stock"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Jim Cramer Says Palantir (PLTR) Deserves a “Little Bit More Love” After a Massive Surge",
-   "date": "2026-08-15",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-palantir-pltr-000702429.html"
+   "title": "Here's What a $10,000 Palantir Investment Could Be Worth by 2028",
+   "date": "2026-08-16",
+   "url": "https://www.fool.com/investing/2026/08/16/heres-what-a-10000-palantir-investment-could-be-wo/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Intuit, MongoDB, Cloudflare, Palantir Technologies, and The Trade Desk Shares Are Soaring, What You Need To Know",
+   "date": "2026-08-16",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/intuit-mongodb-cloudflare-palantir-technologies-062900428.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "This ETF Is the Most Important in the Market. You Probably Haven’t Heard of It.",
+   "date": "2026-08-16",
+   "url": "https://www.barchart.com/story/news/3875975/this-etf-is-the-most-important-in-the-market-you-probably-havent-heard-of-it"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "If You Invest $100 a Month in VGT Starting Today, Here's What History Says You Could Have in 20 Years",
+   "date": "2026-08-16",
+   "url": "https://www.fool.com/investing/2026/08/16/if-invest-100-month-vgt-etf-today-20-years/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "삼성전자",
    "stock_id": "005930",
-   "title": "Samsung Electronics (KOSE:A005930) Ends Memory Patent Fight With Five Year Licensing Deal",
-   "date": "2026-08-15",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-electronics-kose-a005930-ends-042049333.html"
+   "title": "Apple may finally have a $2,000 reason to enter foldables",
+   "date": "2026-08-16",
+   "url": "https://www.thestreet.com/investing/apple-may-finally-have-a-2000-reason-to-enter-foldables"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/video/berkshire-ups-alphabet-stake-under-212900630.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "The AI build-out has a problem that $1 trillion in cash can't fix",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/technology/article/the-ai-build-out-has-a-problem-that-1-trillion-in-cash-cant-fix-134114624.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "The next AI winners may look nothing like Nvidia or Micron: One Big Investment Idea",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/markets/article/the-next-ai-winners-may-look-nothing-like-nvidia-or-micron-one-big-investment-idea-095700607.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/markets/article/wall-streets-riskiest-trades-are-suddenly-back-on-top-chart-of-the-day-100100027.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla owners in California have until Sept. 25 to claim this settlement money",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/personal-finance/banking/article/tesla-owners-in-california-have-until-sept-25-to-claim-this-settlement-money-162602738.html"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 8-K",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "8-K 제출 — 주요 경영사항 수시보고",
-   "date": "2026-08-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/markets/article/wall-streets-riskiest-trades-are-suddenly-back-on-top-chart-of-the-day-100100027.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Berkshire ups Alphabet stake under Greg Abel, making it a top-3 holding",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/video/berkshire-ups-alphabet-stake-under-212900630.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Wall Street's riskiest trades are suddenly back on top: Chart of the Day",
-   "date": "2026-08-14",
-   "url": "https://finance.yahoo.com/markets/article/wall-streets-riskiest-trades-are-suddenly-back-on-top-chart-of-the-day-100100027.html"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 6-K",
-   "who": "실스크 SEALSQ",
-   "stock_id": "laes",
-   "title": "6-K 제출 — 외국기업 수시보고",
-   "date": "2026-08-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026090088/ea0302080-6k_sealsq.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 6-K",
-   "who": "실스크 SEALSQ",
-   "stock_id": "laes",
-   "title": "6-K 제출 — 외국기업 수시보고",
-   "date": "2026-08-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026090087/ea0302172-6k_sealsq.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 8-K",
    "who": "비트마인 이머전",
    "stock_id": "bmnr",
-   "title": "8-K 제출 — 주요 경영사항 수시보고",
-   "date": "2026-08-14",
-   "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226038012/form8-k.htm"
+   "title": "Tom Lee's Bitmine Continues to Buy Ethereum, Now Holds 4.8% of Its Total Supply. Should Investors Follow His Lead and Buy ETH?",
+   "date": "2026-08-15",
+   "url": "https://www.fool.com/investing/2026/08/15/tom-lees-bitmine-continues-to-buy-ethereum-now-hol/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "JEPQ vs. SPYI: Nearly Identical Yields, and One ETF Charges You Twice the Fee",
+   "date": "2026-08-15",
+   "url": "https://247wallst.com/investing/etf/2026/08/15/jepq-vs-spyi-nearly-identical-yields-and-one-etf-charges-you-twice-the-fee/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Apple, Samsung Can Absorb the Smartphone Cost Shock — Smaller Rivals May Not Be so Lucky",
+   "date": "2026-08-15",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/apple-samsung-absorb-smartphone-cost-180159241.html"
   }
  ],
  "errors": []

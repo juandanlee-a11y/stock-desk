@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-17 09:02",
+ "generated_at": "2026-08-17 18:12",
  "demo": false,
  "market": {
-  "kr": "장중",
+  "kr": "장 마감",
   "us": "개장 전"
  },
  "stocks": [
@@ -1114,30 +1114,28 @@
    "currency": "KRW",
    "yahoo": "364980.KS",
    "listed_on": null,
-   "history_from": "2025-08-14",
-   "is_new_listing": false,
-   "range_label": "52주",
+   "history_from": "2026-07-22",
+   "is_new_listing": true,
+   "range_label": "상장 이후",
    "price": 10280.0,
    "change_abs": 355.0,
    "change_pct": 3.58,
    "returns": {
     "d1": 3.58,
     "w1": 5.98,
-    "m1": 9.01,
-    "m3": -20.31,
-    "ytd": 20.09
+    "m1": null,
+    "m3": null,
+    "ytd": 16.29
    },
    "week52": {
-    "low": 7775.0,
-    "high": 14900.0,
-    "position": 35.2
+    "low": 8040.0,
+    "high": 10280.0,
+    "position": 100.0
    },
-   "rsi14": 59.0,
-   "above_ma20": true,
-   "above_ma60": true,
+   "rsi14": null,
+   "above_ma20": false,
+   "above_ma60": false,
    "sparkline": [
-    8675.0,
-    8805.0,
     8840.0,
     9665.0,
     9120.0,
@@ -1168,30 +1166,28 @@
    "currency": "KRW",
    "yahoo": "472170.KS",
    "listed_on": null,
-   "history_from": "2025-08-14",
-   "is_new_listing": false,
-   "range_label": "52주",
+   "history_from": "2026-07-22",
+   "is_new_listing": true,
+   "range_label": "상장 이후",
    "price": 14140.0,
    "change_abs": 55.0,
    "change_pct": 0.39,
    "returns": {
     "d1": 0.39,
     "w1": -0.39,
-    "m1": -0.91,
-    "m3": -4.07,
-    "ytd": 0.5
+    "m1": null,
+    "m3": null,
+    "ytd": -0.18
    },
    "week52": {
-    "low": 13060.0,
-    "high": 14840.0,
-    "position": 60.7
+    "low": 13620.0,
+    "high": 14255.0,
+    "position": 81.9
    },
-   "rsi14": 50.7,
-   "above_ma20": true,
+   "rsi14": null,
+   "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    14155.0,
-    14180.0,
     14165.0,
     14095.0,
     13835.0,
@@ -1221,27 +1217,126 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Billionaires Battle on NVIDIA: David Tepper Bought More. Dan Loeb Sold Every Share. George Soros Bought Puts.",
-   "date": "2026-08-16",
-   "url": "https://247wallst.com/investing/2026/08/16/billionaires-battle-on-nvidia-david-tepper-bought-more-dan-loeb-sold-every-share-george-soros-bought-puts/"
+   "title": "Fed Chair Kevin Warsh's Job Just Got Much Easier. Here's What's Likely Next for the Stock Market As a Result.",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/17/fed-chair-kevin-warshs-job-just-got-much-easier-he/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
-   "date": "2026-08-16",
-   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
+   "title": "One of the Biggest Chip ETFs Has Averaged 14% a Year Since 2001 and Just Made 118% in Twelve Months",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/17/one-of-the-biggest-chip-etfs-has-averaged-14-a-yea/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
-   "date": "2026-08-16",
-   "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
+   "title": "Headline Inflation Is Easing, but Trumpflation Isn't -- and That's a Recipe for Disaster on Wall Street",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/17/inflation-easing-trumpflation-isnt-recipe-disaster/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Elon Musk Says Tesla Is ‘Most Made in America’ Car Brand as Trump Tariffs Shake Up Auto Industry",
+   "date": "2026-08-17",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-says-tesla-most-035929356.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "SpaceX closes $60bn acquisition of AI coding agent Cursor",
+   "date": "2026-08-17",
+   "url": "https://www.verdict.co.uk/spacex-closes-acquisition-cursor/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Spotting Winners: Lumen (NYSE:LUMN) And Telecommunication Services Stocks In Q2",
+   "date": "2026-08-17",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/spotting-winners-lumen-nyse-lumn-085420766.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "What Does Toast (TOST) Mean For The Future Of AI Food Ordering?",
+   "date": "2026-08-17",
+   "url": "https://finance.yahoo.com/technology/ai/articles/does-toast-tost-mean-future-080931105.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Payments processing firm Stripe to acquire OpenRouter for over $7bn – report",
+   "date": "2026-08-17",
+   "url": "https://www.electronicpaymentsinternational.com/news/stripe-acquire-openrouter/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Alphabet's Reported $112 Billion Profit Included a $94 Billion Paper Gain From SpaceX. Here's What the Company Actually Earned.",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/17/alphabets-reported-112-billion-profit-included-a-9/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Where Palantir Stock Lands in 5 Years Comes Down to One Number",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/17/where-palantir-stock-lands-in-5-years-comes-down-t/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Where Will Palantir Stock Be in 2030?",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/16/where-will-palantir-stock-be-in-2030/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "This Software Stock Just Produced a Rule of 40 Score Nearly as High as Palantir's, and Its Valuation Is Much More Attractive",
+   "date": "2026-08-17",
+   "url": "https://www.fool.com/investing/2026/08/16/this-software-stock-just-produced-a-rule-of-40-sco/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "SNDK, MU Rise Overnight: Analyst Target Hikes, KOSPI Rebound Power Surge",
+   "date": "2026-08-17",
+   "url": "https://stocktwits.com/news-articles/markets/equity/sndk-mu-rise-overnight-analyst-target-hikes-kospi-rebound-power-surge/cZo6v4ORJKA"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "CXMT’s Rise to China’s Most Valuable Firm Heralds New Tech Era",
+   "date": "2026-08-17",
+   "url": "https://finance.yahoo.com/technology/articles/cxmt-rise-china-most-valuable-010738048.html"
   },
   {
    "kind": "news",
@@ -1260,87 +1355,6 @@
    "title": "Waymo shipped 3,200 Chinese-built EVs to LA for its robotaxi fleet despite 127.5% tariffs Americans can't get around",
    "date": "2026-08-16",
    "url": "https://finance.yahoo.com/technology/articles/waymo-shipped-3-200-chinese-163000266.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "EXCLUSIVE: Ross Gerber Says Tesla Could ‘Double’ Sales Without Elon Musk, Warns Investors on SpaceX Merger",
-   "date": "2026-08-16",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/exclusive-ross-gerber-says-tesla-140813250.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
-   "date": "2026-08-16",
-   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Elon Musk Can't Sell SpaceX Stock Until June 2027 -- But 6 Billion More Shares Could Flood the Market Before Then",
-   "date": "2026-08-16",
-   "url": "https://www.fool.com/investing/2026/08/16/elon-musk-cant-sell-spacex-stock-until-june-2027-b/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
-   "date": "2026-08-16",
-   "url": "https://finance.yahoo.com/news/spending-is-leading-to-earnings-wall-street-strategists-see-payoff-from-big-techs-ai-investment-151610093.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Elon Musk and Jensen Huang’s New Partnership Could Create the Next Era of Technology",
-   "date": "2026-08-16",
-   "url": "https://247wallst.com/investing/2026/08/16/elon-musk-and-jensen-huangs-new-partnership-could-create-the-next-era-of-technology/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges",
-   "date": "2026-08-16",
-   "url": "https://www.fool.com/investing/2026/08/16/amazon-alphabet-and-microsoft-are-dropping-nearly/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Peter Thiel invests $118 million in surging big tech stock",
-   "date": "2026-08-16",
-   "url": "https://www.thestreet.com/investing/stocks/thiel-macro-amazon-stock"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Here's What a $10,000 Palantir Investment Could Be Worth by 2028",
-   "date": "2026-08-16",
-   "url": "https://www.fool.com/investing/2026/08/16/heres-what-a-10000-palantir-investment-could-be-wo/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Intuit, MongoDB, Cloudflare, Palantir Technologies, and The Trade Desk Shares Are Soaring, What You Need To Know",
-   "date": "2026-08-16",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/intuit-mongodb-cloudflare-palantir-technologies-062900428.html"
   },
   {
    "kind": "news",
@@ -1377,24 +1391,6 @@
    "title": "Tom Lee's Bitmine Continues to Buy Ethereum, Now Holds 4.8% of Its Total Supply. Should Investors Follow His Lead and Buy ETH?",
    "date": "2026-08-15",
    "url": "https://www.fool.com/investing/2026/08/15/tom-lees-bitmine-continues-to-buy-ethereum-now-hol/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "JEPQ vs. SPYI: Nearly Identical Yields, and One ETF Charges You Twice the Fee",
-   "date": "2026-08-15",
-   "url": "https://247wallst.com/investing/etf/2026/08/15/jepq-vs-spyi-nearly-identical-yields-and-one-etf-charges-you-twice-the-fee/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "삼성전자",
-   "stock_id": "005930",
-   "title": "Apple, Samsung Can Absorb the Smartphone Cost Shock — Smaller Rivals May Not Be so Lucky",
-   "date": "2026-08-15",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/apple-samsung-absorb-smartphone-cost-180159241.html"
   }
  ],
  "errors": []
