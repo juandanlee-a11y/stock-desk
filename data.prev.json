@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-07 22:16",
+ "generated_at": "2026-09-08 03:54",
  "demo": false,
  "market": {
-  "kr": "장 마감",
-  "us": "개장 전"
+  "kr": "개장 전",
+  "us": "장중"
  },
  "stocks": [
   {
@@ -66,7 +66,7 @@
     "hold": 2,
     "sell": 1,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -129,7 +129,7 @@
     "hold": 20,
     "sell": 5,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -186,7 +186,7 @@
    "vs_ipo": 9.59,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 1949120987136,
+   "market_cap": 1950244274176,
    "target": {
     "mean": 222.32,
     "upside": 50.3,
@@ -194,7 +194,7 @@
     "hold": 5,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -257,7 +257,7 @@
     "hold": 5,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -320,7 +320,7 @@
     "hold": 9,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -383,7 +383,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -446,7 +446,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -617,7 +617,7 @@
     "hold": 1,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -680,7 +680,7 @@
     "hold": 3,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -743,7 +743,7 @@
     "hold": 3,
     "sell": 3,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -806,7 +806,7 @@
     "hold": 9,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -869,7 +869,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -889,8 +889,8 @@
    "returns": {
     "d1": 0.0,
     "w1": 0.0,
-    "m1": 2.46,
-    "m3": -14.68,
+    "m1": -9.83,
+    "m3": -14.16,
     "ytd": -47.26
    },
    "week52": {
@@ -902,10 +902,10 @@
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
-    1109.0,
     1030.0,
     1150.0,
     1036.0,
+    1000.0,
     1000.0,
     1000.0,
     1000.0,
@@ -928,11 +928,11 @@
    "target": {
     "mean": 1500.0,
     "upside": 50.0,
-    "buy": 0,
-    "hold": 1,
-    "sell": 0,
+    "buy": null,
+    "hold": null,
+    "sell": null,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -1049,7 +1049,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-07"
+    "asof": "2026-09-08"
    }
   },
   {
@@ -1104,7 +1104,7 @@
     4005.0
    ],
    "per": null,
-   "market_cap": 334457503744
+   "market_cap": 371468304384
   },
   {
    "id": "364980",
@@ -1221,72 +1221,81 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "1 Unstoppable Vanguard Growth ETF Up 14% in 2026 to Buy and Hold for the Next 20 Years",
+   "title": "This ETF Would Have Increased Your Investment by 6x Over the Past 10 Years -- and It's Still Soaring",
    "date": "2026-09-07",
-   "url": "https://www.fool.com/investing/2026/09/07/1-unstoppable-vanguard-growth-etf-up-14-in-2026-to/"
+   "url": "https://www.fool.com/investing/2026/09/07/this-etf-would-have-increased-your-investment-by-6/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Jensen Huang Says AGI Has Arrived. Nvidia Investors Should Pay Attention",
+   "title": "Broadcom Inc. (AVGO)’s AI Opportunity Expands Across AI Infrastructure",
    "date": "2026-09-07",
-   "url": "https://finance.yahoo.com/technology/ai/articles/jensen-huang-says-agi-arrived-124157331.html"
+   "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-inc-avgo-ai-opportunity-181909723.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Should You Buy Marvell Technology Stock Before Oct. 6?",
+   "date": "2026-09-07",
+   "url": "https://www.fool.com/investing/2026/09/07/should-you-buy-marvell-technology-stock-before-oct-6/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "OpenAI, Anthropic IPOs Could Spark a Selloff in These Struggling Stocks — IBM, Tesla, AppLovin Among Names at Risk",
+   "title": "Is Tesla Stock Under $360 a Share an Obvious Buy in September?",
    "date": "2026-09-07",
-   "url": "https://www.benzinga.com/markets/equities/26/09/61647784/openai-anthropic-ipos-could-spark-a-selloff-in-these-struggling-stocks-ibm-tesla-applovin-among-names-at-risk?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
+   "url": "https://www.fool.com/investing/2026/09/07/is-tesla-stock-under-360-a-share-an-obvious-buy-in/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Tesla vs SpaceX: Elon Musk’s Two Companies Are Chasing the Same AI Prize. Only One Is Positioned to Win It",
+   "title": "Billionaire has 5-word response to Elon Musk's Tesla chart",
    "date": "2026-09-07",
-   "url": "https://247wallst.com/investing/2026/09/07/tesla-vs-spacex-elon-musks-two-companies-are-chasing-the-same-ai-prize-only-one-is-positioned-to-win-it/"
+   "url": "https://www.thestreet.com/crypto/markets/billionaire-has-5-word-response-to-elon-musks-tesla-chart"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Tesla Wants to Be Seen as an AI Company",
+   "title": "Elon Musk Owns 28% of Tesla, a Stake Worth Nearly $350 Billion. Here's Why His Ownership Level Matters for Shareholders.",
    "date": "2026-09-07",
-   "url": "https://247wallst.com/investing/2026/09/07/tesla-wants-to-be-seen-as-an-ai-company/"
+   "url": "https://www.fool.com/investing/2026/09/07/elon-musk-owns-tesla-stake-worth-billion-stock/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "SpaceX Rival Claims €10 Billion Pipeline After First Orbit. How Will Stock React?",
+   "title": "Tesla Plus SpaceX Could Become a ‘Must-Have’ Investment, Ross Gerber Says",
    "date": "2026-09-07",
-   "url": "https://beincrypto.com/spacex-rival-isar-10-billion-pipeline/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-plus-spacex-could-become-170020766.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Tesla vs SpaceX: Elon Musk’s Two Companies Are Chasing the Same AI Prize. Only One Is Positioned to Win It",
+   "title": "The Real Satellite Race Isn’t About Rockets — It’s About Who Controls the Spectrum in Your Phone",
    "date": "2026-09-07",
-   "url": "https://247wallst.com/investing/2026/09/07/tesla-vs-spacex-elon-musks-two-companies-are-chasing-the-same-ai-prize-only-one-is-positioned-to-win-it/"
+   "url": "https://247wallst.com/investing/2026/09/07/the-real-satellite-race-isnt-about-rockets-its-about-who-controls-the-spectrum-in-your-phone/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "3 Historical Reasons I'll Be Completely Avoiding Anthropic's Upcoming and Potentially Record-Breaking IPO",
+   "title": "Will SpaceX Stock Get Back to $200 Before the End of 2026?",
    "date": "2026-09-07",
-   "url": "https://www.fool.com/investing/2026/09/07/3-historical-reasons-im-avoiding-anthropic-upcoming-record-breaking-ipo/"
+   "url": "https://www.fool.com/investing/2026/09/07/will-spacex-stock-get-back-to-200-before-the-end-of-2026/"
   },
   {
    "kind": "news",
@@ -1302,99 +1311,90 @@
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Why Apple May Be the Safest AI Stock Nobody Calls an AI Stock",
+   "title": "Apple’s new CEO faces a staggering $14 billion iPhone test",
    "date": "2026-09-07",
-   "url": "https://247wallst.com/investing/2026/09/07/why-apple-may-be-the-safest-ai-stock-nobody-calls-an-ai-stock/"
+   "url": "https://www.thestreet.com/investing/apples-new-ceo-faces-a-staggering-14-billion-iphone-test"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Apple’s Sept. 9 Event Could Change Everything",
+   "title": "Google-Backed Pixxel Raises $100 Million in India's Biggest Space-Tech Round",
    "date": "2026-09-07",
-   "url": "https://247wallst.com/investing/2026/09/07/apples-sept-9-event-could-change-everything/"
+   "url": "https://finance.yahoo.com/technology/articles/google-backed-pixxel-raises-100-174102678.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Down Nearly 50% in 2026, Is BigBear.ai Stock Cheap Enough to Finally Buy?",
+   "title": "Cathie Wood Dumps $25 Million of Palantir Shares. Should PLTR Investors Worry?",
    "date": "2026-09-07",
-   "url": "https://www.fool.com/investing/2026/09/07/down-nearly-50-in-2026-is-bigbear-ai-cheap-enough-to-finally-buy/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-25-million-172403799.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Palantir’s Alex Karp: The Real AI Leak Isn't Data, It's Your 'Alpha'",
+   "title": "Palantir Surged 51% in August. The Rest of Tech Wasn't Even Close",
    "date": "2026-09-07",
-   "url": "https://finance.yahoo.com/technology/ai/articles/palantir-alex-karp-real-ai-013013347.html"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-surged-51-august-rest-172023418.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Palantir Stock Could Make a Dramatic Move Over the Next Year (Hint: It Implies a Big Move)",
+   "date": "2026-09-07",
+   "url": "https://www.fool.com/investing/2026/09/07/palantir-stock-could-make-a-dramatic-move-over-the/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Amazon, Meta Are Now Serious Competition to Uncle Sam: Big Tech's AI Debt Boom 'Driving' Treasury Yields Higher, Says Market Commentator",
+   "title": "This ETF Would Have Increased Your Investment by 6x Over the Past 10 Years -- and It's Still Soaring",
    "date": "2026-09-07",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-meta-now-serious-competition-065654674.html"
+   "url": "https://www.fool.com/investing/2026/09/07/this-etf-would-have-increased-your-investment-by-6/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "The S&P 100 ETF Just Dumped Nike and Colgate for 4 AI Stocks. Here’s What That Means for Your Portfolio",
+   "date": "2026-09-07",
+   "url": "https://247wallst.com/investing/etf/2026/09/07/the-sp-100-etf-just-dumped-nike-and-colgate-for-4-ai-stocks-heres-what-that-means-for-your-portfolio/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Investors Pulled $700 Million From IGV Hours Before Snowflake Reignited Software",
+   "date": "2026-09-07",
+   "url": "https://247wallst.com/investing/etf/2026/09/07/investors-pulled-700-million-from-igv-hours-before-snowflake-reignited-software/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "삼성전자",
    "stock_id": "005930",
-   "title": "Kospi Surges as SK Hynix, Samsung Keep Global AI Rally Raging On",
+   "title": "Apple’s new CEO faces a staggering $14 billion iPhone test",
    "date": "2026-09-07",
-   "url": "https://www.barrons.com/articles/stock-market-today-kospi-sk-hynix-samsung-ai-rally-05f6ffee?siteid=yhoof2&yptr=yahoo"
+   "url": "https://www.thestreet.com/investing/apples-new-ceo-faces-a-staggering-14-billion-iphone-test"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "삼성전자",
    "stock_id": "005930",
-   "title": "European Chip Stocks Rise, Buoyed By Asian Peers",
+   "title": "Arm Expands Into AI Accelerators With Samsung — But It’s Not the Data Center Goldmine Investors Hope For",
    "date": "2026-09-07",
-   "url": "https://www.wsj.com/finance/stocks/nikkei-rises-1-8-led-by-chip-related-stocks-37f5728d?siteid=yhoof2&yptr=yahoo"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "삼성전자",
-   "stock_id": "005930",
-   "title": "Goldman Strategist Holds 12,000 KOSPI Target: Will Memory Earnings Close a 74% Gap?",
-   "date": "2026-09-07",
-   "url": "https://beincrypto.com/goldman-kospi-target-memory-chips/"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "코오롱인더",
-   "stock_id": "120110",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "date": "2026-09-07",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000307"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "감성코퍼레이션",
-   "stock_id": "036620",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "date": "2026-09-07",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000119"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "감성코퍼레이션",
-   "stock_id": "036620",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "date": "2026-09-07",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260907000118"
+   "url": "https://247wallst.com/investing/2026/09/07/arm-expands-into-ai-accelerators-with-samsung-but-its-not-the-data-center-goldmine-investors-hope-for/"
   }
  ],
  "errors": []
