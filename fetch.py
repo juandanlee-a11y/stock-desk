@@ -2,7 +2,7 @@
 """
 MY STOCK DESK - 데이터 수집기
 
-watchlist.json 을 읽어서 시세 / 공시 / 목표주가 / 뉴스를 모아
+watchlist.json 을 읽어서 시세 / 공시 / 목표주가 / 뉴스 / 시장 온도계를 모아
 data.json 과 data.js 를 만듭니다. 화면(index.html)은 이 파일만 읽습니다.
 
   python fetch.py           실제 수집
@@ -412,6 +412,212 @@ def fetch_news(stock: dict, limit: int = 3) -> list:
 
 
 # ─────────────────────────────────────────────────────────────
+# 6. 시장 온도계 — 버핏지수 · 실러 CAPE · VIX · 미국 10년물 · 달러 · 원달러
+#    "지금 시장이 뜨거운가"를 숫자로 보고 현금 비중을 정하기 위한 층입니다.
+#    종목 시세와 달리 하루하루 바뀌는 값이 아니므로 실패해도 직전 값을 유지합니다.
+# ─────────────────────────────────────────────────────────────
+
+def zone_of(value, zones: list) -> dict:
+    """[하한, 상한, 이름, 등급] 목록에서 value 가 속한 구간을 찾습니다."""
+    if value is None:
+        return {"label": "—", "grade": "na"}
+    for lo, hi, label, grade in zones:
+        if lo <= value < hi:
+            return {"label": label, "grade": grade}
+    return {"label": "범위 밖", "grade": "na"}
+
+
+def yahoo_series(symbol: str, period: str = "6mo") -> pd.Series:
+    hist = ticker(symbol).history(period=period, auto_adjust=False)
+    close = hist["Close"].dropna() if not hist.empty else pd.Series(dtype=float)
+    if close.empty:
+        raise ValueError(f"{symbol} 히스토리가 비어있음")
+    return close
+
+
+def gauge_from_series(close: pd.Series, scale: float = 1.0, digits: int = 2) -> dict:
+    """마지막 값 · 전일 대비 · 1개월 전 대비 · 최근 20일 스파크라인."""
+    last = float(close.iloc[-1]) * scale
+    prev = float(close.iloc[-2]) * scale if len(close) > 1 else last
+    m1 = None
+    target = close.index[-1] - pd.Timedelta(days=30)
+    past = close[close.index <= target]
+    if not past.empty:
+        m1 = float(past.iloc[-1]) * scale
+    return {
+        "value": round(last, digits),
+        "change": round(last - prev, digits),
+        "change_m1": round(last - m1, digits) if m1 is not None else None,
+        "sparkline": [round(float(v) * scale, digits) for v in close.tail(20)],
+        "asof": close.index[-1].strftime("%Y-%m-%d"),
+    }
+
+
+def fetch_fred_gdp() -> tuple[float, str]:
+    """미국 명목 GDP(연율, 10억 달러). FRED 그래프 CSV 는 키 없이 내려받을 수 있습니다."""
+    r = requests.get(
+        "https://fred.stlouisfed.org/graph/fredgraph.csv",
+        params={"id": "GDP"}, timeout=20,
+        headers={"User-Agent": SEC_UA or "stock-desk"},
+    )
+    r.raise_for_status()
+    rows = [ln.split(",") for ln in r.text.strip().splitlines()[1:]]
+    rows = [(d, v) for d, v in rows if v not in ("", ".")]
+    if not rows:
+        raise ValueError("GDP CSV 가 비어있음")
+    date, val = rows[-1]
+    return float(val), date
+
+
+def fetch_buffett(thermo: dict) -> dict:
+    """버핏 지수 = 미국 전체 시가총액 / GDP × 100.
+
+    수동값(manual_buffett)이 있으면 그 값을 씁니다. 없으면 Wilshire 5000 지수를
+    시가총액의 근사치로 써서 계산합니다 (지수 1포인트 ≈ 10억 달러 — 정확한 배율은
+    watchlist.json 의 w5000_bn_per_point 로 보정). 근사치는 화면에 '근사'로 표시됩니다.
+    """
+    manual = thermo.get("manual_buffett") or {}
+    if manual.get("value"):
+        return {"value": round(float(manual["value"]), 1), "source": "수동 입력",
+                "asof": manual.get("asof"), "approx": False}
+
+    close = None
+    for sym in ("^W5000", "^FTW5000"):
+        try:
+            close = yahoo_series(sym, "3mo")
+            break
+        except Exception as e:
+            note_error(f"온도계 {sym}", e)
+    if close is None:
+        raise ValueError("Wilshire 5000 지수를 받지 못함 — manual_buffett 에 값을 넣어주세요")
+
+    gdp, gdp_date = fetch_fred_gdp()
+    factor = float(thermo.get("w5000_bn_per_point") or 1.0)
+    mcap_bn = float(close.iloc[-1]) * factor
+    return {
+        "value": round(mcap_bn / gdp * 100, 1),
+        "source": f"Wilshire 5000 × {factor:g} / FRED GDP({gdp_date[:7]})",
+        "asof": close.index[-1].strftime("%Y-%m-%d"),
+        "approx": True,
+    }
+
+
+def fetch_cape(thermo: dict) -> dict:
+    """실러 CAPE. 수동값이 있으면 우선, 없으면 multpl.com 현재값을 읽습니다."""
+    manual = thermo.get("manual_cape") or {}
+    if manual.get("value"):
+        return {"value": round(float(manual["value"]), 2), "source": "수동 입력",
+                "asof": manual.get("asof"), "approx": False}
+
+    import re
+    r = requests.get(
+        "https://www.multpl.com/shiller-pe", timeout=20,
+        headers={"User-Agent": "Mozilla/5.0 (stock-desk personal dashboard)"},
+    )
+    r.raise_for_status()
+    m = re.search(r"Current Shiller PE Ratio[^0-9]*([0-9]+(?:\.[0-9]+)?)", r.text)
+    if not m:
+        raise ValueError("multpl.com 페이지에서 CAPE 값을 찾지 못함 — manual_cape 에 값을 넣어주세요")
+    return {"value": float(m.group(1)), "source": "multpl.com",
+            "asof": datetime.now(KST).strftime("%Y-%m-%d"), "approx": False}
+
+
+THERMO_GAUGES = [
+    # key, 야후 심볼, 배율, 소수 자리, 표시 이름, 단위
+    ("vix",    "^VIX",     1.0, 2, "VIX 공포지수", ""),
+    ("us10y",  "^TNX",     0.1, 2, "미국 10년물",  "%"),   # ^TNX 는 수익률×10 으로 표시됩니다
+    ("dxy",    "DX-Y.NYB", 1.0, 2, "달러인덱스",   ""),
+    ("usdkrw", "KRW=X",    1.0, 1, "원/달러",      "원"),
+]
+
+
+def fetch_thermometer(cfg: dict, prev_thermo: dict | None) -> dict:
+    thermo = cfg.get("thermometer") or {}
+    zones = thermo.get("zones") or {}
+    prev_thermo = prev_thermo or {}
+    out = {"gauges": {}, "zones": zones, "cash_guide": thermo.get("cash_guide") or {}}
+
+    def keep_prev(key):
+        old = (prev_thermo.get("gauges") or {}).get(key)
+        if old and old.get("value") is not None:
+            old = dict(old); old["stale"] = True
+            out["gauges"][key] = old
+            log(f"  └ {key} 직전 값 유지")
+
+    for key, sym, scale, digits, label, unit in THERMO_GAUGES:
+        try:
+            g = gauge_from_series(yahoo_series(sym), scale, digits)
+            g.update({"label": label, "unit": unit, "source": "Yahoo"})
+            g["zone"] = zone_of(g["value"], zones.get(key, []))
+            out["gauges"][key] = g
+        except Exception as e:
+            note_error(f"온도계 {label}", e)
+            keep_prev(key)
+        time.sleep(0.3)
+
+    for key, fn, label in (("buffett", fetch_buffett, "버핏 지수"), ("cape", fetch_cape, "실러 CAPE")):
+        try:
+            g = fn(thermo)
+            g.update({"label": label, "unit": "%" if key == "buffett" else ""})
+            g["zone"] = zone_of(g["value"], zones.get(key, []))
+            out["gauges"][key] = g
+        except Exception as e:
+            note_error(f"온도계 {label}", e)
+            keep_prev(key)
+
+    out["overall"] = overall_grade(out["gauges"])
+    return out
+
+
+GRADE_RANK = {"low": 0, "mid": 1, "warm": 2, "hot": 3}
+
+
+def overall_grade(gauges: dict) -> dict:
+    """밸류에이션 두 지표(버핏·CAPE) 중 더 뜨거운 쪽을 종합 등급으로 씁니다.
+
+    VIX 는 밸류에이션이 아니라 '지금 공포 상태인가'이므로 종합에는 넣지 않고
+    별도 경보로 다룹니다 (공포 구간 = 투매 금지 신호).
+    """
+    grades = []
+    for k in ("buffett", "cape"):
+        z = (gauges.get(k) or {}).get("zone") or {}
+        if z.get("grade") in GRADE_RANK:
+            grades.append((GRADE_RANK[z["grade"]], z["grade"], z["label"], k))
+    if not grades:
+        return {"grade": "na", "label": "—", "basis": "밸류에이션 지표 없음"}
+    grades.sort(reverse=True)
+    _, grade, label, key = grades[0]
+    basis = "버핏 지수" if key == "buffett" else "실러 CAPE"
+    vix = (gauges.get("vix") or {}).get("zone") or {}
+    return {"grade": grade, "label": label, "basis": basis,
+            "fear": vix.get("grade") == "hot"}
+
+
+def demo_thermometer(cfg: dict) -> dict:
+    thermo = cfg.get("thermometer") or {}
+    zones = thermo.get("zones") or {}
+    random.seed("thermo")
+    def spark(base, wig):
+        s, p = [], base
+        for _ in range(20):
+            p += random.uniform(-wig, wig); s.append(round(p, 2))
+        return s
+    demo = {
+        "vix":    {"value": 18.4, "change": -0.9, "change_m1": 2.1, "sparkline": spark(17, .8), "label": "VIX 공포지수", "unit": "", "source": "데모"},
+        "us10y":  {"value": 4.21, "change": 0.03, "change_m1": -0.12, "sparkline": spark(4.3, .04), "label": "미국 10년물", "unit": "%", "source": "데모"},
+        "dxy":    {"value": 101.8, "change": -0.2, "change_m1": 0.6, "sparkline": spark(101, .3), "label": "달러인덱스", "unit": "", "source": "데모"},
+        "usdkrw": {"value": 1362.5, "change": 4.0, "change_m1": -11.0, "sparkline": spark(1370, 5), "label": "원/달러", "unit": "원", "source": "데모"},
+        "buffett": {"value": 208.3, "source": "데모", "asof": "2026-09-01", "approx": True, "label": "버핏 지수", "unit": "%"},
+        "cape":    {"value": 38.7, "source": "데모", "asof": "2026-09-01", "approx": False, "label": "실러 CAPE", "unit": ""},
+    }
+    for k, g in demo.items():
+        g.setdefault("asof", "2026-09-18")
+        g["zone"] = zone_of(g["value"], zones.get(k, []))
+    return {"gauges": demo, "zones": zones, "cash_guide": thermo.get("cash_guide") or {},
+            "overall": overall_grade(demo)}
+
+
+# ─────────────────────────────────────────────────────────────
 # 데모 데이터 (네트워크 없이 화면부터 확인할 때)
 # ─────────────────────────────────────────────────────────────
 
@@ -529,21 +735,34 @@ def load_prev() -> dict:
     """
     f = HERE / "data.json"
     if not f.exists():
-        return {"stocks": {}, "feed": [], "at": None}
+        return {"stocks": {}, "feed": [], "at": None, "thermometer": None}
     try:
         d = json.loads(f.read_text(encoding="utf-8"))
         return {
             "stocks": {s["id"]: s for s in d.get("stocks", []) if s.get("id")},
             "feed": d.get("feed", []),
             "at": d.get("generated_at"),
+            "thermometer": d.get("thermometer"),
         }
     except Exception:
-        return {"stocks": {}, "feed": [], "at": None}
+        return {"stocks": {}, "feed": [], "at": None, "thermometer": None}
 
 
 def meta(s: dict) -> dict:
-    return {k: s.get(k) for k in
-            ("id", "name", "type", "market", "currency", "yahoo", "listed_on")}
+    m = {k: s.get(k) for k in
+         ("id", "name", "type", "market", "currency", "yahoo", "listed_on")}
+    # 매수 규칙 카드 — watchlist.json 에 적어둔 논리·손절가·익절가를 그대로 화면에 넘깁니다
+    r = s.get("rules") or {}
+    m["rules"] = {
+        "thesis": (r.get("thesis") or "").strip(),
+        "moat": (r.get("moat") or "").strip(),
+        "kill_signal": (r.get("kill_signal") or "").strip(),
+        "stop_price": r.get("stop_price"),
+        "take_profit_price": r.get("take_profit_price"),
+        "entry_price": r.get("entry_price"),
+        "review_on": r.get("review_on"),
+    }
+    return m
 
 
 def market_status() -> dict:
@@ -564,10 +783,14 @@ def main():
         log("데모 모드 — 네트워크 없이 샘플 데이터를 만듭니다")
         payload = build_demo(cfg)
         stocks, feed = payload["stocks"], payload["feed"]
+        thermometer = demo_thermometer(cfg)
     else:
         stocks, feed = [], []
         corp_map, cik_map = {}, {}
         prev = load_prev()
+
+        log("시장 온도계 수집")
+        thermometer = fetch_thermometer(cfg, prev.get("thermometer"))
 
         if DART_KEY:
             try:
@@ -645,6 +868,7 @@ def main():
         "generated_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
         "demo": DEMO,
         "market": market_status(),
+        "thermometer": thermometer,
         "stocks": stocks,
         "feed": feed,
         "errors": ERRORS,

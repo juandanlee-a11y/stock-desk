@@ -108,9 +108,71 @@ td.cell{font-family:var(--mono);font-weight:500}
 .note.err ul{margin:6px 0 0 16px}
 .empty{padding:40px 20px;text-align:center;color:var(--tx3);font-size:13px}
 
+/* ── 시장 온도계 ── */
+.thermo{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px}
+.gauge{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 13px 10px;position:relative;overflow:hidden}
+.gauge::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--flat)}
+.gauge.z-low::before{background:var(--teal)} .gauge.z-mid::before{background:var(--flat)}
+.gauge.z-warm::before{background:var(--gold)} .gauge.z-hot::before{background:var(--up)}
+.ghead{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.glab{font-size:11.5px;color:var(--tx2);font-weight:500}
+.zone{font-size:10px;padding:2px 7px;border-radius:99px;border:1px solid var(--line);color:var(--tx2);white-space:nowrap}
+.zone.z-low{border-color:#1D4A40;background:#0F2A24;color:var(--teal)}
+.zone.z-mid{border-color:var(--line);background:var(--panel2);color:var(--tx2)}
+.zone.z-warm{border-color:#4A3A16;background:#241C08;color:var(--gold)}
+.zone.z-hot{border-color:#4A1C28;background:#2A1119;color:var(--up)}
+.gval{display:flex;align-items:baseline;gap:7px;margin-top:8px;flex-wrap:wrap}
+.gval .v{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.02em}
+.gval .u{font-size:11px;color:var(--tx3)}
+.gval .d{font-family:var(--mono);font-size:11.5px}
+.gauge .spark{height:26px;margin:6px 0 2px}
+.zbar{position:relative;height:26px;margin:8px 0 2px}
+.zbar .seg{position:absolute;top:10px;height:6px;border-radius:2px;opacity:.55}
+.zbar .seg.z-low{background:var(--teal)} .zbar .seg.z-mid{background:#3A4C6E} .zbar .seg.z-warm{background:var(--gold)} .zbar .seg.z-hot{background:var(--up)}
+.zbar .tick{position:absolute;top:18px;font-family:var(--mono);font-size:8.5px;color:var(--tx3);transform:translateX(-50%)}
+.zbar .cur{position:absolute;top:5px;width:2px;height:16px;background:var(--tx);border-radius:1px;transform:translateX(-50%)}
+.gfoot{font-size:10px;color:var(--tx3);margin-top:4px;line-height:1.5}
+.gfoot b{color:var(--tx2);font-weight:500}
+
+.guide{margin-top:12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:12px 14px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.guide .big{font-size:13px;font-weight:600;padding:4px 10px;border-radius:6px;white-space:nowrap}
+.guide .big.z-low{background:#0F2A24;color:var(--teal)} .guide .big.z-mid{background:var(--panel2);color:var(--tx)}
+.guide .big.z-warm{background:#241C08;color:var(--gold)} .guide .big.z-hot{background:#2A1119;color:var(--up)}
+.guide .big.z-na{background:var(--panel2);color:var(--tx3)}
+.guide .txt{flex:1;min-width:220px;font-size:12.5px;color:var(--tx)}
+.guide .sub{font-size:11px;color:var(--tx3);margin-top:3px}
+.fear{margin-top:10px;border:1px solid #4A1C28;background:#1C0D12;color:#D98A9C;border-radius:8px;padding:9px 13px;font-size:12px}
+.fear b{color:var(--up)}
+
+/* ── 규칙 발동 경보 ── */
+.alerts{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.alert{border-radius:8px;padding:9px 13px;font-size:12.5px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px solid}
+.alert.stop{border-color:#5A2334;background:#24101A;color:#F0A5B5}
+.alert.take{border-color:#4A3A16;background:#241C08;color:#E8C97A}
+.alert.review{border-color:#213A55;background:#0F1E31;color:#9BB8E6}
+.alert .k{font-weight:600;font-size:11px;padding:2px 7px;border-radius:4px;white-space:nowrap}
+.alert.stop .k{background:var(--up);color:#fff} .alert.take .k{background:var(--gold);color:#1A1508} .alert.review .k{background:var(--down);color:#fff}
+.alert .m{font-family:var(--mono)}
+
+/* ── 카드 안 매수 규칙 ── */
+.rules{margin-top:10px;border:1px solid var(--line);border-radius:6px;background:var(--panel2);padding:8px 10px;font-size:11.5px;line-height:1.55}
+.rules .rrow{display:flex;gap:8px}
+.rules .rk{color:var(--tx3);min-width:52px;flex:none;font-size:10.5px;padding-top:1px}
+.rules .rv{color:var(--tx);flex:1;min-width:0}
+.rules .rk.kill{color:var(--up)}
+.rules .nums{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.rules .num{font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:4px;border:1px solid var(--line);color:var(--tx2)}
+.rules .num.stop{border-color:#4A1C28;color:var(--up)} .rules .num.take{border-color:#4A3A16;color:var(--gold)}
+.rules .num.hit{background:var(--up);color:#fff;border-color:var(--up)}
+.rules .num.hit.take{background:var(--gold);color:#1A1508;border-color:var(--gold)}
+.rules.empty{border-style:dashed;color:var(--tx3);font-size:11px}
+.rules.empty b{color:var(--gold)}
+
 @media(max-width:520px){
   .price .p{font-size:22px}
   .grid{grid-template-columns:1fr}
+  .thermo{grid-template-columns:repeat(2,1fr)}
+  .gval .v{font-size:20px}
 }
 </style>
 </head>
@@ -258,9 +320,118 @@ function stockCard(s) {
       <div><div class="k">PER</div><div class="v">${s.per ?? '—'}</div></div>
     </div>
     <div class="sig"><b>위치</b> ${ma} · ${rl} 구간의 ${s.week52 ? s.week52.position + '%' : '—'} 지점</div>
+    ${rulesHTML(s)}
     ${newbie}
     ${stale}
   </div>`;
+}
+
+/* ── 시장 온도계: 지금 시장이 뜨거운가를 숫자로 ── */
+const fmtNum = (v, d) => v == null ? '—' : v.toLocaleString('ko-KR', {minimumFractionDigits:d, maximumFractionDigits:d});
+const signNum = (v, d, unit) => v == null ? '' : (v > 0 ? '+' : '') + fmtNum(v, d) + (unit || '');
+
+/* 밸류에이션 지표는 추세선 대신 구간 막대: 지금 값이 어느 구간에 있는지 한눈에 */
+function zoneBar(value, zones) {
+  if (!zones || !zones.length || value == null) return '';
+  const lo = zones[0][0];
+  const lastHi = zones[zones.length - 1][1];
+  /* 마지막 구간의 상한(999 같은 값)은 표시용 상한으로 잘라냅니다 */
+  const hi = Math.max(zones[zones.length - 1][0] * 1.5, value * 1.15, lastHi < zones[zones.length - 1][0] * 3 ? lastHi : 0);
+  const x = (v) => Math.max(0, Math.min(100, (v - lo) / (hi - lo) * 100));
+  const segs = zones.map(([a, b, , grade]) => `<div class="seg z-${grade}" style="left:${x(a)}%;width:${(x(Math.min(b, hi)) - x(a)).toFixed(1)}%"></div>`).join('');
+  let lastX = -99, ticks = '';   /* 경계가 너무 붙으면 숫자가 겹치므로 하나는 건너뜁니다 */
+  zones.slice(1).forEach(([a]) => { if (x(a) - lastX >= 12) { ticks += `<div class="tick" style="left:${x(a)}%">${a}</div>`; lastX = x(a); } });
+  return `<div class="zbar">${segs}${ticks}<div class="cur" style="left:${x(value)}%"></div></div>`;
+}
+
+function gaugeHTML(key, g) {
+  if (!g) return `<div class="gauge z-na"><div class="ghead"><span class="glab">${esc(key)}</span></div>
+    <div class="gval"><span class="v" style="color:var(--tx3)">—</span></div>
+    <div class="gfoot">아직 수집되지 않았습니다 · 아래 수집 로그 확인</div></div>`;
+  const z = g.zone || {grade:'na', label:'—'};
+  const zones = ((D.thermometer || {}).zones || {})[key];
+  const badge = (z.grade && z.grade !== 'na') ? `<span class="zone z-${esc(z.grade)}">${esc(z.label)}</span>` : '';
+  const digits = key === 'usdkrw' ? 1 : (key === 'buffett' ? 1 : 2);
+  const isVal = key === 'buffett' || key === 'cape';
+  /* 금리·VIX 는 '오르면 시장에 압박' 이므로 상승을 빨강으로 두지 않고 중립색으로 표시 */
+  const dCls = (key === 'usdkrw') ? cls(g.change) : 'flat';
+  const chg = g.change != null ? `<span class="d ${dCls}">${signNum(g.change, digits, g.unit)}</span>` : '';
+  const m1 = g.change_m1 != null ? `1개월 <b>${signNum(g.change_m1, digits, g.unit)}</b> · ` : '';
+  const stale = g.stale ? `<b style="color:var(--up)">갱신 안 됨</b> · ` : '';
+  const approx = g.approx ? `<b>근사값</b> · ` : '';
+  return `<div class="gauge z-${esc(z.grade)}">
+    <div class="ghead"><span class="glab">${esc(g.label || key)}</span>${badge}</div>
+    <div class="gval"><span class="v">${fmtNum(g.value, digits)}</span><span class="u">${esc(g.unit || '')}</span>${chg}</div>
+    ${isVal ? zoneBar(g.value, zones) : sparkSVG(g.sparkline, false).replace('#3B8CFF', '#8798B5').replace('rgba(59,140,255,.09)', 'rgba(135,152,181,.10)')}
+    <div class="gfoot">${stale}${approx}${m1}${esc(g.source || '')} ${esc(g.asof || '')}</div>
+  </div>`;
+}
+
+function thermoHTML(T) {
+  if (!T || !T.gauges) return '<div class="note">온도계 데이터가 없습니다. fetch.py 를 다시 실행하면 채워집니다.</div>';
+  const order = ['buffett', 'cape', 'vix', 'us10y', 'dxy', 'usdkrw'];
+  const tiles = order.map(k => gaugeHTML(k, T.gauges[k])).join('');
+  const o = T.overall || {grade:'na', label:'—'};
+  const guideTxt = (T.cash_guide || {})[o.grade] || '밸류에이션 지표가 없어 행동 가이드를 만들 수 없습니다 · watchlist.json 의 manual_cape / manual_buffett 에 값을 넣어주세요';
+  const fear = o.fear
+    ? `<div class="fear"><b>공포 구간</b> VIX 가 공포 구간입니다 — 카너먼의 손실 회피가 가장 세게 작동하는 순간입니다. 정해둔 규칙 밖의 투매는 하지 않습니다.</div>` : '';
+  return `<div class="thermo">${tiles}</div>
+    <div class="guide">
+      <span class="big z-${esc(o.grade)}">${esc(o.label)}</span>
+      <div><div class="txt">${esc(guideTxt)}</div>
+      <div class="sub">종합 등급은 버핏 지수·실러 CAPE 중 더 뜨거운 쪽(${esc(o.basis || '—')}) 기준 · 문구와 구간은 watchlist.json 의 thermometer 에서 바꿉니다</div></div>
+    </div>${fear}`;
+}
+
+/* ── 매수 규칙 카드: 사전에 적어둔 손절·익절 조건이 현재가에 닿았는지 ── */
+function ruleState(s) {
+  const r = s.rules || {}, p = s.price;
+  const has = !!(r.thesis || r.moat || r.kill_signal || r.stop_price || r.take_profit_price);
+  const stopHit = p != null && r.stop_price != null && p <= r.stop_price;
+  const takeHit = p != null && r.take_profit_price != null && p >= r.take_profit_price;
+  const stopGap = (p != null && r.stop_price) ? (p / r.stop_price - 1) * 100 : null;   // 손절선까지 남은 여유
+  const takeGap = (p != null && r.take_profit_price) ? (r.take_profit_price / p - 1) * 100 : null;
+  const pnl = (p != null && r.entry_price) ? (p / r.entry_price - 1) * 100 : null;
+  const today = (D.generated_at || '').slice(0, 10);
+  const reviewDue = !!(r.review_on && today && r.review_on <= today);
+  return {r, has, stopHit, takeHit, stopGap, takeGap, pnl, reviewDue};
+}
+
+function rulesHTML(s) {
+  const st = ruleState(s), r = st.r;
+  if (!st.has) return `<div class="rules empty"><b>매수 규칙 미작성</b> · watchlist.json 의 rules 에 논리·손절가·익절가를 적어두면 여기에 표시되고, 현재가가 닿으면 상단에 경보가 뜹니다</div>`;
+  const row = (k, v, extra) => v ? `<div class="rrow"><span class="rk ${extra || ''}">${k}</span><span class="rv">${esc(v)}</span></div>` : '';
+  const nums = [];
+  if (r.entry_price) nums.push(`<span class="num">평단 ${money(r.entry_price, s.currency)}${st.pnl != null ? ` <span class="${cls(st.pnl)}">${sign(st.pnl, 1)}</span>` : ''}</span>`);
+  if (r.stop_price) nums.push(`<span class="num stop ${st.stopHit ? 'hit' : ''}">손절 ${money(r.stop_price, s.currency)}${st.stopHit ? ' 도달' : (st.stopGap != null ? ` · 여유 ${st.stopGap.toFixed(1)}%` : '')}</span>`);
+  if (r.take_profit_price) nums.push(`<span class="num take ${st.takeHit ? 'hit' : ''}">익절 ${money(r.take_profit_price, s.currency)}${st.takeHit ? ' 도달' : (st.takeGap != null ? ` · ${st.takeGap.toFixed(1)}% 남음` : '')}</span>`);
+  if (r.review_on) nums.push(`<span class="num" ${st.reviewDue ? 'style="color:var(--down);border-color:#213A55"' : ''}>점검 ${esc(r.review_on)}${st.reviewDue ? ' 지남' : ''}</span>`);
+  return `<div class="rules">
+    ${row('왜 사는가', r.thesis)}${row('해자', r.moat)}${row('매도 신호', r.kill_signal, 'kill')}
+    ${nums.length ? `<div class="nums">${nums.join('')}</div>` : ''}
+  </div>`;
+}
+
+function alertsHTML(stocks) {
+  const items = [];
+  stocks.forEach(s => {
+    if (s.type === 'private' || s.price == null) return;
+    const st = ruleState(s);
+    if (st.stopHit) items.push(`<div class="alert stop"><span class="k">손절선 도달</span><b>${esc(s.name)}</b><span class="m">${money(s.price, s.currency)} ≤ ${money(st.r.stop_price, s.currency)}</span><span>사전에 정한 규칙입니다 — 이유를 새로 만들지 말고 실행합니다</span></div>`);
+    if (st.takeHit) items.push(`<div class="alert take"><span class="k">익절선 도달</span><b>${esc(s.name)}</b><span class="m">${money(s.price, s.currency)} ≥ ${money(st.r.take_profit_price, s.currency)}</span><span>절반 익절 후 나머지는 논리가 유지되는지만 확인</span></div>`);
+    if (st.reviewDue) items.push(`<div class="alert review"><span class="k">점검일 지남</span><b>${esc(s.name)}</b><span class="m">${esc(st.r.review_on)}</span><span>매도 신호(사전 부검)가 현실이 됐는지 확인하고 점검일을 갱신</span></div>`);
+  });
+  if (!items.length) return '';
+  return `<div class="alerts">${items.join('')}</div>`;
+}
+
+function stopCell(s) {
+  const st = ruleState(s);
+  if (!st.r.stop_price) return '<span class="hm" style="color:var(--tx3);font-size:10px;min-width:auto">미설정</span>';
+  if (st.stopHit) return '<span class="hm" style="background:var(--up);color:#fff">도달</span>';
+  const g = st.stopGap;
+  const a = Math.max(0.1, Math.min(g / 30, 1));   // 여유가 적을수록 붉게
+  return `<span class="hm" style="background:rgba(240,64,92,${(0.55 - a * 0.45).toFixed(2)});color:${g < 5 ? 'var(--up)' : 'var(--tx)'}">${g.toFixed(1)}%</span>`;
 }
 
 function heatTable(stocks) {
@@ -270,7 +441,7 @@ function heatTable(stocks) {
       return `<tr><td>${esc(s.name)} <span class="mono" style="color:var(--tx3);font-size:10px">비상장</span></td>
         <td class="cell" colspan="5" style="text-align:center;color:var(--tx3);font-size:11px">
         일별 시세 없음 · 기준 ${esc(m.asof ?? '—')} · 직전 대비 ${sign(m.qoq, 1)}</td>
-        <td class="cell flat">—</td><td class="cell flat">—</td></tr>`;
+        <td class="cell flat">—</td><td class="cell flat">—</td><td class="cell flat">—</td></tr>`;
     }
     const r = s.returns || {}, t = s.target || {};
     /* 기간이 없어서 빈 칸인지, 데이터가 안 와서 빈 칸인지 구분되게 표시 */
@@ -285,11 +456,12 @@ function heatTable(stocks) {
       <td class="cell">${s.vs_ipo != null ? heat(s.vs_ipo) : cell(r.ytd)}</td>
       <td class="cell">${s.week52 ? s.week52.position + '%' : '—'}</td>
       <td class="cell ${cls(t.upside)}">${sign(t.upside, 1)}</td>
+      <td class="cell">${stopCell(s)}</td>
     </tr>`;
   }).join('');
 
   return `<div class="tblwrap"><table>
-    <thead><tr><th>종목</th><th>1일</th><th>1주</th><th>1개월</th><th>3개월</th><th>연초 이후</th><th>52주 위치</th><th>목표가 대비</th></tr></thead>
+    <thead><tr><th>종목</th><th>1일</th><th>1주</th><th>1개월</th><th>3개월</th><th>연초 이후</th><th>52주 위치</th><th>목표가 대비</th><th>손절선 여유</th></tr></thead>
     <tbody>${rows}</tbody></table></div>`;
 }
 
@@ -327,7 +499,14 @@ function render() {
 
   document.getElementById('app').innerHTML = `
     <section>
-      <div class="shead"><span class="snum">01</span><span class="stitle">관심종목 스냅샷</span>
+      <div class="shead"><span class="snum">01</span><span class="stitle">시장 온도계</span>
+        <span class="sdesc">버핏 지수·실러 CAPE 는 월 1회 보는 밸류에이션 · VIX·금리·달러는 매일 보는 방향 신호 · 초록 저평가 → 회색 적정 → 노랑 주의 → 빨강 과열</span></div>
+      ${thermoHTML(D.thermometer)}
+      ${alertsHTML(D.stocks)}
+    </section>
+
+    <section>
+      <div class="shead"><span class="snum">02</span><span class="stitle">관심종목 스냅샷</span>
         <span class="sdesc">현재가 · 20일 흐름 · 52주 위치 대비 목표주가</span></div>
       <div class="grid">${D.stocks.map(stockCard).join('')}
         <div class="card" style="display:flex;align-items:center;justify-content:center;min-height:200px;border-style:dashed;color:var(--tx3)">
@@ -338,13 +517,13 @@ function render() {
     </section>
 
     <section>
-      <div class="shead"><span class="snum">02</span><span class="stitle">기간별 수익률</span>
-        <span class="sdesc">빨강 상승 · 파랑 하락 · 색이 진할수록 변동 폭이 큽니다 · 신규 상장주는 연초 대신 공모가 대비</span></div>
+      <div class="shead"><span class="snum">03</span><span class="stitle">기간별 수익률</span>
+        <span class="sdesc">빨강 상승 · 파랑 하락 · 색이 진할수록 변동 폭이 큽니다 · 신규 상장주는 연초 대신 공모가 대비 · 손절선 여유는 watchlist.json 의 stop_price 기준</span></div>
       ${heatTable(D.stocks)}
     </section>
 
     <section>
-      <div class="shead"><span class="snum">03</span><span class="stitle">공시 · 뉴스</span>
+      <div class="shead"><span class="snum">04</span><span class="stitle">공시 · 뉴스</span>
         <span class="sdesc">DART 전자공시 + SEC EDGAR + 뉴스 · 제목을 누르면 원문으로 갑니다</span></div>
       ${feedHTML(D.feed)}
       ${errs}

@@ -1,78 +1,133 @@
 {
   "_comment": "여기만 고치면 대시보드가 따라옵니다. 한국주는 krx_code(DART 공시용), 미국주는 sec_ticker(SEC 공시용)를 넣습니다. ETF는 둘 다 없어도 됩니다.",
+
+  "_rules_help": [
+    "각 종목의 rules 는 매수 전에, 감정이 없을 때 적어두는 매수 규칙 카드입니다. 비어 있으면 카드에 '규칙 미작성'으로 표시됩니다.",
+    "thesis = 능력 범위: 이 사업을 왜 이해하고 왜 사는가 (한두 문장)",
+    "moat = 지속 가능한 해자: 독점력·전환비용·네트워크 효과 중 무엇인가",
+    "kill_signal = 사전 부검: 이 신호가 나오면 논리가 깨진 것 → 기계적 매도",
+    "stop_price = 손절가(숫자) / take_profit_price = 절반 익절가(숫자) / entry_price = 평단(선택) / review_on = 다음 점검일(선택)",
+    "현재가가 stop_price 아래로 가거나 take_profit_price 위로 가면 대시보드 상단 '규칙 발동'에 자동으로 뜹니다.",
+    "예: \"rules\": { \"thesis\": \"AI 가속기 수요가 3년 이상 간다고 판단\", \"moat\": \"CUDA 생태계 전환비용\", \"kill_signal\": \"데이터센터 매출 2개 분기 연속 역성장, 또는 주요 고객의 자체칩 전환 발표\", \"stop_price\": 150, \"take_profit_price\": 320, \"entry_price\": 180, \"review_on\": \"2026-11-20\" }"
+  ],
+
+  "thermometer": {
+    "_comment": [
+      "시장 온도계 설정. 버핏지수·CAPE 는 자동 수집을 먼저 시도하고, manual_* 에 value 가 있으면 그 값을 우선 씁니다.",
+      "월 1회 gurufocus.com (Buffett Indicator) / multpl.com (Shiller PE) 값을 보고 manual_* 를 갱신하면 가장 정확합니다.",
+      "zones 는 [하한, 상한, 표시이름, 등급] 형식. 등급은 low / mid / warm / hot 네 가지이며 cash_guide 문구와 연결됩니다.",
+      "구간 경계와 cash_guide 문구는 본인 기준으로 수정하세요 — 대시보드 상단 행동 가이드에 그대로 표시됩니다."
+    ],
+    "manual_cape":    { "value": null, "asof": null },
+    "manual_buffett": { "value": null, "asof": null },
+    "w5000_bn_per_point": 1.0,
+    "zones": {
+      "cape":    [ [0, 15, "저평가", "low"], [15, 25, "적정", "mid"], [25, 30, "주의", "warm"], [30, 999, "과열", "hot"] ],
+      "buffett": [ [0, 80, "저평가", "low"], [80, 120, "적정", "mid"], [120, 140, "고평가", "warm"], [140, 9999, "과열", "hot"] ],
+      "vix":     [ [0, 15, "안정", "low"], [15, 25, "보통", "mid"], [25, 35, "불안", "warm"], [35, 999, "공포", "hot"] ],
+      "us10y":   [ [0, 3.5, "완화", "low"], [3.5, 4.5, "중립", "mid"], [4.5, 99, "압박", "hot"] ]
+    },
+    "cash_guide": {
+      "low":  "저평가 구간 — 매수 강도 상향, 현금 비중 10% 이하 (본인 기준으로 수정)",
+      "mid":  "적정 구간 — 정해둔 매수 규칙대로만, 현금 비중 10~20% (본인 기준으로 수정)",
+      "warm": "주의 구간 — 신규 매수 축소, 현금 비중 20~30% (본인 기준으로 수정)",
+      "hot":  "과열 구간 — 신규 매수 중단, 현금 비중 30% 이상 (본인 기준으로 수정)"
+    }
+  },
+
   "stocks": [
     { "id": "nvda", "name": "엔비디아", "type": "listed",
-      "yahoo": "NVDA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "NVDA" },
+      "yahoo": "NVDA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "NVDA",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "tsla", "name": "테슬라", "type": "listed",
-      "yahoo": "TSLA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "TSLA" },
+      "yahoo": "TSLA", "market": "NASDAQ", "currency": "USD", "sec_ticker": "TSLA",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "spacex", "name": "SpaceX", "type": "listed",
       "yahoo": "SPCX", "market": "NASDAQ", "currency": "USD", "sec_ticker": "SPCX",
-      "listed_on": "2026-06-12", "ipo_price": 135 },
+      "listed_on": "2026-06-12", "ipo_price": 135,
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "googl", "name": "알파벳 A", "type": "listed",
-      "yahoo": "GOOGL", "market": "NASDAQ", "currency": "USD", "sec_ticker": "GOOGL" },
+      "yahoo": "GOOGL", "market": "NASDAQ", "currency": "USD", "sec_ticker": "GOOGL",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "pltr", "name": "팔란티어", "type": "listed",
-      "yahoo": "PLTR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "PLTR" },
+      "yahoo": "PLTR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "PLTR",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "laes", "name": "실스크 SEALSQ", "type": "listed",
-      "yahoo": "LAES", "market": "NASDAQ", "currency": "USD", "sec_ticker": "LAES" },
+      "yahoo": "LAES", "market": "NASDAQ", "currency": "USD", "sec_ticker": "LAES",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "bmnr", "name": "비트마인 이머전", "type": "listed",
-      "yahoo": "BMNR", "market": "NYSE", "currency": "USD", "sec_ticker": "BMNR" },
+      "yahoo": "BMNR", "market": "NYSE", "currency": "USD", "sec_ticker": "BMNR",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "ritr", "name": "라이터 로그텍", "type": "listed",
-      "yahoo": "RITR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "RITR" },
+      "yahoo": "RITR", "market": "NASDAQ", "currency": "USD", "sec_ticker": "RITR",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "qqq", "name": "QQQ 나스닥100", "type": "listed",
-      "yahoo": "QQQ", "market": "NASDAQ · ETF", "currency": "USD" },
+      "yahoo": "QQQ", "market": "NASDAQ · ETF", "currency": "USD",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "005930", "name": "삼성전자", "type": "listed",
       "yahoo": "005930.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "005930",
-      "manual_target": { "mean": null,
-        "note": "한국 목표주가는 무료 API가 없습니다. 예: {\"mean\": 104000, \"buy\": 28, \"hold\": 3, \"sell\": 0, \"asof\": \"2026-08-14\"}" } },
+      "manual_target": {"mean": null, "note": "한국 목표주가는 무료 API가 없습니다. 예: {\"mean\": 104000, \"buy\": 28, \"hold\": 3, \"sell\": 0, \"asof\": \"2026-08-14\"}"},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "035420", "name": "NAVER", "type": "listed",
       "yahoo": "035420.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "035420",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "377300", "name": "카카오페이", "type": "listed",
       "yahoo": "377300.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "377300",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "323410", "name": "카카오뱅크", "type": "listed",
       "yahoo": "323410.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "323410",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "120110", "name": "코오롱인더", "type": "listed",
       "yahoo": "120110.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "120110",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "019680", "name": "대교", "type": "listed",
       "yahoo": "019680.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "019680",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "084680", "name": "이월드", "type": "listed",
       "yahoo": "084680.KS", "market": "KOSPI", "currency": "KRW", "krx_code": "084680",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "036620", "name": "감성코퍼레이션", "type": "listed",
       "yahoo": "036620.KQ", "market": "KOSDAQ", "currency": "KRW", "krx_code": "036620",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "900290", "name": "GRT", "type": "listed",
       "yahoo": "900290.KQ", "market": "KOSDAQ", "currency": "KRW", "krx_code": "900290",
       "_note": "중국계 외국기업 코스닥 상장. DART 공시가 안 잡히면 수집 로그에 표시됩니다",
-      "manual_target": { "mean": null } },
+      "manual_target": {"mean": null},
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "364980", "name": "TIGER 2차전지TOP10", "type": "listed",
-      "yahoo": "364980.KS", "market": "KOSPI · ETF", "currency": "KRW" },
+      "yahoo": "364980.KS", "market": "KOSPI · ETF", "currency": "KRW",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } },
 
     { "id": "472170", "name": "TIGER 미국테크TOP10채권혼합", "type": "listed",
-      "yahoo": "472170.KS", "market": "KOSPI · ETF", "currency": "KRW" }
+      "yahoo": "472170.KS", "market": "KOSPI · ETF", "currency": "KRW",
+      "rules": { "thesis": "", "moat": "", "kill_signal": "", "stop_price": null, "take_profit_price": null, "entry_price": null, "review_on": null } }
   ],
+
   "news_feed_size": 20,
   "dart_lookback_days": 14
 }
