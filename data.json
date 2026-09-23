@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-09-23 03:18",
+ "generated_at": "2026-09-23 10:43",
  "demo": false,
  "market": {
-  "kr": "개장 전",
-  "us": "장중"
+  "kr": "장중",
+  "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 14.27,
-    "change": -0.6,
-    "change_m1": -0.86,
+    "value": 14.21,
+    "change": -0.66,
+    "change_m1": -0.92,
     "sparkline": [
      15.21,
      14.51,
@@ -31,7 +31,7 @@
      15.44,
      14.81,
      14.87,
-     14.27
+     14.21
     ],
     "asof": "2026-09-22",
     "label": "VIX 공포지수",
@@ -44,7 +44,7 @@
    },
    "us10y": {
     "value": 0.5,
-    "change": -0.0,
+    "change": 0.0,
     "change_m1": 0.02,
     "sparkline": [
      0.46,
@@ -78,9 +78,9 @@
     }
    },
    "dxy": {
-    "value": 100.61,
-    "change": 0.18,
-    "change_m1": 1.81,
+    "value": 100.63,
+    "change": 0.2,
+    "change_m1": 1.83,
     "sparkline": [
      98.92,
      99.17,
@@ -101,7 +101,7 @@
      100.22,
      100.22,
      100.43,
-     100.61
+     100.63
     ],
     "asof": "2026-09-22",
     "label": "달러인덱스",
@@ -113,11 +113,10 @@
     }
    },
    "usdkrw": {
-    "value": 1357.8,
-    "change": -27.0,
-    "change_m1": -33.0,
+    "value": 1348.5,
+    "change": -25.2,
+    "change_m1": -36.5,
     "sparkline": [
-     1381.5,
      1383.5,
      1380.4,
      1377.1,
@@ -136,9 +135,10 @@
      1376.6,
      1379.5,
      1384.9,
-     1357.8
+     1373.7,
+     1348.5
     ],
-    "asof": "2026-09-22",
+    "asof": "2026-09-23",
     "label": "원/달러",
     "unit": "원",
     "source": "Yahoo",
@@ -160,7 +160,7 @@
     }
    },
    "cape": {
-    "value": 41.6,
+    "value": 41.59,
     "source": "multpl.com",
     "asof": "2026-09-23",
     "approx": false,
@@ -303,28 +303,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 229.29,
-   "change_abs": 1.91,
-   "change_pct": 0.84,
+   "price": 227.38,
+   "change_abs": 5.11,
+   "change_pct": 2.3,
    "returns": {
-    "d1": 0.84,
-    "w1": 8.07,
-    "m1": 6.79,
-    "m3": 14.62,
-    "ytd": 21.41
+    "d1": 2.3,
+    "w1": 7.78,
+    "m1": 5.9,
+    "m3": 8.98,
+    "ytd": 20.4
    },
    "week52": {
     "low": 165.17,
     "high": 235.74,
-    "position": 90.9
+    "position": 88.2
    },
-   "rsi14": 59.7,
+   "rsi14": 58.2,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    208.48,
     213.05,
     209.66,
     227.98,
@@ -343,14 +344,13 @@
     213.9,
     219.34,
     222.27,
-    227.38,
-    229.29
+    227.38
    ],
-   "per": 29.0,
-   "market_cap": 5536424132608,
+   "per": 28.9,
+   "market_cap": 5526523478016,
    "target": {
     "mean": 327.7,
-    "upside": 42.9,
+    "upside": 44.1,
     "buy": 58,
     "hold": 2,
     "sell": 1,
@@ -375,28 +375,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 378.81,
-   "change_abs": 3.51,
-   "change_pct": 0.94,
+   "price": 375.3,
+   "change_abs": 11.03,
+   "change_pct": 3.03,
    "returns": {
-    "d1": 0.94,
-    "w1": 6.23,
-    "m1": 4.4,
-    "m3": -0.73,
-    "ytd": -13.53
+    "d1": 3.03,
+    "w1": 4.55,
+    "m1": 3.43,
+    "m3": -7.34,
+    "ytd": -14.33
    },
    "week52": {
     "low": 298.32,
     "high": 489.88,
-    "position": 42.0
+    "position": 40.2
    },
-   "rsi14": 60.0,
+   "rsi14": 58.6,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    348.95,
     350.25,
     345.82,
     354.81,
@@ -415,14 +416,13 @@
     358.08,
     366.2,
     364.27,
-    375.3,
-    378.81
+    375.3
    ],
    "per": 347.6,
-   "market_cap": 1496444174336,
+   "market_cap": 1496483495936,
    "target": {
     "mean": 396.94,
-    "upside": 4.8,
+    "upside": 5.8,
     "buy": 19,
     "hold": 20,
     "sell": 4,
@@ -450,25 +450,26 @@
    "history_from": "2026-06-12",
    "is_new_listing": true,
    "range_label": "상장 이후",
-   "price": 154.04,
-   "change_abs": 2.19,
-   "change_pct": 1.44,
+   "price": 151.85,
+   "change_abs": -0.86,
+   "change_pct": -0.56,
    "returns": {
-    "d1": 1.44,
-    "w1": 7.35,
-    "m1": 12.46,
-    "m3": -1.33,
+    "d1": -0.56,
+    "w1": 2.5,
+    "m1": 10.86,
+    "m3": -1.78,
     "ytd": null
    },
    "week52": {
     "low": 108.27,
     "high": 211.39,
-    "position": 44.4
+    "position": 42.3
    },
-   "rsi14": 60.9,
+   "rsi14": 59.2,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    135.0,
     137.95,
     139.63,
     140.87,
@@ -487,16 +488,15 @@
     150.88,
     154.81,
     152.71,
-    151.85,
-    154.04
+    151.85
    ],
-   "vs_ipo": 14.1,
+   "vs_ipo": 12.48,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 2030521286656,
+   "market_cap": 2039485038592,
    "target": {
     "mean": 222.42,
-    "upside": 44.4,
+    "upside": 46.5,
     "buy": 29,
     "hold": 5,
     "sell": 2,
@@ -521,28 +521,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 353.23,
-   "change_abs": -1.74,
-   "change_pct": -0.49,
+   "price": 354.97,
+   "change_abs": 5.43,
+   "change_pct": 1.55,
    "returns": {
-    "d1": -0.49,
-    "w1": 2.39,
-    "m1": 2.44,
-    "m3": 2.05,
-    "ytd": 12.08
+    "d1": 1.55,
+    "w1": 1.6,
+    "m1": 2.94,
+    "m3": 1.51,
+    "ytd": 12.64
    },
    "week52": {
     "low": 236.57,
     "high": 402.62,
-    "position": 70.3
+    "position": 71.3
    },
-   "rsi14": 57.1,
+   "rsi14": 58.8,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    348.06,
     346.96,
     342.0,
     340.65,
@@ -561,14 +562,13 @@
     342.87,
     347.33,
     349.54,
-    354.97,
-    353.23
+    354.97
    ],
-   "per": 17.7,
-   "market_cap": 4319857606656,
+   "per": 17.6,
+   "market_cap": 4294663995392,
    "target": {
     "mean": 429.46,
-    "upside": 21.6,
+    "upside": 21.0,
     "buy": 56,
     "hold": 5,
     "sell": 0,
@@ -593,28 +593,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 184.23,
-   "change_abs": 1.14,
-   "change_pct": 0.62,
+   "price": 183.09,
+   "change_abs": 5.45,
+   "change_pct": 3.07,
    "returns": {
-    "d1": 0.62,
-    "w1": 6.76,
-    "m1": 2.38,
-    "m3": 57.87,
-    "ytd": 9.75
+    "d1": 3.07,
+    "w1": 5.64,
+    "m1": 1.75,
+    "m3": 53.21,
+    "ytd": 9.07
    },
    "week52": {
     "low": 107.27,
     "high": 207.18,
-    "position": 77.0
+    "position": 75.9
    },
-   "rsi14": 61.9,
+   "rsi14": 61.1,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    175.89,
     172.73,
     177.5,
     185.93,
@@ -633,14 +634,13 @@
     174.34,
     176.24,
     177.64,
-    183.09,
-    184.23
+    183.09
    ],
-   "per": 157.5,
-   "market_cap": 442715439104,
+   "per": 158.1,
+   "market_cap": 444541796352,
    "target": {
     "mean": 196.84,
-    "upside": 6.8,
+    "upside": 7.5,
     "buy": 21,
     "hold": 9,
     "sell": 2,
@@ -665,28 +665,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 2.33,
-   "change_abs": -0.03,
-   "change_pct": -1.27,
+   "price": 2.36,
+   "change_abs": 0.12,
+   "change_pct": 5.36,
    "returns": {
-    "d1": -1.27,
-    "w1": 1.3,
-    "m1": -8.27,
-    "m3": -30.24,
-    "ytd": -45.05
+    "d1": 5.36,
+    "w1": 1.72,
+    "m1": -7.09,
+    "m3": -23.87,
+    "ytd": -44.34
    },
    "week52": {
     "low": 2.09,
     "high": 7.65,
-    "position": 4.3
+    "position": 4.9
    },
-   "rsi14": 44.7,
+   "rsi14": 46.1,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
+    2.48,
     2.54,
     2.48,
     2.61,
@@ -705,14 +706,13 @@
     2.19,
     2.3,
     2.24,
-    2.36,
-    2.33
+    2.36
    ],
    "per": null,
-   "market_cap": 524088192,
+   "market_cap": 528586784,
    "target": {
     "mean": 5.88,
-    "upside": 152.1,
+    "upside": 148.9,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -737,28 +737,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 28.65,
-   "change_abs": 0.4,
-   "change_pct": 1.4,
+   "price": 28.25,
+   "change_abs": 2.26,
+   "change_pct": 8.7,
    "returns": {
-    "d1": 1.4,
-    "w1": 21.38,
-    "m1": 25.47,
-    "m3": 89.33,
-    "ytd": -8.16
+    "d1": 8.7,
+    "w1": 9.67,
+    "m1": 23.74,
+    "m3": 78.12,
+    "ytd": -9.43
    },
    "week52": {
     "low": 13.31,
     "high": 63.22,
-    "position": 30.7
+    "position": 29.9
    },
-   "rsi14": 67.1,
+   "rsi14": 66.2,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    24.14,
     24.82,
     24.91,
     25.63,
@@ -777,14 +778,13 @@
     22.81,
     23.89,
     25.99,
-    28.25,
-    28.65
+    28.25
    ],
    "per": null,
-   "market_cap": 17279420416,
+   "market_cap": 17348790272,
    "target": {
-    "mean": 44.53,
-    "upside": 55.4,
+    "mean": 45.87,
+    "upside": 62.4,
     "buy": 3,
     "hold": 0,
     "sell": 0,
@@ -856,28 +856,29 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 746.43,
-   "change_abs": 4.97,
-   "change_pct": 0.67,
+   "price": 741.47,
+   "change_abs": 20.02,
+   "change_pct": 2.77,
    "returns": {
-    "d1": 0.67,
-    "w1": 5.95,
-    "m1": 4.62,
-    "m3": 4.59,
-    "ytd": 21.74
+    "d1": 2.77,
+    "w1": 4.55,
+    "m1": 3.93,
+    "m3": 0.48,
+    "ytd": 20.93
    },
    "week52": {
     "low": 558.28,
-    "high": 746.43,
-    "position": 100.0
+    "high": 746.16,
+    "position": 97.5
    },
-   "rsi14": 67.6,
+   "rsi14": 65.7,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
+    706.32,
     710.72,
     711.37,
     721.11,
@@ -896,10 +897,9 @@
     704.72,
     716.92,
     721.45,
-    741.47,
-    746.43
+    741.47
    ],
-   "per": 30.4,
+   "per": 30.5,
    "market_cap": null
   },
   {
@@ -919,30 +919,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 274000.0,
-   "change_abs": 13000.0,
-   "change_pct": 4.98,
+   "price": 284000.0,
+   "change_abs": 7500.0,
+   "change_pct": 2.71,
    "returns": {
-    "d1": 4.98,
-    "w1": 10.04,
-    "m1": -2.66,
-    "m3": -22.49,
-    "ytd": 113.23
+    "d1": 2.71,
+    "w1": 12.03,
+    "m1": 10.51,
+    "m3": -16.59,
+    "ytd": 121.01
    },
    "week52": {
     "low": 83300.0,
     "high": 362500.0,
-    "position": 68.3
+    "position": 71.9
    },
-   "rsi14": 57.2,
+   "rsi14": 61.4,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    257000.0,
-    261500.0,
     266000.0,
     257000.0,
     260000.0,
@@ -960,13 +958,15 @@
     253500.0,
     252500.0,
     261000.0,
-    274000.0
+    274000.0,
+    276500.0,
+    284000.0
    ],
    "per": null,
-   "market_cap": 1815654743146496,
+   "market_cap": 1866545676419072,
    "target": {
     "mean": 475850.1,
-    "upside": 73.7,
+    "upside": 67.6,
     "buy": 35,
     "hold": 1,
     "sell": 0,
@@ -991,30 +991,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 197900.0,
-   "change_abs": 200.0,
-   "change_pct": 0.1,
+   "price": 197700.0,
+   "change_abs": -3300.0,
+   "change_pct": -1.64,
    "returns": {
-    "d1": 0.1,
-    "w1": -2.99,
-    "m1": -10.86,
-    "m3": -10.86,
-    "ytd": -19.88
+    "d1": -1.64,
+    "w1": -1.89,
+    "m1": -11.54,
+    "m3": -0.85,
+    "ytd": -19.96
    },
    "week52": {
     "low": 183200.0,
     "high": 287000.0,
-    "position": 14.2
+    "position": 14.0
    },
-   "rsi14": 38.6,
+   "rsi14": 39.6,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    220500.0,
-    220000.0,
     216500.0,
     220500.0,
     217000.0,
@@ -1032,15 +1030,17 @@
     201500.0,
     199000.0,
     197700.0,
-    197900.0
+    197900.0,
+    201000.0,
+    197700.0
    ],
    "per": null,
-   "market_cap": 30110671437824,
+   "market_cap": 29616318185472,
    "target": {
-    "mean": 300500.0,
-    "upside": 51.8,
-    "buy": 23,
-    "hold": 3,
+    "mean": 297423.06,
+    "upside": 50.4,
+    "buy": 22,
+    "hold": 4,
     "sell": 0,
     "source": "Yahoo 컨센서스",
     "asof": "2026-09-23"
@@ -1063,30 +1063,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 39900.0,
-   "change_abs": -350.0,
-   "change_pct": -0.87,
+   "price": 40700.0,
+   "change_abs": -250.0,
+   "change_pct": -0.61,
    "returns": {
-    "d1": -0.87,
-    "w1": -14.93,
-    "m1": -6.12,
-    "m3": -5.56,
-    "ytd": -21.46
+    "d1": -0.61,
+    "w1": 0.49,
+    "m1": -9.15,
+    "m3": 3.04,
+    "ytd": -19.88
    },
    "week52": {
     "low": 37450.0,
     "high": 70900.0,
-    "position": 7.3
+    "position": 9.7
    },
-   "rsi14": 37.1,
+   "rsi14": 40.3,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    46100.0,
-    46300.0,
     46900.0,
     47350.0,
     46450.0,
@@ -1104,13 +1102,15 @@
     40500.0,
     40000.0,
     40250.0,
-    39900.0
+    39900.0,
+    40950.0,
+    40700.0
    ],
    "per": null,
-   "market_cap": 5539311910912,
+   "market_cap": 5505494286336,
    "target": {
     "mean": 52710.0,
-    "upside": 32.1,
+    "upside": 29.5,
     "buy": 5,
     "hold": 3,
     "sell": 3,
@@ -1135,30 +1135,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 20100.0,
-   "change_abs": -350.0,
-   "change_pct": -1.71,
+   "price": 20150.0,
+   "change_abs": -50.0,
+   "change_pct": -0.25,
    "returns": {
-    "d1": -1.71,
-    "w1": -6.94,
-    "m1": -5.63,
-    "m3": -4.29,
-    "ytd": -8.22
+    "d1": -0.25,
+    "w1": -3.12,
+    "m1": -6.71,
+    "m3": 0.5,
+    "ytd": -7.99
    },
    "week52": {
     "low": 19750.0,
     "high": 28700.0,
-    "position": 3.9
+    "position": 4.5
    },
-   "rsi14": 28.2,
+   "rsi14": 30.0,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    21600.0,
-    21500.0,
     21600.0,
     21850.0,
     21850.0,
@@ -1176,13 +1174,15 @@
     20800.0,
     20700.0,
     20450.0,
-    20100.0
+    20100.0,
+    20200.0,
+    20150.0
    ],
    "per": null,
-   "market_cap": 9624878055424,
+   "market_cap": 9601054408704,
    "target": {
     "mean": 27527.78,
-    "upside": 37.0,
+    "upside": 36.6,
     "buy": 9,
     "hold": 9,
     "sell": 0,
@@ -1207,30 +1207,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 57100.0,
-   "change_abs": 300.0,
-   "change_pct": 0.53,
+   "price": 54100.0,
+   "change_abs": -1100.0,
+   "change_pct": -1.99,
    "returns": {
-    "d1": 0.53,
-    "w1": 3.25,
-    "m1": 15.01,
-    "m3": -11.47,
-    "ytd": 34.35
+    "d1": -1.99,
+    "w1": 0.56,
+    "m1": 7.55,
+    "m3": -18.28,
+    "ytd": 27.29
    },
    "week52": {
     "low": 34000.0,
     "high": 100900.0,
-    "position": 34.5
+    "position": 30.0
    },
-   "rsi14": 53.6,
-   "above_ma20": true,
-   "above_ma60": true,
+   "rsi14": 46.7,
+   "above_ma20": false,
+   "above_ma60": false,
    "sparkline": [
-    55200.0,
-    52600.0,
     53000.0,
     56500.0,
     59500.0,
@@ -1248,13 +1246,15 @@
     53800.0,
     55900.0,
     56800.0,
-    57100.0
+    57100.0,
+    55200.0,
+    54100.0
    ],
    "per": null,
-   "market_cap": 1879038492672,
+   "market_cap": 1841593843712,
    "target": {
     "mean": 97750.0,
-    "upside": 71.2,
+    "upside": 80.7,
     "buy": 4,
     "hold": 0,
     "sell": 0,
@@ -1279,30 +1279,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 1642.0,
-   "change_abs": 19.0,
-   "change_pct": 1.17,
+   "price": 1632.0,
+   "change_abs": -5.0,
+   "change_pct": -0.31,
    "returns": {
-    "d1": 1.17,
-    "w1": -4.26,
-    "m1": -17.9,
-    "m3": -15.62,
-    "ytd": -56.7
+    "d1": -0.31,
+    "w1": -1.15,
+    "m1": -18.4,
+    "m3": -9.93,
+    "ytd": -56.96
    },
    "week52": {
     "low": 1616.0,
-    "high": 4390.0,
-    "position": 0.9
+    "high": 4370.0,
+    "position": 0.6
    },
-   "rsi14": 24.9,
+   "rsi14": 24.3,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    2000.0,
-    2000.0,
     2000.0,
     2000.0,
     2000.0,
@@ -1320,13 +1318,15 @@
     1651.0,
     1616.0,
     1623.0,
-    1642.0
+    1642.0,
+    1637.0,
+    1632.0
    ],
    "per": null,
-   "market_cap": 69632065536,
+   "market_cap": 69419384832,
    "target": {
     "mean": 3000.0,
-    "upside": 82.7,
+    "upside": 83.8,
     "buy": null,
     "hold": null,
     "sell": null,
@@ -1351,7 +1351,7 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
    "price": 532.0,
@@ -1361,7 +1361,7 @@
     "d1": 0.0,
     "w1": 0.0,
     "m1": 22.58,
-    "m3": -53.5,
+    "m3": -50.0,
     "ytd": -64.93
    },
    "week52": {
@@ -1373,7 +1373,6 @@
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    467.0,
     607.0,
     537.0,
     535.0,
@@ -1384,6 +1383,7 @@
     531.0,
     521.0,
     516.0,
+    532.0,
     532.0,
     532.0,
     532.0,
@@ -1414,30 +1414,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3750.0,
-   "change_abs": 20.0,
-   "change_pct": 0.54,
+   "price": 3710.0,
+   "change_abs": 55.0,
+   "change_pct": 1.5,
    "returns": {
-    "d1": 0.54,
-    "w1": -3.23,
-    "m1": -1.7,
-    "m3": -14.29,
-    "ytd": -34.9
+    "d1": 1.5,
+    "w1": -0.67,
+    "m1": -3.51,
+    "m3": -10.71,
+    "ytd": -35.59
    },
    "week52": {
     "low": 3590.0,
     "high": 7370.0,
-    "position": 4.2
+    "position": 3.2
    },
-   "rsi14": 42.3,
+   "rsi14": 41.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    3955.0,
-    3895.0,
     3810.0,
     3790.0,
     3775.0,
@@ -1455,13 +1453,15 @@
     3735.0,
     3735.0,
     3730.0,
-    3750.0
+    3750.0,
+    3655.0,
+    3710.0
    ],
    "per": null,
-   "market_cap": 328449064960,
+   "market_cap": 333391527936,
    "target": {
     "mean": 7050.0,
-    "upside": 88.0,
+    "upside": 90.0,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -1486,30 +1486,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3670.0,
-   "change_abs": 270.0,
-   "change_pct": 7.94,
+   "price": 3445.0,
+   "change_abs": -85.0,
+   "change_pct": -2.41,
    "returns": {
-    "d1": 7.94,
-    "w1": -1.08,
-    "m1": 6.69,
-    "m3": 13.8,
-    "ytd": 3.23
+    "d1": -2.41,
+    "w1": -4.17,
+    "m1": -13.98,
+    "m3": 28.54,
+    "ytd": -3.09
    },
    "week52": {
     "low": 2190.0,
     "high": 7120.0,
-    "position": 30.0
+    "position": 25.5
    },
-   "rsi14": 49.9,
+   "rsi14": 43.5,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
-    4040.0,
-    4045.0,
     3890.0,
     3900.0,
     4210.0,
@@ -1527,10 +1525,12 @@
     3595.0,
     3460.0,
     3400.0,
-    3670.0
+    3670.0,
+    3530.0,
+    3445.0
    ],
    "per": null,
-   "market_cap": 327411499008
+   "market_cap": 319527649280
   },
   {
    "id": "364980",
@@ -1549,29 +1549,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 10020.0,
-   "change_abs": -10.0,
-   "change_pct": -0.1,
+   "price": 10065.0,
+   "change_abs": 45.0,
+   "change_pct": 0.45,
    "returns": {
-    "d1": -0.1,
-    "w1": -3.7,
-    "m1": 4.43,
-    "m3": 1.31,
-    "ytd": 17.06
+    "d1": 0.45,
+    "w1": -2.14,
+    "m1": -0.4,
+    "m3": -1.32,
+    "ytd": 17.58
    },
    "week52": {
     "low": 7775.0,
     "high": 14900.0,
-    "position": 31.5
+    "position": 32.1
    },
-   "rsi14": 47.2,
+   "rsi14": 48.0,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
-    9990.0,
     10675.0,
     10665.0,
     10890.0,
@@ -1590,7 +1589,8 @@
     10275.0,
     10265.0,
     10030.0,
-    10020.0
+    10020.0,
+    10065.0
    ],
    "per": null,
    "market_cap": null
@@ -1612,29 +1612,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-09-22",
+   "history_from": "2025-09-23",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 14135.0,
-   "change_abs": 65.0,
-   "change_pct": 0.46,
+   "price": 14100.0,
+   "change_abs": -35.0,
+   "change_pct": -0.25,
    "returns": {
-    "d1": 0.46,
-    "w1": 2.8,
-    "m1": 2.28,
-    "m3": -0.49,
-    "ytd": 0.46
+    "d1": -0.25,
+    "w1": 2.4,
+    "m1": 2.58,
+    "m3": -0.77,
+    "ytd": 0.21
    },
    "week52": {
     "low": 13060.0,
     "high": 14840.0,
-    "position": 60.4
+    "position": 58.4
    },
-   "rsi14": 64.3,
+   "rsi14": 61.7,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    13815.0,
     13835.0,
     13900.0,
     13885.0,
@@ -1653,13 +1652,50 @@
     13860.0,
     14040.0,
     14070.0,
-    14135.0
+    14135.0,
+    14100.0
    ],
    "per": null,
    "market_cap": null
   }
  ],
  "feed": [
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "If You Buy Monster Beverage With $10,000 Today, Could You Become a Millionaire in 25 Years?",
+   "date": "2026-09-23",
+   "url": "https://www.fool.com/investing/2026/09/22/if-you-buy-monster-beverage-with-10000-today-could/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "President Trump’s money managers made more than 1,100 trades in July",
+   "date": "2026-09-23",
+   "url": "https://www.cnn.com/2026/09/22/business/trump-more-than-1000-trades-july"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Alphabet (GOOGL) Stock May Be A Bargain After Privacy Fine",
+   "date": "2026-09-23",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-stock-may-bargain-011402689.html"
+  },
+  {
+   "kind": "sec",
+   "source": "SEC 4",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "4 제출 — 내부자 지분 변동 신고",
+   "date": "2026-09-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/xslF345X06/wk-form4_1790110579.xml"
+  },
   {
    "kind": "news",
    "source": "뉴스",
@@ -1683,45 +1719,27 @@
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "How to organize AI governance: Is it a job for the pope?",
+   "title": "Is Tesla's evaluation based on pure faith or on hoping for the best?",
    "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/video/organize-ai-governance-job-pope-172335778.html"
+   "url": "https://finance.yahoo.com/video/teslas-evaluation-based-pure-faith-181659153.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Robotaxi competition revs up, weighing on Uber and Lyft stocks",
+   "title": "Tesla, Waymo, and Zoox are driving a nightmarish year for these 2 stocks",
    "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/video/robotaxi-competition-revs-weighing-uber-141500621.html"
+   "url": "https://finance.yahoo.com/markets/stocks/article/tesla-waymo-and-zoox-are-driving-a-nightmarish-year-for-these-2-stocks-142300670.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla (TSLA) Heads To Civil Rights Trial After Record 580 Megawatt Battery Dispatch",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Meta's Muse AI teams up with Shopify, lifting its stock",
    "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-heads-civil-rights-171309114.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "BNP Paribas Spots What Could Move Microsoft Stock Next",
-   "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/bnp-paribas-spots-could-move-180623944.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Three AI Stocks Now Dwarf Decades of Tech IPOs",
-   "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/technology/ai/articles/three-ai-stocks-now-dwarf-174416512.html"
+   "url": "https://finance.yahoo.com/video/metas-muse-ai-teams-up-with-shopify-lifting-its-stock-195026601.html"
   },
   {
    "kind": "news",
@@ -1735,47 +1753,29 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Meta Platforms Just Hit an Amazon Roadblock",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Palantir's Huge Rally Has Wall Street Asking a New Question",
    "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/technology/ai/articles/meta-platforms-just-hit-amazon-180758747.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "3 Big Tech Stocks With the Most Upside Right Now",
-   "date": "2026-09-22",
-   "url": "https://247wallst.com/investing/2026/09/22/3-big-tech-stocks-with-the-most-upside-right-now/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/palantirs-huge-rally-wall-street-222835679.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Is Palantir a Millionaire-Maker Stock?",
+   "title": "Palantir Gains as Karp Puts Liability Before AI Listings",
    "date": "2026-09-22",
-   "url": "https://www.fool.com/investing/2026/09/22/is-palantir-a-millionaire-maker-stock/"
+   "url": "https://finance.yahoo.com/technology/ai/articles/palantir-gains-karp-puts-liability-221554558.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Michael Burry Adds To Micron, Nebius, Palantir Shorts As Acer Flags Rising Memory Supply",
+   "title": "Got $5,000? 2 Growth Stocks Building the Software Backbone of the AI Revolution",
    "date": "2026-09-22",
-   "url": "https://stocktwits.com/news-articles/markets/equity/michael-burry-memory-stocks-thesis-gets-fresh-support-from-acer-ceo-supply-warning/cZMPMm7RB7b"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "AI Leaders Are Standing On a Liability Landmine",
-   "date": "2026-09-22",
-   "url": "https://www.wsj.com/tech/ai/ai-leaders-are-standing-on-a-liability-landmine-736a8060?siteid=yhoof2&yptr=yahoo"
+   "url": "https://www.fool.com/investing/2026/09/22/got-5000-2-growth-stocks-building-the-software-bac/"
   },
   {
    "kind": "news",
@@ -1800,27 +1800,27 @@
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Fastly Tumbles 7% as Investor Day Meets Profit Taking; Cloudflare and Akamai Edge Higher",
+   "title": "Nasdaq Jumps To Close At Record As Chipmakers Climb, Oil Prices Cool — AAPL, META, SPCX, MSFT, VKTX In Focus",
    "date": "2026-09-22",
-   "url": "https://247wallst.com/investing/2026/09/22/fastly-tumbles-7-as-investor-day-meets-profit-taking-cloudflare-and-akamai-edge-higher/"
+   "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-jumps-to-close-at-record-as-chipmakers-climb-oil-prices-cool-aapl-meta-spcx-msft-vktx-in-focus/cZM5GHbRB7L"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Exchange-Traded Funds Rise, US Equities Mixed After Midday",
+   "title": "S&P 500 Nears Record as Breadth Sends Rare Warning",
    "date": "2026-09-22",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171035923.html"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nears-record-breadth-211359123.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Cisco Sinks 6% While the Tech Sector Rises; Arista and Ciena Hold Flat",
+   "title": "A Retired Couple Can Sell $98,900 of Gains This Year and Owe the IRS Nothing. These 3 ETFs Are Built for the 0% Bracket",
    "date": "2026-09-22",
-   "url": "https://247wallst.com/investing/2026/09/22/cisco-sinks-6-while-the-tech-sector-rises-arista-and-ciena-hold-flat/"
+   "url": "https://247wallst.com/investing/etf/2026/09/22/a-retired-couple-can-sell-98900-of-gains-this-year-and-owe-the-irs-nothing-these-3-etfs-are-built-for-the-0-bracket/"
   },
   {
    "kind": "dart",
@@ -1836,9 +1836,9 @@
    "source": "뉴스",
    "who": "삼성전자",
    "stock_id": "005930",
-   "title": "Sandisk Stock Is Up 644% This Year. Why the Stock Isn’t Done Rising.",
+   "title": "Micron's Memory Boom Is Facing a New Test",
    "date": "2026-09-22",
-   "url": "https://www.barrons.com/articles/sandisk-stock-ai-memory-chips-45cf5c6e?siteid=yhoof2&yptr=yahoo"
+   "url": "https://finance.yahoo.com/technology/articles/microns-memory-boom-facing-test-222431132.html"
   }
  ],
  "errors": []
