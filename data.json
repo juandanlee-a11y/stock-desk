@@ -1,18 +1,17 @@
 {
- "generated_at": "2026-09-24 10:40",
+ "generated_at": "2026-09-24 21:35",
  "demo": false,
  "market": {
-  "kr": "장중",
+  "kr": "장 마감",
   "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 15.18,
-    "change": 0.31,
-    "change_m1": -0.67,
+    "value": 16.01,
+    "change": 0.83,
+    "change_m1": 0.56,
     "sparkline": [
-     15.21,
      14.51,
      14.43,
      14.92,
@@ -31,9 +30,10 @@
      15.44,
      14.81,
      14.87,
-     15.18
+     15.18,
+     16.01
     ],
-    "asof": "2026-09-23",
+    "asof": "2026-09-24",
     "label": "VIX 공포지수",
     "unit": "",
     "source": "Yahoo",
@@ -78,11 +78,10 @@
     }
    },
    "dxy": {
-    "value": 101.13,
-    "change": 0.7,
-    "change_m1": 2.13,
+    "value": 101.28,
+    "change": 0.18,
+    "change_m1": 2.36,
     "sparkline": [
-     98.92,
      99.17,
      99.16,
      99.7,
@@ -101,9 +100,10 @@
      100.22,
      100.22,
      100.43,
-     101.13
+     101.1,
+     101.28
     ],
-    "asof": "2026-09-23",
+    "asof": "2026-09-24",
     "label": "달러인덱스",
     "unit": "",
     "source": "Yahoo",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1368.9,
-    "change": 18.6,
-    "change_m1": -11.8,
+    "value": 1368.3,
+    "change": 17.9,
+    "change_m1": -12.5,
     "sparkline": [
      1380.4,
      1377.1,
@@ -136,7 +136,7 @@
      1384.9,
      1373.7,
      1350.4,
-     1368.9
+     1368.3
     ],
     "asof": "2026-09-24",
     "label": "원/달러",
@@ -346,7 +346,7 @@
     228.87,
     225.51
    ],
-   "per": 28.9,
+   "per": 28.5,
    "market_cap": 5445389910016,
    "target": {
     "mean": 327.7,
@@ -564,7 +564,7 @@
     351.16,
     337.83
    ],
-   "per": 16.9,
+   "per": 17.0,
    "market_cap": 4131638738944,
    "target": {
     "mean": 429.46,
@@ -813,25 +813,26 @@
    "is_new_listing": true,
    "range_label": "상장 이후",
    "price": 0.0,
-   "change_abs": 0.0,
-   "change_pct": 17.44,
+   "change_abs": -0.0,
+   "change_pct": -10.48,
    "returns": {
-    "d1": 17.44,
-    "w1": null,
+    "d1": -10.48,
+    "w1": -94.61,
     "m1": null,
     "m3": null,
-    "ytd": -93.98
+    "ytd": -94.61
    },
    "week52": {
     "low": 0.0,
     "high": 0.08,
-    "position": 1.1
+    "position": 0.4
    },
    "rsi14": null,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
     0.08,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -1666,27 +1667,126 @@
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Tesla Makes Brilliant Supercharger Move but BYD Is Closer in the Mirror Than It Appears",
+   "title": "Tesla Semi Joins Parade Of New Model Showcases; Stock Falls",
    "date": "2026-09-24",
-   "url": "https://www.fool.com/investing/2026/09/23/tesla-makes-brilliant-supercharger-move-but-byd-is/"
+   "url": "https://www.investors.com/news/tesla-semi-elon-musk-electric-vehicles-truck-trucking-diesel-prices-pepsico/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Tesla’s EU Registrations Jump Nearly 53% In August – But Chinese EV Rivals Grow Much Faster",
+   "date": "2026-09-24",
+   "url": "https://stocktwits.com/news-articles/markets/equity/tesla-eu-registrations-august-byd-chery-leapmotor-tsla/cZM76wrRB97"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Energy Transition Update - Fashion Industry Joins Forces For Renewable Energy Revolution",
+   "date": "2026-09-24",
+   "url": "https://finance.yahoo.com/energy/articles/energy-transition-fashion-industry-joins-113702372.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "SpaceX Can't Join the S&P 500 Before June 2027 -- and Its Losses Could Keep It Out Longer",
+   "title": "SpaceX President Just Filed to Sell Nearly $52 Million in Stock",
    "date": "2026-09-24",
-   "url": "https://www.fool.com/investing/2026/09/23/spacex-can-t-join-the-s-and-p-500-before-june-2027-and-its-losses-could-keep-it-out-longer/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-president-just-filed-sell-123025797.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Why Did SpaceX Stock Fall 4% Days Before Starship's Biggest Flight?",
+   "date": "2026-09-24",
+   "url": "https://beincrypto.com/spacex-stock-share-unlock-starship-orbit/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Dow Jones Futures: Stocks Fall As Yields Soar, But Palantir Flashes Buy Signal; Trump-Xi On Tap",
+   "title": "Palantir Just Hit a One-Year High. Here's What's Driving It",
+   "date": "2026-09-24",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-just-hit-one-high-123304257.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Prediction: This Will Be Palantir's Stock Price by the End of 2028 as Commercial Sales Accelerate",
+   "date": "2026-09-24",
+   "url": "https://www.fool.com/investing/2026/09/24/prediction-this-will-be-palantirs-stock-price-by-t/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Dow Jones Futures Fall As Treasury Yields, Oil Prices Keep Rising. Meta, Everpure, Grail Are Early Movers.",
    "date": "2026-09-24",
    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-treasury-yields-soar-palantir-palo-alto-buy-signal/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Stock Market Today: Dow Falls On Rising Treasury Yields; Nvidia Extends Losses (Live Coverage)",
+   "date": "2026-09-24",
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-nvidia-stock-nvda-buy-point/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "History Says This 1 Investment Could Set You Up for Life. Here's the Math.",
+   "date": "2026-09-24",
+   "url": "https://www.fool.com/investing/2026/09/24/history-says-1-investment-set-you-up-for-life-math/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Zacks Investment Ideas feature highlights: GLD, QQQ, USO, MU and TWLO",
+   "date": "2026-09-24",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-093400194.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "MU, SNDK Extend Slide For A Second Day As Memory Rally Fizzles: Micron Results Next Week To Test AI Demand",
+   "date": "2026-09-24",
+   "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-extend-slide-for-a-second-day-as-memory-rally-fizzles-micron-results-next-week-to-test-ai-demand/cZM7vdgRBBU"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "GE Vernova, Hitachi, and Samsung Are Bringing Small Modular Reactors to Europe",
+   "date": "2026-09-24",
+   "url": "https://www.fool.com/investing/2026/09/24/ge-vernova-hitachi-and-samsung-are-bringing-small-modular-reactors-to-europe/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Samsung (KOSE:A005930) Stock Looks Cheap Against Its Earnings Story",
+   "date": "2026-09-24",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/samsung-kose-a005930-stock-looks-080950313.html"
   },
   {
    "kind": "sec",
@@ -1720,27 +1820,9 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "The AI panic, tech concentration, and Nvidia windfalls",
+   "title": "Nasdaq climbs to record high off the back of revived AI trade",
    "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/video/ai-panic-tech-concentration-nvidia-100000476.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
-   "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla makes $122M on Bitcoin without buying a single coin",
-   "date": "2026-09-23",
-   "url": "https://www.thestreet.com/crypto/markets/tesla-gains-122m-on-bitcoin-without-buying-a-single-coin"
+   "url": "https://finance.yahoo.com/video/nasdaq-climbs-record-high-off-125323424.html"
   },
   {
    "kind": "news",
@@ -1754,92 +1836,11 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Is Tesla (TSLA) Quietly Shifting From Automaker To Physical AI Platform With FSD Subscriptions?",
-   "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/technology/ai/articles/tesla-tsla-quietly-shifting-automaker-231422962.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
    "title": "This is Humanity's Last Decision",
    "date": "2026-09-23",
    "url": "https://finance.yahoo.com/video/this-is-humanitys-last-decision-203051821.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Netflix has a big YouTube problem — and it's only getting worse",
-   "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/video/netflix-big-youtube-problem-only-142011555.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "The future of AI growth rests on Big Tech's cash flow tripling to $2 trillion: Chart of the Day",
-   "date": "2026-09-23",
-   "url": "https://finance.yahoo.com/markets/article/the-future-of-ai-growth-rests-on-big-techs-cash-flow-tripling-to-2-trillion-chart-of-the-day-100000169.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Palantir Stock Hits Yearly High at $190. What’s Driving the Price?",
-   "date": "2026-09-23",
-   "url": "https://beincrypto.com/palantir-stock-yearly-high-price-catalysts/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Palantir's CEO just sent a message Silicon Valley won't ignore",
-   "date": "2026-09-23",
-   "url": "https://www.thestreet.com/investing/palantirs-ceo-just-sent-a-message-silicon-valley-wont-ignore"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "MSTR Purchases Bitcoin After 2-Week Pause, Keeps Buying Back STRC: BMNR, ASST Keep Adding To Their Crypto Treasuries",
-   "date": "2026-09-23",
-   "url": "https://stocktwits.com/news-articles/markets/equity/asst-outbuys-mstr-latest-bitcoin-purchase-strategy-846k-btc-strc-buybacks/cZMEYuGRBJP"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "QYLD’s Monthly Check Looks Great Until April’s 1099 Reclassifies It as Ordinary Income",
-   "date": "2026-09-23",
-   "url": "https://247wallst.com/investing/etf/2026/09/23/qylds-monthly-check-looks-great-until-aprils-1099-reclassifies-it-as-ordinary-income/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "TQQQ Pays Interest on $2 of Every $3 It Holds: The Financing Charge the 0.82% Fee Never Mentions",
-   "date": "2026-09-23",
-   "url": "https://247wallst.com/investing/etf/2026/09/23/tqqq-pays-interest-on-2-of-every-3-it-holds-the-financing-charge-the-0-82-fee-never-mentions/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "S&P 500, Dow, Nasdaq Drop As Yields Spike Amid Calls For More Rate Hikes — AMZN, GOOGL, NFLX, SPCX, RKLB In Focus",
-   "date": "2026-09-23",
-   "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-drop-as-yields-spike-amid-calls-for-more-rate-hikes-amzn-googl-nflx-spcx-rklb-in-focus/cZM4IxjRBB9"
   }
  ],
  "errors": []
