@@ -1,18 +1,17 @@
 {
- "generated_at": "2026-09-25 10:51",
+ "generated_at": "2026-09-25 21:33",
  "demo": false,
  "market": {
-  "kr": "장중",
+  "kr": "장 마감",
   "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 15.67,
-    "change": 0.49,
-    "change_m1": 0.22,
+    "value": 15.14,
+    "change": -0.53,
+    "change_m1": -0.07,
     "sparkline": [
-     14.51,
      14.43,
      14.92,
      16.34,
@@ -31,9 +30,10 @@
      14.81,
      14.87,
      15.18,
-     15.67
+     15.67,
+     15.14
     ],
-    "asof": "2026-09-24",
+    "asof": "2026-09-25",
     "label": "VIX 공포지수",
     "unit": "",
     "source": "Yahoo",
@@ -78,11 +78,10 @@
     }
    },
    "dxy": {
-    "value": 101.25,
-    "change": 0.15,
-    "change_m1": 2.33,
+    "value": 100.95,
+    "change": -0.34,
+    "change_m1": 1.78,
     "sparkline": [
-     99.17,
      99.16,
      99.7,
      99.43,
@@ -101,9 +100,10 @@
      100.22,
      100.43,
      101.1,
-     101.25
+     101.29,
+     100.95
     ],
-    "asof": "2026-09-24",
+    "asof": "2026-09-25",
     "label": "달러인덱스",
     "unit": "",
     "source": "Yahoo",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1364.2,
-    "change": 1.8,
-    "change_m1": -17.2,
+    "value": 1355.3,
+    "change": -7.2,
+    "change_m1": -26.1,
     "sparkline": [
      1377.1,
      1366.6,
@@ -136,7 +136,7 @@
      1373.7,
      1350.4,
      1362.5,
-     1364.2
+     1355.3
     ],
     "asof": "2026-09-25",
     "label": "원/달러",
@@ -346,7 +346,7 @@
     225.51,
     224.58
    ],
-   "per": 28.5,
+   "per": 28.4,
    "market_cap": 5422933082112,
    "target": {
     "mean": 327.7,
@@ -418,7 +418,7 @@
     380.12,
     377.94
    ],
-   "per": 356.5,
+   "per": 343.6,
    "market_cap": 1492691976192,
    "target": {
     "mean": 396.62,
@@ -493,7 +493,7 @@
    "vs_ipo": 9.65,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 1951298879488,
+   "market_cap": 1950174937088,
    "target": {
     "mean": 222.42,
     "upside": 50.3,
@@ -564,7 +564,7 @@
     337.83,
     342.36
    ],
-   "per": 16.9,
+   "per": 17.2,
    "market_cap": 4187040514048,
    "target": {
     "mean": 429.46,
@@ -814,24 +814,25 @@
    "range_label": "상장 이후",
    "price": 0.0,
    "change_abs": -0.0,
-   "change_pct": -10.48,
+   "change_pct": -2.44,
    "returns": {
-    "d1": -10.48,
-    "w1": -94.61,
+    "d1": -2.44,
+    "w1": 2.56,
     "m1": null,
     "m3": null,
-    "ytd": -94.61
+    "ytd": -94.74
    },
    "week52": {
     "low": 0.0,
     "high": 0.08,
-    "position": 0.4
+    "position": 0.3
    },
    "rsi14": null,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
     0.08,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -1290,21 +1291,21 @@
    "returns": {
     "d1": -0.06,
     "w1": -0.91,
-    "m1": -18.2,
-    "m3": -9.71,
-    "ytd": -56.86
+    "m1": 63.6,
+    "m3": 80.57,
+    "ytd": -13.71
    },
    "week52": {
-    "low": 1616.0,
-    "high": 4370.0,
-    "position": 0.7
+    "low": 846.0,
+    "high": 2185.0,
+    "position": 59.0
    },
-   "rsi14": 24.5,
+   "rsi14": 56.1,
    "above_ma20": false,
-   "above_ma60": false,
+   "above_ma60": true,
    "sparkline": [
-    2000.0,
-    2000.0,
+    1000.0,
+    1000.0,
     2000.0,
     2000.0,
     2000.0,
@@ -1532,7 +1533,7 @@
     3385.0
    ],
    "per": null,
-   "market_cap": 313962594304
+   "market_cap": 282681311232
   },
   {
    "id": "364980",
@@ -1667,16 +1668,25 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Bloom Energy's Backlog Is 5 Times This Year's Expected Revenue. Here's How Fast It Can Actually Build.",
+   "title": "No Nvidia Needed: Akamai Lands $11.6 Billion Anthropic AI Deal",
    "date": "2026-09-25",
-   "url": "https://www.fool.com/investing/2026/09/24/bloom-energy-s-backlog-is-5-times-this-year-s-expected-revenue-here-s-how-fast-it-can-actually-build/"
+   "url": "https://www.investors.com/news/technology/akamai-stock-akam-surges-anthropic-artificial-intelligence-computing/?src=A00220&yptr=yahoo"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Dow Jones Futures: Market Rally Resilient As Yields, Oil Prices Keep Rising; Tesla Holds Semi Event",
+   "title": "Elon Musk Pushes Tesla Semi Into Its Biggest Phase Yet",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-pushes-tesla-semi-121003100.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Dow Jones Futures Signal Rebound For Resilient Market; Tesla, Akamai, Taiwan Semi In Focus",
    "date": "2026-09-25",
    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-resilient-yields-oil-prices-rising-tesla-semi-event/?src=A00220&yptr=yahoo"
   },
@@ -1685,27 +1695,72 @@
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Titans of Tech Attend State Dinner Honoring China’s Xi",
+   "title": "Wall St futures gain as AI enthusiasm eases worries over higher oil prices, yields",
    "date": "2026-09-25",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-24-2026/card/titans-of-tech-attend-state-dinner-honoring-china-s-xi-pgk4d9DY6Eju4Y3F7zXz?siteid=yhoof2&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Titans of Tech Attend State Dinner Honoring China’s Xi",
+   "title": "Google throws a satellite into the ring as the AI space race heats up",
    "date": "2026-09-25",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-24-2026/card/titans-of-tech-attend-state-dinner-honoring-china-s-xi-pgk4d9DY6Eju4Y3F7zXz?siteid=yhoof2&yptr=yahoo"
+   "url": "https://finance.yahoo.com/technology/article/google-throws-a-satellite-into-the-ring-as-the-ai-space-race-heats-up-100000242.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Wall St futures gain as AI enthusiasm eases worries over higher oil prices, yields",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "SpaceX Bought xAI for $250 Billion. That Division Now Supposedly Has a $26.5 Trillion Total Addressable Market.",
+   "date": "2026-09-25",
+   "url": "https://www.fool.com/investing/2026/09/25/spacex-bought-xai-for-250-billion-that-division-no/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Titans of Tech Attend State Dinner Honoring China’s Xi",
+   "title": "Alphabet Trades for 17 Times Earnings. The S&P 500 Trades for 25 Times Earnings. Is This the Best Stock to Buy in the Market?",
    "date": "2026-09-25",
-   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-24-2026/card/titans-of-tech-attend-state-dinner-honoring-china-s-xi-pgk4d9DY6Eju4Y3F7zXz?siteid=yhoof2&yptr=yahoo"
+   "url": "https://www.fool.com/investing/2026/09/25/alphabet-trades-for-17-times-earnings-the-sp-500-t/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Technology Stocks Are Back, Because Nothing Else Is",
+   "date": "2026-09-25",
+   "url": "https://www.investors.com/stock-lists/ibd-50/technology-tech-stocks-ibd-50-nvidia-palantir-amd-micron/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Should Investors Worry About Michael Burry's Big AI Stock Shorts",
+   "date": "2026-09-25",
+   "url": "https://www.fool.com/investing/2026/09/25/should-investors-worry-about-michael-burrys-big-ai/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Stock Market Today: Dow Rises On U.S.-Iran Peace Hopes; Micron, Sandisk Rally (Live Coverage)",
+   "date": "2026-09-25",
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-micron-sandisk/?src=A00220&yptr=yahoo"
   },
   {
    "kind": "news",
@@ -1715,6 +1770,15 @@
    "title": "S&P 500, Dow, Nasdaq Futures Ease As Treasury Yields Continue To Spike — ORCL, META, AKAM, GOOGL, MGM In Focus",
    "date": "2026-09-25",
    "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-futures-ease-as-us-treasury-yields-spike/cZMapaERBac"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "AMD Just Joined Nvidia in the $1 Trillion Club. At $614, Wall Street Is Paying Too Much for a Distant No. 2.",
+   "date": "2026-09-25",
+   "url": "https://www.fool.com/investing/2026/09/25/amd-just-joined-nvidia-in-the-1-trillion-club-at-6/"
   },
   {
    "kind": "news",
@@ -1735,15 +1799,6 @@
    "url": "https://finance.yahoo.com/markets/article/nvidia-leads-tech-stocks-lower-as-treasury-yields-surge-alphacheck-133744347.html"
   },
   {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla (TSLA) vs Rivian (RIVN): Which is a Better EV Stock to Buy",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-vs-rivian-rivn-235302515.html"
-  },
-  {
    "kind": "sec",
    "source": "SEC 4",
    "who": "SpaceX",
@@ -1751,24 +1806,6 @@
    "title": "4 제출 — 내부자 지분 변동 신고",
    "date": "2026-09-24",
    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/xslF345X06/wk-form4_1790280657.xml"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "SpaceX Stock-Split Watch: Here's When It Should Happen",
-   "date": "2026-09-24",
-   "url": "https://www.fool.com/investing/2026/09/24/stock-split-watch-is-hot-stock-next/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Jeff Bezos’ Blue Origin Is Fueled With $30 Billion of His Fortune",
-   "date": "2026-09-24",
-   "url": "https://www.wsj.com/business/jeff-bezos-blue-origin-is-fueled-with-30-billion-of-his-fortune-b7407e6e?siteid=yhoof2&yptr=yahoo"
   },
   {
    "kind": "news",
@@ -1800,47 +1837,11 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Anthropic proposes supervoting shares to give co-founders majority control -report",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-proposes-supervoting-shares-co-224138524.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Could Palantir (PLTR)’s Partnership with Nebius Group (NBIS) Accelerate its AI Growth?",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/technology/ai/articles/could-palantir-pltr-partnership-nebius-220317492.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
    "who": "비트마인 이머전",
    "stock_id": "bmnr",
    "title": "Bitmine Chair Tom Lee Says Ethereum Could Surge Past $5,000 This Year",
    "date": "2026-09-24",
    "url": "https://www.coinage.media/2026/bitmine-chair-tom-lee-says-ethereum-could-surge-past-5-000-this-year"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "Tom Lee Says Ethereum Could Surge Past $5,000 This Year To New High",
-   "date": "2026-09-24",
-   "url": "https://www.coinage.media/2026/bitmine-chair-tom-lee-says-ethereum-could-surge-past-5-000-this-year"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "AI Trade Is ‘Dead Money’: Fidelity Strategist Warns $3.3 Trillion Buildout Is Inflationary With ‘Unknown Returns’",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/technology/ai/articles/ai-trade-dead-money-fidelity-220024955.html"
   }
  ],
  "errors": []
