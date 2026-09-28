@@ -1,18 +1,17 @@
 {
- "generated_at": "2026-09-25 21:33",
+ "generated_at": "2026-09-26 03:54",
  "demo": false,
  "market": {
-  "kr": "장 마감",
-  "us": "개장 전"
+  "kr": "휴장",
+  "us": "휴장"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 15.14,
-    "change": -0.53,
-    "change_m1": -0.07,
+    "value": 14.95,
+    "change": -0.72,
+    "change_m1": -0.26,
     "sparkline": [
-     14.43,
      14.92,
      16.34,
      15.2,
@@ -29,17 +28,18 @@
      15.44,
      14.81,
      14.87,
+     14.21,
      15.18,
      15.67,
-     15.14
+     14.95
     ],
     "asof": "2026-09-25",
     "label": "VIX 공포지수",
     "unit": "",
     "source": "Yahoo",
     "zone": {
-     "label": "보통",
-     "grade": "mid"
+     "label": "안정",
+     "grade": "low"
     }
    },
    "us10y": {
@@ -48,8 +48,6 @@
     "change_m1": 0.05,
     "sparkline": [
      0.47,
-     0.47,
-     0.47,
      0.48,
      0.48,
      0.48,
@@ -63,12 +61,14 @@
      0.5,
      0.5,
      0.49,
+     0.5,
      0.5,
      0.5,
      0.51,
+     0.52,
      0.52
     ],
-    "asof": "2026-09-24",
+    "asof": "2026-09-25",
     "label": "미국 10년물",
     "unit": "%",
     "source": "Yahoo",
@@ -78,11 +78,10 @@
     }
    },
    "dxy": {
-    "value": 100.95,
-    "change": -0.34,
-    "change_m1": 1.78,
+    "value": 100.99,
+    "change": -0.3,
+    "change_m1": 1.82,
     "sparkline": [
-     99.16,
      99.7,
      99.43,
      99.67,
@@ -99,9 +98,10 @@
      100.22,
      100.22,
      100.43,
+     100.6,
      101.1,
      101.29,
-     100.95
+     100.99
     ],
     "asof": "2026-09-25",
     "label": "달러인덱스",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1355.3,
-    "change": -7.2,
-    "change_m1": -26.1,
+    "value": 1354.9,
+    "change": -7.6,
+    "change_m1": -26.6,
     "sparkline": [
      1377.1,
      1366.6,
@@ -136,7 +136,7 @@
      1373.7,
      1350.4,
      1362.5,
-     1355.3
+     1354.9
     ],
     "asof": "2026-09-25",
     "label": "원/달러",
@@ -162,7 +162,7 @@
    "cape": {
     "value": 41.25,
     "source": "multpl.com",
-    "asof": "2026-09-25",
+    "asof": "2026-09-26",
     "approx": false,
     "label": "실러 CAPE",
     "unit": "",
@@ -306,26 +306,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 224.58,
-   "change_abs": -0.93,
-   "change_pct": -0.41,
+   "price": 224.09,
+   "change_abs": -0.49,
+   "change_pct": -0.22,
    "returns": {
-    "d1": -0.41,
-    "w1": 2.39,
-    "m1": 5.41,
-    "m3": 14.73,
-    "ytd": 18.92
+    "d1": -0.22,
+    "w1": 0.82,
+    "m1": 6.88,
+    "m3": 16.39,
+    "ytd": 18.66
    },
    "week52": {
     "low": 165.17,
     "high": 235.74,
-    "position": 84.2
+    "position": 83.5
    },
-   "rsi14": 54.7,
+   "rsi14": 54.2,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    227.98,
     217.55,
     220.78,
     217.44,
@@ -344,18 +343,19 @@
     227.38,
     228.87,
     225.51,
-    224.58
+    224.58,
+    224.09
    ],
-   "per": 28.4,
-   "market_cap": 5422933082112,
+   "per": 28.3,
+   "market_cap": 5411100950528,
    "target": {
     "mean": 327.7,
-    "upside": 45.9,
+    "upside": 46.2,
     "buy": 58,
     "hold": 2,
     "sell": 1,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -378,26 +378,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 377.94,
-   "change_abs": -2.18,
-   "change_pct": -0.57,
+   "price": 372.36,
+   "change_abs": -5.58,
+   "change_pct": -1.48,
    "returns": {
-    "d1": -0.57,
-    "w1": 3.21,
-    "m1": 7.91,
-    "m3": 0.75,
-    "ytd": -13.73
+    "d1": -1.48,
+    "w1": 2.22,
+    "m1": 7.67,
+    "m3": -1.94,
+    "ytd": -15.0
    },
    "week52": {
     "low": 298.32,
     "high": 489.88,
-    "position": 41.6
+    "position": 38.7
    },
-   "rsi14": 59.1,
+   "rsi14": 55.5,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    354.81,
     348.75,
     367.95,
     356.09,
@@ -416,18 +415,19 @@
     375.3,
     378.9,
     380.12,
-    377.94
+    377.94,
+    372.36
    ],
-   "per": 343.6,
-   "market_cap": 1492691976192,
+   "per": 338.5,
+   "market_cap": 1470418518016,
    "target": {
     "mean": 396.62,
-    "upside": 4.9,
+    "upside": 6.5,
     "buy": 19,
     "hold": 20,
     "sell": 4,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -450,14 +450,14 @@
    "history_from": "2026-06-12",
    "is_new_listing": true,
    "range_label": "상장 이후",
-   "price": 148.03,
-   "change_abs": -0.33,
-   "change_pct": -0.22,
+   "price": 148.04,
+   "change_abs": 0.01,
+   "change_pct": 0.01,
    "returns": {
-    "d1": -0.22,
-    "w1": -4.38,
-    "m1": 7.31,
-    "m3": -3.25,
+    "d1": 0.01,
+    "w1": -3.05,
+    "m1": 6.03,
+    "m3": -3.38,
     "ytd": null
    },
    "week52": {
@@ -466,10 +466,9 @@
     "position": 38.6
    },
    "rsi14": 54.2,
-   "above_ma20": true,
+   "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
-    140.87,
     141.5,
     143.69,
     142.23,
@@ -488,20 +487,21 @@
     151.85,
     154.72,
     148.36,
-    148.03
+    148.03,
+    148.04
    ],
-   "vs_ipo": 9.65,
+   "vs_ipo": 9.66,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 1950174937088,
+   "market_cap": 1951496536064,
    "target": {
     "mean": 222.42,
-    "upside": 50.3,
+    "upside": 50.2,
     "buy": 28,
     "hold": 5,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -524,26 +524,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 342.36,
-   "change_abs": 4.53,
-   "change_pct": 1.34,
+   "price": 344.08,
+   "change_abs": 1.72,
+   "change_pct": 0.5,
    "returns": {
-    "d1": 1.34,
-    "w1": -1.43,
-    "m1": -1.33,
-    "m3": -0.39,
-    "ytd": 8.63
+    "d1": 0.5,
+    "w1": -1.56,
+    "m1": 0.61,
+    "m3": 1.98,
+    "ytd": 9.18
    },
    "week52": {
     "low": 236.57,
     "high": 402.62,
-    "position": 63.7
+    "position": 64.7
    },
-   "rsi14": 48.5,
+   "rsi14": 49.8,
    "above_ma20": true,
    "above_ma60": false,
    "sparkline": [
-    340.65,
     346.59,
     339.35,
     335.02,
@@ -562,18 +561,19 @@
     354.97,
     351.16,
     337.83,
-    342.36
+    342.36,
+    344.08
    ],
-   "per": 17.2,
-   "market_cap": 4187040514048,
+   "per": 17.3,
+   "market_cap": 4208137076736,
    "target": {
     "mean": 429.46,
-    "upside": 25.4,
+    "upside": 24.8,
     "buy": 56,
     "hold": 5,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -596,26 +596,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 192.59,
-   "change_abs": 0.8,
-   "change_pct": 0.42,
+   "price": 191.33,
+   "change_abs": -1.26,
+   "change_pct": -0.65,
    "returns": {
-    "d1": 0.42,
-    "w1": 9.28,
-    "m1": 11.5,
-    "m3": 79.54,
-    "ytd": 14.73
+    "d1": -0.65,
+    "w1": 7.71,
+    "m1": 7.79,
+    "m3": 69.42,
+    "ytd": 13.98
    },
    "week52": {
     "low": 107.27,
     "high": 207.18,
-    "position": 85.4
+    "position": 84.1
    },
-   "rsi14": 67.4,
+   "rsi14": 65.7,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    185.93,
     186.29,
     186.38,
     179.92,
@@ -634,18 +633,19 @@
     183.09,
     184.99,
     191.79,
-    192.59
+    192.59,
+    191.33
    ],
-   "per": 164.6,
-   "market_cap": 462805008384,
+   "per": 163.5,
+   "market_cap": 459777179648,
    "target": {
     "mean": 195.57,
-    "upside": 1.5,
+    "upside": 2.2,
     "buy": 20,
     "hold": 9,
     "sell": 2,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -668,26 +668,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 2.32,
-   "change_abs": 0.02,
-   "change_pct": 0.87,
+   "price": 2.35,
+   "change_abs": 0.03,
+   "change_pct": 1.08,
    "returns": {
-    "d1": 0.87,
-    "w1": 0.87,
-    "m1": -8.66,
-    "m3": -26.81,
-    "ytd": -45.28
+    "d1": 1.08,
+    "w1": 4.69,
+    "m1": -5.44,
+    "m3": -24.84,
+    "ytd": -44.69
    },
    "week52": {
     "low": 2.09,
     "high": 7.65,
-    "position": 4.1
+    "position": 4.6
    },
-   "rsi14": 44.4,
+   "rsi14": 46.1,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    2.61,
     2.48,
     2.49,
     2.39,
@@ -706,18 +705,19 @@
     2.36,
     2.35,
     2.3,
-    2.32
+    2.32,
+    2.35
    ],
    "per": null,
-   "market_cap": 521838880,
+   "market_cap": 527462176,
    "target": {
     "mean": 5.88,
-    "upside": 153.2,
+    "upside": 150.0,
     "buy": 2,
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -740,26 +740,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 28.03,
-   "change_abs": 0.57,
-   "change_pct": 2.08,
+   "price": 27.52,
+   "change_abs": -0.51,
+   "change_pct": -1.8,
    "returns": {
-    "d1": 2.08,
-    "w1": 17.33,
-    "m1": 12.93,
-    "m3": 110.44,
-    "ytd": -10.13
+    "d1": -1.8,
+    "w1": 5.91,
+    "m1": 10.5,
+    "m3": 102.99,
+    "ytd": -11.75
    },
    "week52": {
     "low": 13.31,
     "high": 63.22,
-    "position": 29.5
+    "position": 28.5
    },
-   "rsi14": 63.2,
+   "rsi14": 61.0,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    25.63,
     23.8,
     25.32,
     23.37,
@@ -778,18 +777,19 @@
     28.25,
     28.76,
     27.46,
-    28.03
+    28.03,
+    27.52
    ],
    "per": null,
-   "market_cap": 16908435456,
+   "market_cap": 16603805696,
    "target": {
     "mean": 45.87,
-    "upside": 63.6,
+    "upside": 66.7,
     "buy": 3,
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -862,26 +862,25 @@
    "history_from": "2025-09-25",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 741.1,
-   "change_abs": -0.11,
-   "change_pct": -0.01,
+   "price": 744.29,
+   "change_abs": 3.19,
+   "change_pct": 0.43,
    "returns": {
-    "d1": -0.01,
-    "w1": 3.37,
-    "m1": 4.27,
-    "m3": 3.45,
-    "ytd": 20.87
+    "d1": 0.43,
+    "w1": 3.17,
+    "m1": 4.63,
+    "m3": 5.35,
+    "ytd": 21.39
    },
    "week52": {
     "low": 558.28,
     "high": 747.46,
-    "position": 96.6
+    "position": 98.3
    },
-   "rsi14": 63.1,
+   "rsi14": 64.6,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
-    721.11,
     716.43,
     716.76,
     707.64,
@@ -900,9 +899,10 @@
     741.47,
     747.46,
     741.21,
-    741.1
+    741.1,
+    744.29
    ],
-   "per": 30.2,
+   "per": 30.3,
    "market_cap": null
   },
   {
@@ -974,7 +974,7 @@
     "hold": 1,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1046,7 +1046,7 @@
     "hold": 4,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1118,7 +1118,7 @@
     "hold": 3,
     "sell": 3,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1190,7 +1190,7 @@
     "hold": 9,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1262,7 +1262,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1291,21 +1291,21 @@
    "returns": {
     "d1": -0.06,
     "w1": -0.91,
-    "m1": 63.6,
-    "m3": 80.57,
-    "ytd": -13.71
+    "m1": -18.2,
+    "m3": -9.71,
+    "ytd": -56.86
    },
    "week52": {
-    "low": 846.0,
-    "high": 2185.0,
-    "position": 59.0
+    "low": 1616.0,
+    "high": 4370.0,
+    "position": 0.7
    },
-   "rsi14": 56.1,
+   "rsi14": 24.5,
    "above_ma20": false,
-   "above_ma60": true,
+   "above_ma60": false,
    "sparkline": [
-    1000.0,
-    1000.0,
+    2000.0,
+    2000.0,
     2000.0,
     2000.0,
     2000.0,
@@ -1334,7 +1334,7 @@
     "hold": null,
     "sell": null,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1469,7 +1469,7 @@
     "hold": 0,
     "sell": 0,
     "source": "Yahoo 컨센서스",
-    "asof": "2026-09-25"
+    "asof": "2026-09-26"
    }
   },
   {
@@ -1533,7 +1533,7 @@
     3385.0
    ],
    "per": null,
-   "market_cap": 282681311232
+   "market_cap": 313962594304
   },
   {
    "id": "364980",
@@ -1668,180 +1668,180 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "No Nvidia Needed: Akamai Lands $11.6 Billion Anthropic AI Deal",
+   "title": "Microsoft CEO: We 'have to earn that permission' to build data centers from communities",
    "date": "2026-09-25",
-   "url": "https://www.investors.com/news/technology/akamai-stock-akam-surges-anthropic-artificial-intelligence-computing/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/stocks/article/microsoft-ceo-we-have-to-earn-that-permission-to-build-data-centers-from-communities-172505836.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Tech stocks gain after tech titan dinner with Trump and China's Xi Jinping: AlphaCheck",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/article/tech-stocks-gain-after-tech-titan-dinner-with-trump-and-chinas-xi-jinping-alphacheck-135107178.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Over 30 CEOs scored an invite to the US-China state dinner — and these 4 got a spot at the head table",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/article/over-30-ceos-scored-an-invite-to-the-us-china-state-dinner--and-these-4-got-a-spot-at-the-head-table-134400923.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Elon Musk Pushes Tesla Semi Into Its Biggest Phase Yet",
+   "title": "How to fix overvalued AI companies and a McDonald's market play",
    "date": "2026-09-25",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-pushes-tesla-semi-121003100.html"
+   "url": "https://finance.yahoo.com/video/fix-overvalued-ai-companies-mcdonalds-165755634.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Dow Jones Futures Signal Rebound For Resilient Market; Tesla, Akamai, Taiwan Semi In Focus",
+   "title": "Why Elon Musk could be the next tech leader to have a 'Mark Zuckerberg moment'",
    "date": "2026-09-25",
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-resilient-yields-oil-prices-rising-tesla-semi-event/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/video/why-elon-musk-could-next-150606664.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Wall St futures gain as AI enthusiasm eases worries over higher oil prices, yields",
+   "title": "Tech stocks gain after tech titan dinner with Trump and China's Xi Jinping: AlphaCheck",
    "date": "2026-09-25",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html"
+   "url": "https://finance.yahoo.com/markets/article/tech-stocks-gain-after-tech-titan-dinner-with-trump-and-chinas-xi-jinping-alphacheck-135107178.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Google throws a satellite into the ring as the AI space race heats up",
+   "title": "How to fix overvalued AI companies and a McDonald's market play",
    "date": "2026-09-25",
-   "url": "https://finance.yahoo.com/technology/article/google-throws-a-satellite-into-the-ring-as-the-ai-space-race-heats-up-100000242.html"
+   "url": "https://finance.yahoo.com/video/fix-overvalued-ai-companies-mcdonalds-165755634.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Wall St futures gain as AI enthusiasm eases worries over higher oil prices, yields",
+   "title": "AMD CEO Lisa Su is having a September to remember",
    "date": "2026-09-25",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-gain-ai-095035646.html"
+   "url": "https://finance.yahoo.com/markets/article/amd-ceo-lisa-su-is-having-a-september-to-remember-135902902.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "SpaceX Bought xAI for $250 Billion. That Division Now Supposedly Has a $26.5 Trillion Total Addressable Market.",
+   "title": "What Musk’s Tesla and SpaceX Stocks Are Doing After That White House State Dinner",
    "date": "2026-09-25",
-   "url": "https://www.fool.com/investing/2026/09/25/spacex-bought-xai-for-250-billion-that-division-no/"
+   "url": "https://www.barrons.com/articles/elon-musk-tesla-spacex-stock-trump-xi-a47adcbd?siteid=yhoof2&yptr=yahoo"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Alphabet Trades for 17 Times Earnings. The S&P 500 Trades for 25 Times Earnings. Is This the Best Stock to Buy in the Market?",
+   "title": "Why this early Uber investor would short OpenAI",
    "date": "2026-09-25",
-   "url": "https://www.fool.com/investing/2026/09/25/alphabet-trades-for-17-times-earnings-the-sp-500-t/"
+   "url": "https://finance.yahoo.com/markets/stocks/article/why-this-early-uber-investor-would-short-openai-173506483.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Could OpenAI and Anthropic going public backfire?",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/video/could-openai-anthropic-going-public-150845369.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Google’s New Initiative Aims to Match 25,000 Veterans With These In-Demand Jobs",
+   "date": "2026-09-25",
+   "url": "https://www.entrepreneur.com/business-news/googles-new-initiative-aims-to-match-25000-veterans-with-these-in-demand-jobs"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Technology Stocks Are Back, Because Nothing Else Is",
+   "title": "Can Palantir’s AI moat survive the competition?",
    "date": "2026-09-25",
-   "url": "https://www.investors.com/stock-lists/ibd-50/technology-tech-stocks-ibd-50-nvidia-palantir-amd-micron/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/video/palantir-ai-moat-survive-competition-172500938.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Should Investors Worry About Michael Burry's Big AI Stock Shorts",
+   "title": "Palantir's Latest $250 Target Comes With a Catch",
    "date": "2026-09-25",
-   "url": "https://www.fool.com/investing/2026/09/25/should-investors-worry-about-michael-burrys-big-ai/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/palantirs-latest-250-target-comes-183851496.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "Stock Market Today: Dow Rises On U.S.-Iran Peace Hopes; Micron, Sandisk Rally (Live Coverage)",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Palantir Stock Falls as Karp Puts Liability Before IPOs",
    "date": "2026-09-25",
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-micron-sandisk/?src=A00220&yptr=yahoo"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "S&P 500, Dow, Nasdaq Futures Ease As Treasury Yields Continue To Spike — ORCL, META, AKAM, GOOGL, MGM In Focus",
-   "date": "2026-09-25",
-   "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-nasdaq-futures-ease-as-us-treasury-yields-spike/cZMapaERBac"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "삼성전자",
-   "stock_id": "005930",
-   "title": "AMD Just Joined Nvidia in the $1 Trillion Club. At $614, Wall Street Is Paying Too Much for a Distant No. 2.",
-   "date": "2026-09-25",
-   "url": "https://www.fool.com/investing/2026/09/25/amd-just-joined-nvidia-in-the-1-trillion-club-at-6/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "Nvidia's valuation is falling, but it might not be a warning sign",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/video/nvidias-valuation-falling-might-not-140207364.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "Nvidia leads tech stocks lower as Treasury yields surge: AlphaCheck",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-leads-tech-stocks-lower-as-treasury-yields-surge-alphacheck-133744347.html"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-stock-falls-karp-puts-165428263.html"
   },
   {
    "kind": "sec",
-   "source": "SEC 4",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-24",
-   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/xslF345X06/wk-form4_1790280657.xml"
+   "source": "SEC 6-K",
+   "who": "실스크 SEALSQ",
+   "stock_id": "laes",
+   "title": "6-K 제출 — 외국기업 수시보고",
+   "date": "2026-09-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026103268/ea030658602-6k_sealsq.htm"
+  },
+  {
+   "kind": "sec",
+   "source": "SEC 6-K",
+   "who": "실스크 SEALSQ",
+   "stock_id": "laes",
+   "title": "6-K 제출 — 외국기업 수시보고",
+   "date": "2026-09-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026103266/ea030658601-6k_sealsq.htm"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Meta's stock surges as it moves from AI laggard to leader",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/video/metas-stock-surges-moves-ai-194025560.html"
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Exchange-Traded Funds Rise US Equities Advance After Midday",
+   "date": "2026-09-25",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-172055719.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "How Muse AI is expanding Meta's moat, & why you shouldn't bring iced coffee to job interviews",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/video/muse-ai-expanding-metas-moat-180537667.html"
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Qualcomm Rallies 6% as Buyers Reverse Apple Renewal Selloff; Apple Stock Ticks Up",
+   "date": "2026-09-25",
+   "url": "https://247wallst.com/investing/2026/09/25/qualcomm-rallies-6-as-buyers-reverse-apple-renewal-selloff-apple-stock-ticks-up/"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Reddit Stock And 2 More Quality Stocks",
-   "date": "2026-09-24",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/reddit-stock-2-more-quality-231436685.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "Bitmine Chair Tom Lee Says Ethereum Could Surge Past $5,000 This Year",
-   "date": "2026-09-24",
-   "url": "https://www.coinage.media/2026/bitmine-chair-tom-lee-says-ethereum-could-surge-past-5-000-this-year"
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Bloom Energy Jumps 8% as Oracle Reaffirms 2.4 GW Fuel Cell Contract After Force Majeure Notice",
+   "date": "2026-09-25",
+   "url": "https://247wallst.com/investing/2026/09/25/bloom-energy-jumps-8-as-oracle-reaffirms-2-4-gw-fuel-cell-contract-after-force-majeure-notice/"
   }
  ],
  "errors": []
