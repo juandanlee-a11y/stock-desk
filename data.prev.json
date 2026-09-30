@@ -1,18 +1,17 @@
 {
- "generated_at": "2026-09-30 11:19",
+ "generated_at": "2026-09-30 22:20",
  "demo": false,
  "market": {
-  "kr": "장중",
+  "kr": "장 마감",
   "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 16.04,
-    "change": -0.03,
-    "change_m1": 1.61,
+    "value": 15.79,
+    "change": -0.25,
+    "change_m1": 0.87,
     "sparkline": [
-     15.2,
      14.32,
      14.53,
      15.3,
@@ -31,9 +30,10 @@
      15.67,
      14.87,
      16.07,
-     16.04
+     16.04,
+     15.79
     ],
-    "asof": "2026-09-29",
+    "asof": "2026-09-30",
     "label": "VIX 공포지수",
     "unit": "",
     "source": "Yahoo",
@@ -43,11 +43,10 @@
     }
    },
    "us10y": {
-    "value": 0.53,
-    "change": 0.0,
+    "value": 0.52,
+    "change": -0.0,
     "change_m1": 0.05,
     "sparkline": [
-     0.48,
      0.48,
      0.48,
      0.48,
@@ -66,9 +65,10 @@
      0.52,
      0.52,
      0.52,
-     0.53
+     0.53,
+     0.52
     ],
-    "asof": "2026-09-29",
+    "asof": "2026-09-30",
     "label": "미국 10년물",
     "unit": "%",
     "source": "Yahoo",
@@ -78,11 +78,10 @@
     }
    },
    "dxy": {
-    "value": 101.37,
-    "change": 0.17,
-    "change_m1": 1.67,
+    "value": 101.19,
+    "change": -0.18,
+    "change_m1": 1.76,
     "sparkline": [
-     99.67,
      99.56,
      99.0,
      99.16,
@@ -101,9 +100,10 @@
      101.29,
      100.97,
      101.2,
-     101.37
+     101.37,
+     101.19
     ],
-    "asof": "2026-09-29",
+    "asof": "2026-09-30",
     "label": "달러인덱스",
     "unit": "",
     "source": "Yahoo",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1355.1,
-    "change": -4.5,
-    "change_m1": -22.0,
+    "value": 1352.9,
+    "change": -6.7,
+    "change_m1": -24.2,
     "sparkline": [
      1358.4,
      1355.4,
@@ -136,7 +136,7 @@
      1367.4,
      1354.5,
      1359.6,
-     1355.1
+     1352.9
     ],
     "asof": "2026-09-30",
     "label": "원/달러",
@@ -148,7 +148,7 @@
     }
    },
    "buffett": {
-    "value": 234.7,
+    "value": 234.1,
     "source": "Wilshire 5000 × 1 / FRED GDP(2026-04)",
     "asof": "2026-09-29",
     "approx": true,
@@ -346,7 +346,7 @@
     228.86,
     227.21
    ],
-   "per": 28.9,
+   "per": 28.7,
    "market_cap": 5486440087552,
    "target": {
     "mean": 327.7,
@@ -418,7 +418,7 @@
     357.45,
     352.84
    ],
-   "per": 329.8,
+   "per": 323.7,
    "market_cap": 1393558290432,
    "target": {
     "mean": 395.83,
@@ -495,8 +495,8 @@
    "per": null,
    "market_cap": 1966115782656,
    "target": {
-    "mean": 223.82,
-    "upside": 50.0,
+    "mean": 226.0,
+    "upside": 51.4,
     "buy": 30,
     "hold": 5,
     "sell": 2,
@@ -564,7 +564,7 @@
     342.75,
     340.92
    ],
-   "per": 17.2,
+   "per": 17.1,
    "market_cap": 4169429680128,
    "target": {
     "mean": 429.36,
@@ -925,22 +925,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 271250.0,
-   "change_abs": -1250.0,
-   "change_pct": -0.46,
+   "price": 268500.0,
+   "change_abs": -4000.0,
+   "change_pct": -1.47,
    "returns": {
-    "d1": -0.46,
-    "w1": -4.99,
-    "m1": 4.33,
-    "m3": -13.75,
-    "ytd": 111.09
+    "d1": -1.47,
+    "w1": -5.95,
+    "m1": 3.27,
+    "m3": -14.63,
+    "ytd": 108.95
    },
    "week52": {
     "low": 83900.0,
     "high": 362500.0,
-    "position": 67.2
+    "position": 66.3
    },
-   "rsi14": 53.7,
+   "rsi14": 52.2,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
@@ -963,13 +963,13 @@
     285500.0,
     270000.0,
     272500.0,
-    271250.0
+    268500.0
    ],
    "per": null,
-   "market_cap": 1781180248621056,
+   "market_cap": 1763122192842752,
    "target": {
-    "mean": 478627.88,
-    "upside": 76.5,
+    "mean": 477516.75,
+    "upside": 77.8,
     "buy": 35,
     "hold": 1,
     "sell": 0,
@@ -997,22 +997,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 194800.0,
-   "change_abs": 0.0,
-   "change_pct": 0.0,
+   "price": 193700.0,
+   "change_abs": -1100.0,
+   "change_pct": -0.56,
    "returns": {
-    "d1": 0.0,
-    "w1": 0.05,
-    "m1": -10.23,
-    "m3": -1.32,
-    "ytd": -21.13
+    "d1": -0.56,
+    "w1": -0.51,
+    "m1": -10.74,
+    "m3": -1.87,
+    "ytd": -21.58
    },
    "week52": {
     "low": 183200.0,
     "high": 287000.0,
-    "position": 11.2
+    "position": 10.1
    },
-   "rsi14": 38.6,
+   "rsi14": 37.8,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -1035,13 +1035,13 @@
     194700.0,
     197700.0,
     194800.0,
-    194800.0
+    193700.0
    ],
    "per": null,
-   "market_cap": 29181884760064,
+   "market_cap": 29017098944512,
    "target": {
     "mean": 297423.06,
-    "upside": 52.7,
+    "upside": 53.5,
     "buy": 22,
     "hold": 4,
     "sell": 0,
@@ -1069,22 +1069,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 40250.0,
-   "change_abs": 150.0,
-   "change_pct": 0.37,
+   "price": 39850.0,
+   "change_abs": -250.0,
+   "change_pct": -0.62,
    "returns": {
-    "d1": 0.37,
-    "w1": -0.98,
-    "m1": -13.35,
-    "m3": -2.07,
-    "ytd": -20.77
+    "d1": -0.62,
+    "w1": -1.97,
+    "m1": -14.21,
+    "m3": -3.04,
+    "ytd": -21.56
    },
    "week52": {
     "low": 37450.0,
     "high": 70900.0,
-    "position": 8.4
+    "position": 7.2
    },
-   "rsi14": 39.9,
+   "rsi14": 38.6,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -1107,13 +1107,13 @@
     40650.0,
     41150.0,
     40100.0,
-    40250.0
+    39850.0
    ],
    "per": null,
-   "market_cap": 5444622876672,
+   "market_cap": 5390514782208,
    "target": {
     "mean": 52710.0,
-    "upside": 31.0,
+    "upside": 32.3,
     "buy": 5,
     "hold": 3,
     "sell": 3,
@@ -1141,22 +1141,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 20050.0,
-   "change_abs": -200.0,
-   "change_pct": -0.99,
+   "price": 19890.0,
+   "change_abs": -360.0,
+   "change_pct": -1.78,
    "returns": {
-    "d1": -0.99,
-    "w1": 0.65,
-    "m1": -8.24,
-    "m3": -4.07,
-    "ytd": -8.45
+    "d1": -1.78,
+    "w1": -0.15,
+    "m1": -8.97,
+    "m3": -4.83,
+    "ytd": -9.18
    },
    "week52": {
     "low": 19750.0,
     "high": 28700.0,
-    "position": 3.4
+    "position": 1.6
    },
-   "rsi14": 34.8,
+   "rsi14": 33.2,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -1179,13 +1179,13 @@
     19920.0,
     20500.0,
     20250.0,
-    20050.0
+    19890.0
    ],
    "per": null,
-   "market_cap": 9553406066688,
+   "market_cap": 9477169348608,
    "target": {
     "mean": 27527.78,
-    "upside": 37.3,
+    "upside": 38.4,
     "buy": 9,
     "hold": 9,
     "sell": 0,
@@ -1213,22 +1213,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 55700.0,
-   "change_abs": 1000.0,
-   "change_pct": 1.83,
+   "price": 55100.0,
+   "change_abs": 400.0,
+   "change_pct": 0.73,
    "returns": {
-    "d1": 1.83,
-    "w1": 2.77,
-    "m1": -6.39,
-    "m3": -10.31,
-    "ytd": 31.06
+    "d1": 0.73,
+    "w1": 1.66,
+    "m1": -7.39,
+    "m3": -11.27,
+    "ytd": 29.65
    },
    "week52": {
     "low": 34000.0,
     "high": 100900.0,
-    "position": 32.4
+    "position": 31.5
    },
-   "rsi14": 50.5,
+   "rsi14": 49.1,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
@@ -1251,13 +1251,13 @@
     54200.0,
     56200.0,
     54700.0,
-    55700.0
+    55100.0
    ],
    "per": null,
-   "market_cap": 1896058716160,
+   "market_cap": 1875634421760,
    "target": {
     "mean": 97750.0,
-    "upside": 75.5,
+    "upside": 77.4,
     "buy": 4,
     "hold": 0,
     "sell": 0,
@@ -1285,22 +1285,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 1624.0,
-   "change_abs": 8.0,
-   "change_pct": 0.5,
+   "price": 1639.0,
+   "change_abs": 23.0,
+   "change_pct": 1.42,
    "returns": {
-    "d1": 0.5,
-    "w1": -0.73,
-    "m1": -18.8,
-    "m3": 71.49,
-    "ytd": -14.35
+    "d1": 1.42,
+    "w1": 0.18,
+    "m1": -18.05,
+    "m3": 73.07,
+    "ytd": -13.55
    },
    "week52": {
     "low": 846.0,
     "high": 2105.0,
-    "position": 61.8
+    "position": 63.0
    },
-   "rsi14": 54.7,
+   "rsi14": 56.0,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
@@ -1323,13 +1323,13 @@
     1636.0,
     1640.0,
     1616.0,
-    1624.0
+    1639.0
    ],
    "per": null,
-   "market_cap": 69079097344,
+   "market_cap": 69717139456,
    "target": {
     "mean": 3000.0,
-    "upside": 84.7,
+    "upside": 83.0,
     "buy": null,
     "hold": null,
     "sell": null,
@@ -1420,23 +1420,23 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3795.0,
-   "change_abs": 100.0,
-   "change_pct": 2.71,
+   "price": 3715.0,
+   "change_abs": 20.0,
+   "change_pct": 0.54,
    "returns": {
-    "d1": 2.71,
-    "w1": 2.15,
-    "m1": 0.53,
-    "m3": -8.55,
-    "ytd": -34.11
+    "d1": 0.54,
+    "w1": 0.0,
+    "m1": -1.59,
+    "m3": -10.48,
+    "ytd": -35.5
    },
    "week52": {
     "low": 3590.0,
     "high": 7370.0,
-    "position": 5.4
+    "position": 3.3
    },
-   "rsi14": 48.1,
-   "above_ma20": true,
+   "rsi14": 43.0,
+   "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
     3775.0,
@@ -1458,13 +1458,13 @@
     3715.0,
     3670.0,
     3695.0,
-    3795.0
+    3715.0
    ],
    "per": null,
-   "market_cap": 339853410304,
+   "market_cap": 332689178624,
    "target": {
     "mean": 7050.0,
-    "upside": 85.8,
+    "upside": 89.8,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -1492,24 +1492,24 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3375.0,
-   "change_abs": 85.0,
-   "change_pct": 2.58,
+   "price": 3300.0,
+   "change_abs": 10.0,
+   "change_pct": 0.3,
    "returns": {
-    "d1": 2.58,
-    "w1": -0.3,
-    "m1": -19.83,
-    "m3": 10.29,
-    "ytd": -5.06
+    "d1": 0.3,
+    "w1": -2.51,
+    "m1": -21.62,
+    "m3": 7.84,
+    "ytd": -7.17
    },
    "week52": {
     "low": 2190.0,
     "high": 7120.0,
-    "position": 24.0
+    "position": 22.5
    },
-   "rsi14": 42.8,
+   "rsi14": 40.0,
    "above_ma20": false,
-   "above_ma60": true,
+   "above_ma60": false,
    "sparkline": [
     4200.0,
     4200.0,
@@ -1530,10 +1530,10 @@
     3385.0,
     3350.0,
     3290.0,
-    3375.0
+    3300.0
    ],
    "per": null,
-   "market_cap": 281846218752
+   "market_cap": 275582976000
   },
   {
    "id": "364980",
@@ -1555,22 +1555,22 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 9995.0,
-   "change_abs": 115.0,
-   "change_pct": 1.16,
+   "price": 9965.0,
+   "change_abs": 85.0,
+   "change_pct": 0.86,
    "returns": {
-    "d1": 1.16,
-    "w1": 0.25,
-    "m1": -8.22,
-    "m3": 1.68,
-    "ytd": 16.76
+    "d1": 0.86,
+    "w1": -0.05,
+    "m1": -8.49,
+    "m3": 1.37,
+    "ytd": 16.41
    },
    "week52": {
     "low": 7775.0,
     "high": 14900.0,
-    "position": 31.2
+    "position": 30.7
    },
-   "rsi14": 47.5,
+   "rsi14": 46.9,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
@@ -1593,7 +1593,7 @@
     9970.0,
     10255.0,
     9880.0,
-    9995.0
+    9965.0
    ],
    "per": null,
    "market_cap": null
@@ -1618,24 +1618,24 @@
    "history_from": "2025-09-30",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 14010.0,
-   "change_abs": 0.0,
-   "change_pct": 0.0,
+   "price": 13985.0,
+   "change_abs": -25.0,
+   "change_pct": -0.18,
    "returns": {
-    "d1": 0.0,
-    "w1": -0.88,
-    "m1": 0.9,
-    "m3": -2.54,
-    "ytd": -0.43
+    "d1": -0.18,
+    "w1": -1.06,
+    "m1": 0.72,
+    "m3": -2.71,
+    "ytd": -0.6
    },
    "week52": {
     "low": 13060.0,
     "high": 14840.0,
-    "position": 53.4
+    "position": 52.0
    },
-   "rsi14": 54.9,
+   "rsi14": 53.2,
    "above_ma20": true,
-   "above_ma60": true,
+   "above_ma60": false,
    "sparkline": [
     13855.0,
     13760.0,
@@ -1656,13 +1656,157 @@
     14135.0,
     14110.0,
     14010.0,
-    14010.0
+    13985.0
    ],
    "per": null,
    "market_cap": null
   }
  ],
  "feed": [
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Tesla Locks In $30 Billion Credit Line To Fund Soaring AI Spending",
+   "date": "2026-09-30",
+   "url": "https://www.investors.com/news/tesla-robotaxi-terafab-optimus-elon-musk-spacex-citigroup-wells-fargo/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Elon Musk takes aim at Delta for refusing to use Starlink for Wi-Fi",
+   "date": "2026-09-30",
+   "url": "https://finance.yahoo.com/video/elon-musk-takes-aim-at-delta-for-refusing-to-use-starlink-for-wi-fi-131005924.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "Palantir CEO Alex Karp buys 37,000 acres of Swedish forest",
+   "date": "2026-09-30",
+   "url": "https://qz.com/palantir-ceo-alex-karp-swedish-forest-hunters-093026"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "3 Tech Stocks That Could Be in Trouble if There's an Artificial Intelligence (AI) Slowdown",
+   "date": "2026-09-30",
+   "url": "https://www.fool.com/investing/2026/09/30/3-tech-stocks-that-could-be-in-trouble-if-there-s-an-artificial-intelligence-ai-slowdown/"
+  },
+  {
+   "kind": "sec",
+   "source": "SEC 8-K",
+   "who": "비트마인 이머전",
+   "stock_id": "bmnr",
+   "title": "8-K 제출 — 주요 경영사항 수시보고",
+   "date": "2026-09-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226045035/form8-k.htm"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "비트마인 이머전",
+   "stock_id": "bmnr",
+   "title": "Tom Lee Says the Biggest Crypto Bull Run Ever Is Starting. Here's Why",
+   "date": "2026-09-30",
+   "url": "https://beincrypto.com/tom-lee-biggest-crypto-bull-cycle-ever/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "비트마인 이머전",
+   "stock_id": "bmnr",
+   "title": "Tom Lee Says ETH Could Top $10,000 In The Next 12 Months, Calls Arthur Hayes' Year-End Target 'Conservative'",
+   "date": "2026-09-30",
+   "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/tom-lee-says-eth-could-top-10-000-in-the-next-12-months-calls-arthur-hayes-year-end-target-conservative/cZMF2mYRBha"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Stock Market Today: Dow Rises On Surprise Inflation Data; Micron Report Due (Live Coverage)",
+   "date": "2026-09-30",
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-micron-earnings-mu-stock/?src=A00220&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "Wells Fargo Warns Rates Could Stay Higher Through 2027",
+   "date": "2026-09-30",
+   "url": "https://finance.yahoo.com/economy/policy/articles/wells-fargo-warns-rates-could-122439871.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "QQQ 나스닥100",
+   "stock_id": "qqq",
+   "title": "OpenAI Eyes $1.4 Trillion as Anthropic Heads for $2 Trillion IPO",
+   "date": "2026-09-30",
+   "url": "https://finance.yahoo.com/technology/ai/articles/openai-eyes-1-4-trillion-120746396.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Broadcom vs. Qualcomm: Which Technology Stock Is a Better Buy in 2026?",
+   "date": "2026-09-30",
+   "url": "https://www.fool.com/coverage/better-buy/2026/09/30/broadcom-vs-qualcomm-which-technology-stock-is-a-better-buy-in-2026/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Here's What a $1,080 Investment in Micron Stock Could Be Worth in 5 Years",
+   "date": "2026-09-30",
+   "url": "https://www.fool.com/investing/2026/09/30/heres-what-a-1080-investment-in-micron-stock-could/"
+  },
+  {
+   "kind": "dart",
+   "source": "DART 공시",
+   "who": "GRT",
+   "stock_id": "900290",
+   "title": "[기재정정]코스닥시장상장외국법인외부감사인선임ㆍ해임신고서",
+   "date": "2026-09-30",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930900601"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Trump gathers with AI leaders, floats 'self-regulation' as the way to deal with the technology's dangers",
+   "date": "2026-09-29",
+   "url": "https://finance.yahoo.com/technology/article/trump-gathers-with-ai-leaders-floats-self-regulation-as-the-way-to-deal-with-the-technologys-dangers-193745293.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "How Nvidia is tackling the AI safety problem",
+   "date": "2026-09-29",
+   "url": "https://finance.yahoo.com/video/nvidia-tackling-ai-safety-problem-200500655.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Nvidia's next 'holy grail' is physical AI: Dan Ives",
+   "date": "2026-09-29",
+   "url": "https://finance.yahoo.com/technology/article/nvidias-next-holy-grail-is-physical-ai-dan-ives-165038841.html"
+  },
   {
    "kind": "sec",
    "source": "SEC 8-K",
@@ -1673,175 +1817,31 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
   },
   {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Trump gathers with AI leaders, floats 'self-regulation' as the way to deal with the technology's dangers",
    "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408019/xslF345X06/ownership.xml"
+   "url": "https://finance.yahoo.com/technology/article/trump-gathers-with-ai-leaders-floats-self-regulation-as-the-way-to-deal-with-the-technologys-dangers-193745293.html"
   },
   {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Tesla's Q3 deliveries loom large as the Roadster slips again",
    "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408016/xslF345X06/ownership.xml"
+   "url": "https://finance.yahoo.com/markets/stocks/article/teslas-q3-deliveries-loom-large-as-the-roadster-slips-again-145514238.html"
   },
   {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408014/xslF345X06/ownership.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408009/xslF345X06/ownership.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408007/xslF345X06/ownership.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-29",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526408004/xslF345X06/ownership.xml"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "카카오페이",
-   "stock_id": "377300",
-   "title": "특수관계인에대한자금대여",
-   "date": "2026-09-29",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000575"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "카카오페이",
-   "stock_id": "377300",
-   "title": "특수관계인에대한출자",
-   "date": "2026-09-29",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000574"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 8-K",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "8-K 제출 — 주요 경영사항 수시보고",
-   "date": "2026-09-28",
-   "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226044459/form8-k.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 6-K",
-   "who": "실스크 SEALSQ",
-   "stock_id": "laes",
-   "title": "6-K 제출 — 외국기업 수시보고",
-   "date": "2026-09-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026103268/ea030658602-6k_sealsq.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 6-K",
-   "who": "실스크 SEALSQ",
-   "stock_id": "laes",
-   "title": "6-K 제출 — 외국기업 수시보고",
-   "date": "2026-09-25",
-   "url": "https://www.sec.gov/Archives/edgar/data/1951222/000121390026103266/ea030658601-6k_sealsq.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
+   "kind": "news",
+   "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-24",
-   "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/xslF345X06/wk-form4_1790280657.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-23",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/xslF345X06/wk-form4_1790196985.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-22",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/xslF345X06/wk-form4_1790110579.xml"
-  },
-  {
-   "kind": "dart",
-   "source": "DART 공시",
-   "who": "삼성전자",
-   "stock_id": "005930",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "date": "2026-09-22",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000524"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 8-K",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "8-K 제출 — 주요 경영사항 수시보고",
-   "date": "2026-09-21",
-   "url": "https://www.sec.gov/Archives/edgar/data/1829311/000149315226043486/form8-k.htm"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-18",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000124382126000007/xslF345X06/wk-form4_1789766132.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-18",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000128385426000010/xslF345X06/wk-form4_1789766082.xml"
-  },
-  {
-   "kind": "sec",
-   "source": "SEC 4",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "4 제출 — 내부자 지분 변동 신고",
-   "date": "2026-09-18",
-   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000012/xslF345X06/wk-form4_1789766007.xml"
+   "title": "US launches AI-powered website America.gov for navigating federal programs",
+   "date": "2026-09-29",
+   "url": "https://finance.yahoo.com/video/us-launches-ai-powered-website-193520074.html"
   }
  ],
  "errors": [
