@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-09 05:04",
+ "generated_at": "2026-10-09 12:03",
  "demo": false,
  "market": {
-  "kr": "개장 전",
+  "kr": "장중",
   "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 15.57,
-    "change": 0.49,
-    "change_m1": -0.15,
+    "value": 15.41,
+    "change": 0.33,
+    "change_m1": -0.31,
     "sparkline": [
      15.84,
      17.1,
@@ -31,7 +31,7 @@
      15.52,
      15.01,
      15.08,
-     15.57
+     15.41
     ],
     "asof": "2026-10-08",
     "label": "VIX 공포지수",
@@ -78,9 +78,9 @@
     }
    },
    "dxy": {
-    "value": 102.1,
-    "change": -0.14,
-    "change_m1": 3.26,
+    "value": 102.03,
+    "change": -0.21,
+    "change_m1": 3.19,
     "sparkline": [
      99.12,
      99.46,
@@ -101,7 +101,7 @@
      102.17,
      101.83,
      102.24,
-     102.1
+     102.03
     ],
     "asof": "2026-10-08",
     "label": "달러인덱스",
@@ -113,11 +113,10 @@
     }
    },
    "usdkrw": {
-    "value": 1342.9,
+    "value": 1342.3,
     "change": 3.2,
-    "change_m1": -0.6,
+    "change_m1": 3.1,
     "sparkline": [
-     1348.2,
      1344.6,
      1345.6,
      1363.6,
@@ -136,9 +135,10 @@
      1342.6,
      1343.8,
      1339.7,
-     1342.9
+     1339.1,
+     1342.3
     ],
-    "asof": "2026-10-08",
+    "asof": "2026-10-09",
     "label": "원/달러",
     "unit": "원",
     "source": "Yahoo",
@@ -148,9 +148,9 @@
     }
    },
    "buffett": {
-    "value": 237.8,
+    "value": 236.8,
     "source": "Wilshire 5000 × 1 / FRED GDP(2026-04)",
-    "asof": "2026-10-07",
+    "asof": "2026-10-08",
     "approx": true,
     "label": "버핏 지수",
     "unit": "%",
@@ -160,7 +160,7 @@
     }
    },
    "cape": {
-    "value": 41.8,
+    "value": 41.62,
     "source": "multpl.com",
     "asof": "2026-10-09",
     "approx": false,
@@ -421,8 +421,8 @@
    "per": 347.2,
    "market_cap": 1481080307712,
    "target": {
-    "mean": 392.42,
-    "upside": 4.6,
+    "mean": 396.57,
+    "upside": 5.8,
     "buy": 19,
     "hold": 20,
     "sell": 4,
@@ -493,13 +493,13 @@
    "vs_ipo": 18.94,
    "ipo_price": 135,
    "per": null,
-   "market_cap": 2116598497280,
+   "market_cap": 2115379265536,
    "target": {
-    "mean": 224.56,
-    "upside": 39.8,
+    "mean": 227.54,
+    "upside": 41.7,
     "buy": 29,
     "hold": 5,
-    "sell": 3,
+    "sell": 2,
     "source": "Yahoo 컨센서스",
     "asof": "2026-10-09"
    }
@@ -740,22 +740,22 @@
    "history_from": "2025-10-09",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 24.05,
-   "change_abs": -0.61,
-   "change_pct": -2.47,
+   "price": 24.04,
+   "change_abs": -0.62,
+   "change_pct": -2.51,
    "returns": {
-    "d1": -2.47,
-    "w1": -10.03,
-    "m1": -2.91,
-    "m3": 63.72,
-    "ytd": -22.89
+    "d1": -2.51,
+    "w1": -10.06,
+    "m1": -2.95,
+    "m3": 63.65,
+    "ytd": -22.92
    },
    "week52": {
     "low": 13.31,
     "high": 59.1,
-    "position": 23.5
+    "position": 23.4
    },
-   "rsi14": 44.6,
+   "rsi14": 44.5,
    "above_ma20": false,
    "above_ma60": true,
    "sparkline": [
@@ -778,13 +778,13 @@
     26.79,
     26.2,
     24.66,
-    24.05
+    24.04
    ],
    "per": null,
-   "market_cap": 14507593728,
+   "market_cap": 14501562368,
    "target": {
     "mean": 45.87,
-    "upside": 90.7,
+    "upside": 90.8,
     "buy": 3,
     "hold": 0,
     "sell": 0,
@@ -902,7 +902,7 @@
     757.73,
     747.58
    ],
-   "per": 28.6,
+   "per": 30.5,
    "market_cap": null
   },
   {
@@ -1533,7 +1533,7 @@
     3280.0
    ],
    "per": null,
-   "market_cap": 304223715328
+   "market_cap": 273912774656
   },
   {
    "id": "364980",
