@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-05 00:04",
+ "generated_at": "2026-11-05 05:54",
  "demo": false,
  "market": {
   "kr": "개장 전",
-  "us": "장중"
+  "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 17.3,
-    "change": -3.53,
-    "change_m1": 1.78,
+    "value": 16.74,
+    "change": -4.09,
+    "change_m1": 1.22,
     "sparkline": [
      15.41,
      14.84,
@@ -31,7 +31,7 @@
      19.42,
      21.15,
      20.83,
-     17.3
+     16.74
     ],
     "asof": "2026-11-04",
     "label": "VIX 공포지수",
@@ -44,7 +44,7 @@
    },
    "us10y": {
     "value": 0.49,
-    "change": -0.0,
+    "change": -0.01,
     "change_m1": -0.04,
     "sparkline": [
      0.52,
@@ -78,9 +78,9 @@
     }
    },
    "dxy": {
-    "value": 101.43,
-    "change": -0.44,
-    "change_m1": -0.74,
+    "value": 101.52,
+    "change": -0.35,
+    "change_m1": -0.65,
     "sparkline": [
      102.14,
      102.21,
@@ -101,7 +101,7 @@
      101.88,
      101.75,
      101.87,
-     101.43
+     101.52
     ],
     "asof": "2026-11-04",
     "label": "달러인덱스",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1339.7,
-    "change": -5.1,
-    "change_m1": -2.9,
+    "value": 1340.9,
+    "change": -3.9,
+    "change_m1": -1.7,
     "sparkline": [
      1339.1,
      1343.0,
@@ -136,7 +136,7 @@
      1338.0,
      1325.5,
      1344.8,
-     1339.7
+     1340.9
     ],
     "asof": "2026-11-04",
     "label": "원/달러",
@@ -306,22 +306,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 205.36,
-   "change_abs": -1.33,
-   "change_pct": -0.64,
+   "price": 200.88,
+   "change_abs": -5.81,
+   "change_pct": -2.81,
    "returns": {
-    "d1": -0.64,
-    "w1": -4.65,
-    "m1": -14.04,
-    "m3": -6.32,
-    "ytd": 8.74
+    "d1": -2.81,
+    "w1": -6.73,
+    "m1": -15.91,
+    "m3": -8.37,
+    "ytd": 6.37
    },
    "week52": {
     "low": 165.17,
     "high": 239.24,
-    "position": 54.3
+    "position": 48.2
    },
-   "rsi14": 38.1,
+   "rsi14": 35.0,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -344,13 +344,13 @@
     204.64,
     202.06,
     206.69,
-    205.36
+    200.88
    ],
-   "per": 26.0,
-   "market_cap": 4958586404864,
+   "per": 25.4,
+   "market_cap": 4850890833920,
    "target": {
     "mean": 327.14,
-    "upside": 59.3,
+    "upside": 62.9,
     "buy": 59,
     "hold": 2,
     "sell": 1,
@@ -378,22 +378,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 385.51,
-   "change_abs": -12.99,
-   "change_pct": -3.26,
+   "price": 385.94,
+   "change_abs": -12.56,
+   "change_pct": -3.15,
    "returns": {
-    "d1": -3.26,
-    "w1": -4.63,
-    "m1": 1.79,
-    "m3": 19.89,
-    "ytd": -12.0
+    "d1": -3.15,
+    "w1": -4.52,
+    "m1": 1.9,
+    "m3": 20.02,
+    "ytd": -11.9
    },
    "week52": {
     "low": 298.32,
     "high": 489.88,
-    "position": 45.5
+    "position": 45.7
    },
-   "rsi14": 51.5,
+   "rsi14": 51.8,
    "above_ma20": true,
    "above_ma60": true,
    "sparkline": [
@@ -416,13 +416,13 @@
     399.81,
     403.82,
     398.5,
-    385.51
+    385.94
    ],
-   "per": 423.6,
-   "market_cap": 1523816988672,
+   "per": 424.1,
+   "market_cap": 1525477146624,
    "target": {
     "mean": 413.1,
-    "upside": 7.2,
+    "upside": 7.0,
     "buy": 20,
     "hold": 22,
     "sell": 2,
@@ -450,22 +450,22 @@
    "history_from": "2026-06-12",
    "is_new_listing": true,
    "range_label": "상장 이후",
-   "price": 136.55,
-   "change_abs": -4.76,
-   "change_pct": -3.37,
+   "price": 135.3,
+   "change_abs": -6.01,
+   "change_pct": -4.25,
    "returns": {
-    "d1": -3.37,
-    "w1": -5.98,
-    "m1": -20.19,
-    "m3": 26.12,
+    "d1": -4.25,
+    "w1": -6.83,
+    "m1": -20.92,
+    "m3": 24.97,
     "ytd": null
    },
    "week52": {
     "low": 108.27,
     "high": 211.39,
-    "position": 27.4
+    "position": 26.2
    },
-   "rsi14": 40.8,
+   "rsi14": 39.9,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -488,15 +488,15 @@
     134.72,
     136.37,
     141.31,
-    136.55
+    135.3
    ],
-   "vs_ipo": 1.15,
+   "vs_ipo": 0.23,
    "ipo_price": 135,
-   "per": 569.0,
-   "market_cap": 1854494343168,
+   "per": 563.8,
+   "market_cap": 1837585793024,
    "target": {
     "mean": 257.11,
-    "upside": 88.3,
+    "upside": 90.0,
     "buy": 31,
     "hold": 6,
     "sell": 2,
@@ -524,22 +524,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 293.76,
-   "change_abs": 13.73,
-   "change_pct": 4.9,
+   "price": 289.77,
+   "change_abs": 9.74,
+   "change_pct": 3.48,
    "returns": {
-    "d1": 4.9,
-    "w1": -9.58,
-    "m1": -15.21,
-    "m3": -18.95,
-    "ytd": -6.79
+    "d1": 3.48,
+    "w1": -10.81,
+    "m1": -16.37,
+    "m3": -20.05,
+    "ytd": -8.05
    },
    "week52": {
     "low": 273.5,
     "high": 402.62,
-    "position": 15.7
+    "position": 12.6
    },
-   "rsi14": 33.9,
+   "rsi14": 30.9,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -562,13 +562,13 @@
     279.84,
     278.99,
     280.03,
-    293.76
+    289.77
    ],
-   "per": 15.3,
-   "market_cap": 3611485536256,
+   "per": 15.1,
+   "market_cap": 3562432102400,
    "target": {
     "mean": 400.37,
-    "upside": 36.3,
+    "upside": 38.2,
     "buy": 53,
     "hold": 5,
     "sell": 0,
@@ -596,22 +596,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 174.2,
-   "change_abs": -1.2,
-   "change_pct": -0.68,
+   "price": 170.31,
+   "change_abs": -5.09,
+   "change_pct": -2.9,
    "returns": {
-    "d1": -0.68,
-    "w1": -11.49,
-    "m1": -8.03,
-    "m3": 9.95,
-    "ytd": 3.78
+    "d1": -2.9,
+    "w1": -13.46,
+    "m1": -10.08,
+    "m3": 7.5,
+    "ytd": 1.46
    },
    "week52": {
     "low": 107.27,
     "high": 209.05,
-    "position": 65.8
+    "position": 61.9
    },
-   "rsi14": 35.0,
+   "rsi14": 32.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -634,13 +634,13 @@
     184.11,
     178.34,
     175.4,
-    174.2
+    170.31
    ],
-   "per": 124.4,
-   "market_cap": 419734487040,
+   "per": 119.9,
+   "market_cap": 410309263360,
    "target": {
     "mean": 217.97,
-    "upside": 25.1,
+    "upside": 28.0,
     "buy": 22,
     "hold": 9,
     "sell": 2,
@@ -668,22 +668,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 1.38,
-   "change_abs": 0.01,
-   "change_pct": 0.73,
+   "price": 1.42,
+   "change_abs": 0.05,
+   "change_pct": 4.01,
    "returns": {
-    "d1": 0.73,
-    "w1": -14.81,
-    "m1": -42.74,
-    "m3": -43.9,
-    "ytd": -67.45
+    "d1": 4.01,
+    "w1": -12.04,
+    "m1": -40.87,
+    "m3": -42.07,
+    "ytd": -66.39
    },
    "week52": {
     "low": 1.36,
     "high": 6.58,
-    "position": 0.4
+    "position": 1.2
    },
-   "rsi14": 23.7,
+   "rsi14": 27.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -706,13 +706,13 @@
     1.47,
     1.36,
     1.37,
-    1.38
+    1.42
    ],
    "per": null,
-   "market_cap": 310404160,
+   "market_cap": 320526048,
    "target": {
     "mean": 5.88,
-    "upside": 325.7,
+    "upside": 313.7,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -740,22 +740,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 21.49,
-   "change_abs": 0.96,
-   "change_pct": 4.67,
+   "price": 21.62,
+   "change_abs": 1.09,
+   "change_pct": 5.31,
    "returns": {
-    "d1": 4.67,
-    "w1": -2.54,
-    "m1": -19.79,
-    "m3": 16.6,
-    "ytd": -31.1
+    "d1": 5.31,
+    "w1": -1.95,
+    "m1": -19.3,
+    "m3": 17.31,
+    "ytd": -30.68
    },
    "week52": {
     "low": 13.31,
     "high": 41.42,
-    "position": 29.1
+    "position": 29.6
    },
-   "rsi14": 45.1,
+   "rsi14": 45.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -778,13 +778,13 @@
     20.18,
     19.54,
     20.53,
-    21.49
+    21.62
    ],
    "per": null,
-   "market_cap": 12962912256,
+   "market_cap": 13041754112,
    "target": {
     "mean": 45.87,
-    "upside": 113.4,
+    "upside": 112.1,
     "buy": 3,
     "hold": 0,
     "sell": 0,
@@ -856,22 +856,22 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 698.17,
-   "change_abs": 12.89,
-   "change_pct": 1.88,
+   "price": 691.31,
+   "change_abs": 6.03,
+   "change_pct": 0.88,
    "returns": {
-    "d1": 1.88,
-    "w1": -3.78,
-    "m1": -7.67,
-    "m3": -2.67,
-    "ytd": 13.87
+    "d1": 0.88,
+    "w1": -4.73,
+    "m1": -8.58,
+    "m3": -3.62,
+    "ytd": 12.75
    },
    "week52": {
     "low": 558.28,
     "high": 759.66,
-    "position": 69.5
+    "position": 66.1
    },
-   "rsi14": 41.8,
+   "rsi14": 38.2,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -894,9 +894,9 @@
     690.49,
     681.09,
     685.28,
-    698.17
+    691.31
    ],
-   "per": 26.7,
+   "per": 26.5,
    "market_cap": null
   },
   {
@@ -1527,7 +1527,7 @@
     2695.0
    ],
    "per": null,
-   "market_cap": 239673671680
+   "market_cap": 266195763200
   },
   {
    "id": "364980",
@@ -1549,26 +1549,25 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 8965.0,
-   "change_abs": -665.0,
-   "change_pct": -6.91,
+   "price": 9590.0,
+   "change_abs": 625.0,
+   "change_pct": 6.97,
    "returns": {
-    "d1": -6.91,
-    "w1": -6.47,
-    "m1": -12.71,
-    "m3": -0.22,
-    "ytd": 4.73
+    "d1": 6.97,
+    "w1": -3.38,
+    "m1": -6.62,
+    "m3": 5.38,
+    "ytd": 12.03
    },
    "week52": {
     "low": 8040.0,
     "high": 14900.0,
-    "position": 13.5
+    "position": 22.6
    },
-   "rsi14": 38.3,
+   "rsi14": 46.1,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    10890.0,
     10695.0,
     10945.0,
     10520.0,
@@ -1587,7 +1586,8 @@
     9440.0,
     9475.0,
     9630.0,
-    8965.0
+    8965.0,
+    9590.0
    ],
    "per": null,
    "market_cap": null
@@ -1612,26 +1612,25 @@
    "history_from": "2025-11-04",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 13485.0,
-   "change_abs": -175.0,
-   "change_pct": -1.28,
+   "price": 13610.0,
+   "change_abs": 125.0,
+   "change_pct": 0.93,
    "returns": {
-    "d1": -1.28,
-    "w1": -1.96,
-    "m1": -3.85,
-    "m3": -4.7,
-    "ytd": -4.16
+    "d1": 0.93,
+    "w1": -2.47,
+    "m1": -2.96,
+    "m3": -4.52,
+    "ytd": -3.27
    },
    "week52": {
     "low": 13060.0,
     "high": 14840.0,
-    "position": 23.9
+    "position": 30.9
    },
-   "rsi14": 32.7,
+   "rsi14": 39.6,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    14160.0,
     14165.0,
     14130.0,
     14075.0,
@@ -1650,7 +1649,8 @@
     13840.0,
     13650.0,
     13660.0,
-    13485.0
+    13485.0,
+    13610.0
    ],
    "per": null,
    "market_cap": null
@@ -1662,36 +1662,27 @@
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Wall Street reacts to the stunning election day Blue Wave: winners, losers and those in between",
+   "title": "Hive lines up $129 million to buy Nvidia AI chips",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/economy/policy/article/wall-street-reacts-to-the-stunning-election-day-blue-wave-winners-losers-and-those-in-between-102511437.html"
+   "url": "https://www.thestreet.com/crypto/innovation/hive-lines-up-129-million-to-buy-nvidia-ai-chips"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "AMD Just Doubled Its Own Long-Term Growth Target for 2027",
+   "title": "Here’s Why Dividend Kings Coca-Cola, Procter & Gamble, and Colgate-Palmolive Are Hitting 52-Week Highs Following Midterm Election Results",
    "date": "2026-11-04",
-   "url": "https://247wallst.com/investing/2026/11/04/amd-just-doubled-its-own-long-term-growth-target-for-2027/"
+   "url": "https://www.fool.com/investing/2026/11/04/heres-why-dividend-kings-coca-cola-procter-gamble-and-colgate-palmolive-are-hitting-52-week-highs-following-midterm-election-results/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Navitas Soars 6% as AI Infrastructure Pivot Delivers Revenue Beat: “Breaking the Power Wall”",
+   "title": "Dow Heads for Best Post-Election Day Peformance in Decades",
    "date": "2026-11-04",
-   "url": "https://www.tikr.com/blog/navitas-soars-6-as-ai-infrastructure-pivot-delivers-revenue-beat-breaking-the-power-wall?ref=yahoofinance&tlnk=yf-261104-wqgrj956"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "How Tesla and SpaceX stocks are reacting to Democrats winning Congress",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/video/how-tesla-and-spacex-stocks-are-reacting-to-democrats-winning-congress-143808663.html"
+   "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110426/card/dow-skyrockets-1-500-points-in-best-day-since-trump-s-tariff-pause-VMSWQxf1stpK33dtSPtV?siteid=yhoof2&yptr=yahoo"
   },
   {
    "kind": "news",
@@ -1707,18 +1698,27 @@
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Tesla, SpaceX Dive As Elon Musk's Big GOP Election Bet Fails",
+   "title": "SpaceX and Tesla 'need to find the path forward with Texas' on the back of midterm 'Blue Wave'",
    "date": "2026-11-04",
-   "url": "https://www.investors.com/news/tesla-spacex-elon-musk-gop-election-bet-texas/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/stocks/article/spacex-and-tesla-need-to-find-the-path-forward-with-texas-on-the-back-of-midterm-blue-wave-151413202.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "How Tesla and SpaceX stocks are reacting to Democrats winning Congress",
+   "date": "2026-11-04",
+   "url": "https://finance.yahoo.com/video/how-tesla-and-spacex-stocks-are-reacting-to-democrats-winning-congress-143808663.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "How Tesla and SpaceX stocks are reacting to Democrats winning Congress",
+   "title": "Qualcomm to report Q4 earnings amid slowing smartphone, PC sales",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/video/how-tesla-and-spacex-stocks-are-reacting-to-democrats-winning-congress-143808663.html"
+   "url": "https://finance.yahoo.com/technology/article/qualcomm-to-report-q4-earnings-amid-slowing-smartphone-pc-sales-173320120.html"
   },
   {
    "kind": "news",
@@ -1734,63 +1734,72 @@
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "AI data center stocks dip as midterm elections shake up Wall Street",
+   "title": "SpaceX and Tesla 'need to find the path forward with Texas' on the back of midterm 'Blue Wave'",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/video/ai-data-center-stocks-dip-as-midterm-elections-shake-up-wall-street-140829988.html"
+   "url": "https://finance.yahoo.com/markets/stocks/article/spacex-and-tesla-need-to-find-the-path-forward-with-texas-on-the-back-of-midterm-blue-wave-151413202.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "If You Invest $1,000 in Marvell Today, Here’s What It Could Be Worth by 2030",
+   "title": "Three reasons stocks are moving higher after the midterms",
    "date": "2026-11-04",
-   "url": "https://247wallst.com/investing/2026/11/04/if-you-invest-1000-in-marvell-today-heres-what-it-could-be-worth-by-2030/"
+   "url": "https://finance.yahoo.com/video/three-reasons-stocks-are-moving-higher-after-the-midterms-152243298.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Blue wave threatens to derail America’s AI boom",
+   "title": "Dow Heads for Best Post-Election Day Peformance in Decades",
    "date": "2026-11-04",
-   "url": "https://uk.finance.yahoo.com/news/blue-wave-threatens-derail-america-143323706.html"
+   "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110426/card/dow-skyrockets-1-500-points-in-best-day-since-trump-s-tariff-pause-VMSWQxf1stpK33dtSPtV?siteid=yhoof2&yptr=yahoo"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Wall St set for higher open as Democrats win Congress; data center stocks slide",
+   "title": "Lumentum Fell to $750 With Marvell’s Offer Worth $820. Its November 5 Report Tests the Floor",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-index-futures-steady-083456013.html"
+   "url": "https://www.tikr.com/blog/lumentum-fell-to-750-with-marvells-offer-worth-820-its-november-5-report-tests-the-floor?ref=yahoofinance&tlnk=yf-261104-qpq8vr9q"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Palantir Technologies (PLTR) Lifts Guidance As Fair Value Debate Comes Into Focus",
+   "title": "Cathie Wood buys $10.9 million of tumbling tech stock",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-technologies-pltr-lifts-guidance-141417544.html"
+   "url": "https://www.thestreet.com/investing/stocks/cathie-wood-buys-10-9-million-of-tumbling-tech-stock-palantir-pltr"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Bank Stock Looks To Finance Breakout In Troubled Market",
+   "title": "Cathie Wood Picks a Side Between Palantir and Google",
    "date": "2026-11-04",
-   "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/esquire-financial-esq-bank-stocks-to-watch-in-troubled-market/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-picks-side-between-192037247.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Top Bank Revamps Palantir Price Target After Stunning 96% Revenue Growth",
+   "title": "Why Palantir Technologies Stock Dropped Today",
    "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/top-bank-revamps-palantir-price-121112919.html"
+   "url": "https://www.fool.com/investing/2026/11/04/why-palantir-technologies-stock-dropped-today/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "비트마인 이머전",
+   "stock_id": "bmnr",
+   "title": "Strategy Gains 7% as Bitcoin Rallies After Midterms, CEO Touts “Bitcoin Capital Cycle”",
+   "date": "2026-11-04",
+   "url": "https://www.tikr.com/blog/strategy-gains-7-as-bitcoin-rallies-after-midterms-ceo-touts-bitcoin-capital-cycle?ref=yahoofinance&tlnk=yf-261104-vpqgwxm8"
   },
   {
    "kind": "news",
@@ -1815,27 +1824,18 @@
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Midterm Elections Are Over. Here’s What History Says About the Next 12 Months",
+   "title": "Dow Surges After Democrats Sweep Midterm Elections",
    "date": "2026-11-04",
-   "url": "https://247wallst.com/investing/2026/11/04/midterm-elections-are-over-heres-what-history-says-about-the-next-12-months/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/dow-surges-democrats-sweep-midterm-195252465.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Stock Market Today: Dow Surges 1,200 Points On Election Results; Musk-Led SpaceX, Tesla Dive (Live Coverage)",
+   "title": "Own an AI or Tech ETF? Arista’s Big Quarter Just Paid Off",
    "date": "2026-11-04",
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-election-results-elon-musk-spacex-tesla-amd/?src=A00220&yptr=yahoo"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "Exchange-Traded Funds, Equity Futures Rise Pre-Bell Wednesday as Investors React to US Midterm Election Results",
-   "date": "2026-11-04",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-141810509.html"
+   "url": "https://247wallst.com/investing/etf/2026/11/04/own-an-ai-or-tech-etf-aristas-big-quarter-just-paid-off/"
   }
  ],
  "errors": [
