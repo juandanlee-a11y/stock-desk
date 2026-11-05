@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-06 00:09",
+ "generated_at": "2026-11-06 06:14",
  "demo": false,
  "market": {
   "kr": "개장 전",
-  "us": "장중"
+  "us": "개장 전"
  },
  "thermometer": {
   "gauges": {
    "vix": {
-    "value": 20.07,
-    "change": 3.46,
-    "change_m1": 5.06,
+    "value": 26.9,
+    "change": 10.29,
+    "change_m1": 11.89,
     "sparkline": [
      14.84,
      15.21,
@@ -31,20 +31,20 @@
      21.15,
      20.83,
      16.61,
-     20.07
+     26.9
     ],
     "asof": "2026-11-05",
     "label": "VIX 공포지수",
     "unit": "",
     "source": "Yahoo",
     "zone": {
-     "label": "보통",
-     "grade": "mid"
+     "label": "불안",
+     "grade": "warm"
     }
    },
    "us10y": {
-    "value": 0.49,
-    "change": -0.0,
+    "value": 0.48,
+    "change": -0.01,
     "change_m1": -0.04,
     "sparkline": [
      0.52,
@@ -66,7 +66,7 @@
      0.49,
      0.5,
      0.49,
-     0.49
+     0.48
     ],
     "asof": "2026-11-05",
     "label": "미국 10년물",
@@ -78,9 +78,9 @@
     }
    },
    "dxy": {
-    "value": 101.58,
-    "change": 0.07,
-    "change_m1": -0.25,
+    "value": 101.61,
+    "change": 0.1,
+    "change_m1": -0.22,
     "sparkline": [
      102.21,
      102.58,
@@ -101,7 +101,7 @@
      101.75,
      101.87,
      101.51,
-     101.58
+     101.61
     ],
     "asof": "2026-11-05",
     "label": "달러인덱스",
@@ -113,9 +113,9 @@
     }
    },
    "usdkrw": {
-    "value": 1349.8,
-    "change": 6.9,
-    "change_m1": 6.0,
+    "value": 1356.3,
+    "change": 13.4,
+    "change_m1": 12.5,
     "sparkline": [
      1343.0,
      1340.8,
@@ -136,7 +136,7 @@
      1325.5,
      1344.8,
      1342.9,
-     1349.8
+     1356.3
     ],
     "asof": "2026-11-05",
     "label": "원/달러",
@@ -160,7 +160,7 @@
     }
    },
    "cape": {
-    "value": 40.13,
+    "value": 40.62,
     "source": "multpl.com",
     "asof": "2026-11-06",
     "approx": false,
@@ -303,25 +303,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 188.79,
-   "change_abs": -11.34,
-   "change_pct": -5.67,
+   "price": 181.6,
+   "change_abs": -18.53,
+   "change_pct": -9.26,
    "returns": {
-    "d1": -5.67,
-    "w1": -11.64,
-    "m1": -21.09,
-    "m3": -13.79,
-    "ytd": -0.03
+    "d1": -9.26,
+    "w1": -15.01,
+    "m1": -24.09,
+    "m3": -17.07,
+    "ytd": -3.84
    },
    "week52": {
     "low": 165.17,
     "high": 239.24,
-    "position": 31.9
+    "position": 22.2
    },
-   "rsi14": 28.3,
+   "rsi14": 25.4,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -344,13 +344,13 @@
     202.06,
     206.69,
     200.13,
-    188.79
+    181.6
    ],
-   "per": 23.9,
-   "market_cap": 4558711947264,
+   "per": 23.0,
+   "market_cap": 4385095286784,
    "target": {
     "mean": 327.14,
-    "upside": 73.3,
+    "upside": 80.1,
     "buy": 59,
     "hold": 2,
     "sell": 1,
@@ -375,25 +375,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 350.09,
-   "change_abs": -35.1,
-   "change_pct": -9.11,
+   "price": 343.69,
+   "change_abs": -41.5,
+   "change_pct": -10.77,
    "returns": {
-    "d1": -9.11,
-    "w1": -13.19,
-    "m1": -8.03,
-    "m3": 9.57,
-    "ytd": -20.08
+    "d1": -10.77,
+    "w1": -14.78,
+    "m1": -9.72,
+    "m3": 7.56,
+    "ytd": -21.54
    },
    "week52": {
     "low": 298.32,
     "high": 489.88,
-    "position": 27.0
+    "position": 23.7
    },
-   "rsi14": 37.6,
+   "rsi14": 35.8,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -416,13 +416,13 @@
     403.82,
     398.5,
     385.19,
-    350.09
+    343.69
    ],
-   "per": 384.6,
-   "market_cap": 1383455522816,
+   "per": 377.7,
+   "market_cap": 1358513831936,
    "target": {
     "mean": 413.1,
-    "upside": 18.0,
+    "upside": 20.2,
     "buy": 20,
     "hold": 22,
     "sell": 2,
@@ -450,22 +450,22 @@
    "history_from": "2026-06-12",
    "is_new_listing": true,
    "range_label": "상장 이후",
-   "price": 124.61,
-   "change_abs": -11.31,
-   "change_pct": -8.32,
+   "price": 123.62,
+   "change_abs": -12.3,
+   "change_pct": -9.05,
    "returns": {
-    "d1": -8.32,
-    "w1": -13.4,
-    "m1": -27.52,
-    "m3": 8.44,
+    "d1": -9.05,
+    "w1": -14.09,
+    "m1": -28.09,
+    "m3": 7.57,
     "ytd": null
    },
    "week52": {
     "low": 108.27,
     "high": 211.39,
-    "position": 15.8
+    "position": 14.9
    },
-   "rsi14": 33.6,
+   "rsi14": 33.1,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -488,15 +488,15 @@
     136.37,
     141.31,
     135.92,
-    124.61
+    123.62
    ],
-   "vs_ipo": -7.69,
+   "vs_ipo": -8.43,
    "ipo_price": 135,
-   "per": 541.8,
-   "market_cap": 1692396158976,
+   "per": 537.5,
+   "market_cap": 1678891155456,
    "target": {
     "mean": 257.11,
-    "upside": 106.3,
+    "upside": 108.0,
     "buy": 31,
     "hold": 6,
     "sell": 2,
@@ -521,25 +521,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 285.41,
-   "change_abs": -3.52,
-   "change_pct": -1.22,
+   "price": 282.57,
+   "change_abs": -6.36,
+   "change_pct": -2.2,
    "returns": {
-    "d1": -1.22,
-    "w1": 0.56,
-    "m1": -17.91,
-    "m3": -20.22,
-    "ytd": -9.44
+    "d1": -2.2,
+    "w1": -0.44,
+    "m1": -18.73,
+    "m3": -21.01,
+    "ytd": -10.34
    },
    "week52": {
     "low": 273.5,
     "high": 402.62,
-    "position": 9.2
+    "position": 7.0
    },
-   "rsi14": 28.9,
+   "rsi14": 28.0,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -562,13 +562,13 @@
     278.99,
     280.03,
     288.93,
-    285.41
+    282.57
    ],
-   "per": 14.9,
-   "market_cap": 3508400029696,
+   "per": 14.8,
+   "market_cap": 3473915510784,
    "target": {
     "mean": 400.37,
-    "upside": 40.3,
+    "upside": 41.7,
     "buy": 53,
     "hold": 5,
     "sell": 0,
@@ -593,25 +593,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 157.57,
-   "change_abs": -14.12,
-   "change_pct": -8.23,
+   "price": 154.99,
+   "change_abs": -16.71,
+   "change_pct": -9.73,
    "returns": {
-    "d1": -8.23,
-    "w1": -19.78,
-    "m1": -17.96,
-    "m3": 1.06,
-    "ytd": -6.13
+    "d1": -9.73,
+    "w1": -21.09,
+    "m1": -19.31,
+    "m3": -0.6,
+    "ytd": -7.67
    },
    "week52": {
     "low": 107.27,
     "high": 209.05,
-    "position": 49.4
+    "position": 46.9
    },
-   "rsi14": 26.4,
+   "rsi14": 25.4,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -634,13 +634,13 @@
     178.34,
     175.4,
     171.7,
-    157.57
+    154.99
    ],
-   "per": 111.0,
-   "market_cap": 379857272832,
+   "per": 109.1,
+   "market_cap": 373448048640,
    "target": {
     "mean": 217.97,
-    "upside": 38.3,
+    "upside": 40.6,
     "buy": 22,
     "hold": 9,
     "sell": 2,
@@ -665,25 +665,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 1.26,
-   "change_abs": -0.17,
-   "change_pct": -12.02,
+   "price": 1.23,
+   "change_abs": -0.2,
+   "change_pct": -13.99,
    "returns": {
-    "d1": -12.02,
-    "w1": -19.87,
-    "m1": -48.01,
-    "m3": -49.47,
-    "ytd": -70.33
+    "d1": -13.99,
+    "w1": -21.66,
+    "m1": -49.17,
+    "m3": -50.6,
+    "ytd": -70.99
    },
    "week52": {
-    "low": 1.26,
-    "high": 6.58,
+    "low": 1.23,
+    "high": 6.16,
     "position": 0.0
    },
-   "rsi14": 23.2,
+   "rsi14": 22.5,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -706,13 +706,13 @@
     1.36,
     1.37,
     1.43,
-    1.26
+    1.23
    ],
    "per": null,
-   "market_cap": 282985152,
+   "market_cap": 276664608,
    "target": {
     "mean": 5.88,
-    "upside": 366.3,
+    "upside": 377.6,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -737,25 +737,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 19.93,
-   "change_abs": -1.8,
-   "change_pct": -8.26,
+   "price": 18.98,
+   "change_abs": -2.75,
+   "change_pct": -12.66,
    "returns": {
-    "d1": -8.26,
-    "w1": -7.96,
-    "m1": -23.91,
-    "m3": 8.93,
-    "ytd": -36.09
+    "d1": -12.66,
+    "w1": -12.37,
+    "m1": -27.56,
+    "m3": 3.72,
+    "ytd": -39.15
    },
    "week52": {
     "low": 13.31,
-    "high": 41.42,
-    "position": 23.6
+    "high": 41.15,
+    "position": 20.4
    },
-   "rsi14": 39.8,
+   "rsi14": 37.1,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -778,13 +778,13 @@
     19.54,
     20.53,
     21.73,
-    19.93
+    18.98
    ],
    "per": null,
-   "market_cap": 12013253632,
+   "market_cap": 11449236480,
    "target": {
     "mean": 45.87,
-    "upside": 130.1,
+    "upside": 141.7,
     "buy": 3,
     "hold": 0,
     "sell": 0,
@@ -853,25 +853,25 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-05",
+   "history_from": "2025-11-06",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 664.77,
-   "change_abs": -27.18,
-   "change_pct": -3.93,
+   "price": 647.05,
+   "change_abs": -44.9,
+   "change_pct": -6.49,
    "returns": {
-    "d1": -3.93,
-    "w1": -7.07,
-    "m1": -12.49,
-    "m3": -6.98,
-    "ytd": 8.42
+    "d1": -6.49,
+    "w1": -9.55,
+    "m1": -14.82,
+    "m3": -9.46,
+    "ytd": 5.53
    },
    "week52": {
     "low": 558.28,
     "high": 759.66,
-    "position": 52.9
+    "position": 44.1
    },
-   "rsi14": 30.5,
+   "rsi14": 26.9,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
@@ -894,9 +894,9 @@
     681.09,
     685.28,
     691.95,
-    664.77
+    647.05
    ],
-   "per": 27.4,
+   "per": 26.7,
    "market_cap": null
   },
   {
@@ -1549,26 +1549,25 @@
    "history_from": "2025-11-05",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 9590.0,
-   "change_abs": 625.0,
-   "change_pct": 6.97,
+   "price": 9205.0,
+   "change_abs": -385.0,
+   "change_pct": -4.01,
    "returns": {
-    "d1": 6.97,
-    "w1": -3.38,
-    "m1": -6.62,
-    "m3": 5.38,
-    "ytd": 12.03
+    "d1": -4.01,
+    "w1": -2.49,
+    "m1": -15.47,
+    "m3": 0.49,
+    "ytd": 7.54
    },
    "week52": {
     "low": 8040.0,
     "high": 14900.0,
-    "position": 22.6
+    "position": 17.0
    },
-   "rsi14": 46.1,
+   "rsi14": 42.6,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    10695.0,
     10945.0,
     10520.0,
     10650.0,
@@ -1587,7 +1586,8 @@
     9475.0,
     9630.0,
     8965.0,
-    9590.0
+    9590.0,
+    9205.0
    ],
    "per": null,
    "market_cap": null
@@ -1612,26 +1612,25 @@
    "history_from": "2025-11-05",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 13610.0,
-   "change_abs": 125.0,
-   "change_pct": 0.93,
+   "price": 13750.0,
+   "change_abs": 140.0,
+   "change_pct": 1.03,
    "returns": {
-    "d1": 0.93,
-    "w1": -2.47,
-    "m1": -2.96,
-    "m3": -4.52,
-    "ytd": -3.27
+    "d1": 1.03,
+    "w1": -0.65,
+    "m1": -2.9,
+    "m3": -3.27,
+    "ytd": -2.27
    },
    "week52": {
     "low": 13060.0,
     "high": 14840.0,
-    "position": 30.9
+    "position": 38.8
    },
-   "rsi14": 39.6,
+   "rsi14": 46.3,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    14165.0,
     14130.0,
     14075.0,
     14100.0,
@@ -1650,13 +1649,23 @@
     13650.0,
     13660.0,
     13485.0,
-    13610.0
+    13610.0,
+    13750.0
    ],
    "per": null,
    "market_cap": null
   }
  ],
  "feed": [
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Nvidia has lost nearly $1.4 trillion since its October record",
+   "date": "2026-11-05",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-has-lost-nearly-14-trillion-since-its-october-record-165912910.html"
+  },
   {
    "kind": "news",
    "source": "뉴스",
@@ -1678,11 +1687,11 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "Why one AI model won't rule the world: Fireworks AI CEO",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/video/why-one-ai-model-wont-110000898.html"
+   "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
   },
   {
    "kind": "news",
@@ -1698,18 +1707,18 @@
    "source": "뉴스",
    "who": "테슬라",
    "stock_id": "tsla",
-   "title": "Tesla Optimus Rival Agility Robotics Begins Trading After SPAC Merger",
+   "title": "Best Mag7 dip buys: NVIDIA leads on valuation, Alphabet on RSI",
    "date": "2026-11-05",
-   "url": "https://www.investors.com/news/tesla-agility-robotics-nvidia-amazon-foxconn-optimus-spac-merger/?src=A00220&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/best-mag7-dip-buys-nvidia-210653656.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "These AI Names Sat Out the Midterm Rally. Now, the Losses Are Intensifying.",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "SpaceX, Tesla stocks tumble as Democratic sweep raises questions on merger prospects, AI build-out",
    "date": "2026-11-05",
-   "url": "https://www.barrons.com/livecoverage/stock-market-news-today-110526/card/these-ai-names-sat-out-the-midterm-rally-now-the-losses-are-intensifying--BcFY6Lm1GbpHCLAHiShr?siteid=yhoof2&yptr=yahoo"
+   "url": "https://finance.yahoo.com/markets/article/spacex-tesla-stocks-tumble-as-democratic-sweep-raises-questions-on-merger-prospects-ai-buildout-153753814.html"
   },
   {
    "kind": "news",
@@ -1725,72 +1734,81 @@
    "source": "뉴스",
    "who": "SpaceX",
    "stock_id": "spacex",
-   "title": "Wall Street Is Being Asked to Take Part of SpaceX’s $40 Billion AI Bet",
+   "title": "Tesla, SpaceX Continue Postelection Plunge. Dems Pledge Investigations Into Trump.",
    "date": "2026-11-05",
-   "url": "https://247wallst.com/investing/2026/11/05/wall-street-is-being-asked-to-take-part-of-spacexs-40-billion-ai-bet/"
+   "url": "https://www.investors.com/news/elon-musk-tesla-spacex-2026-midterm-elections/?src=A00220&yptr=yahoo"
   },
   {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Nike downgraded, Circle Internet upgraded: Wall Street's top analyst calls",
+   "kind": "sec",
+   "source": "SEC 8-K",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "8-K 제출 — 주요 경영사항 수시보고",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/dicks-sporting-upgraded-trade-desk-134706727.html"
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526449835/d174184d8k.htm"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Amazon Is Winning the AI Race in the Cloud. Here’s What Investors Need to Watch Next.",
+   "title": "Best Mag7 dip buys: NVIDIA leads on valuation, Alphabet on RSI",
    "date": "2026-11-05",
-   "url": "https://247wallst.com/investing/2026/11/05/amazon-is-winning-the-ai-race-in-the-cloud-heres-what-investors-need-to-watch-next/"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/best-mag7-dip-buys-nvidia-210653656.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Dan Ives Sees Cash Flow Rebound In MSFT, META, GOOGL, AMZN: Says AI Bubble Fears Thrown Out The Window",
+   "title": "Google plans $17 billion Wyoming data center amid rising threats of curbs",
    "date": "2026-11-05",
-   "url": "https://stocktwits.com/news-articles/markets/equity/dan-ives-sees-cash-flow-rebound-in-msft-meta-googl-amzn/cNG1mwzR94d"
+   "url": "https://finance.yahoo.com/technology/ai/articles/google-plans-17-billion-wyoming-204551123.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Apple Makes Surprising Move to Rein In AI Spending",
+   "title": "Reddit Sinks 8% as Social Ad Worries Deepen in Tech Rout",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/technology/ai/articles/apple-makes-surprising-move-rein-144725769.html"
+   "url": "https://www.tikr.com/blog/reddit-sinks-8-as-social-ad-worries-deepen-in-tech-rout?ref=yahoofinance&tlnk=yf-261105-whpgc2qp"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Is Palantir Stock a Buy on the Dip as Revenue Continues to Surge?",
+   "title": "Palantir and CrowdStrike stocks tumble as Wall Street dumps software's AI winners",
    "date": "2026-11-05",
-   "url": "https://www.fool.com/investing/2026/11/05/is-palantir-stock-a-buy-on-the-dip-as-revenue-cont/"
+   "url": "https://finance.yahoo.com/markets/article/palantir-and-crowdstrike-stocks-tumble-as-wall-street-dumps-softwares-ai-winners-173540737.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "ZETA Gears Up to Report Q3 Earnings: What's in the Cards?",
+   "title": "Ondas Just Dropped 38% in a Month: Is ONDS Stock a Falling Knife or Poised for a Comeback?",
    "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/zeta-gears-report-q3-earnings-135300884.html"
+   "url": "https://247wallst.com/investing/2026/11/05/ondas-just-dropped-38-in-a-month-is-onds-stock-a-falling-knife-or-poised-for-a-comeback/"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "팔란티어",
    "stock_id": "pltr",
-   "title": "Palantir’s CEO Just Said What Wall Street Doesn’t Want to Hear About AI",
+   "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
    "date": "2026-11-05",
-   "url": "https://247wallst.com/investing/2026/11/05/palantirs-ceo-just-said-what-wall-street-doesnt-want-to-hear-about-ai/"
+   "url": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "비트마인 이머전",
+   "stock_id": "bmnr",
+   "title": "Bitcoin Breaks Below $76K, Wiping Out Over $1B Crypto Bets: MSTR, BMNR, CRCL, COIN Stocks Tumble Double Digits",
+   "date": "2026-11-05",
+   "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/mstr-bmnr-crcl-coin-stocks-tumble-bitcoin-breaks-76-k-wiping-out-1-b-crypto-bets/cNG1sepR94N"
   },
   {
    "kind": "news",
@@ -1815,27 +1833,9 @@
    "source": "뉴스",
    "who": "QQQ 나스닥100",
    "stock_id": "qqq",
-   "title": "Stock Market Today: Dow Slips After Postelection Rally; Cava, Dutch Bros Plunge On Earnings News (Live Coverage)",
+   "title": "Redwire Plunges 21% as Revenue Miss Overshadows Record Margins and Backlog; Intuitive Machines Sinks 15%, Planet Labs Tumbles 12%",
    "date": "2026-11-05",
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-election-rally-cava-dutch-bros/?src=A00220&yptr=yahoo"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "Exchange-Traded Funds, Equity Futures Mixed Pre-Bell Thursday Amid Pressure on AI Shares",
-   "date": "2026-11-05",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-141133476.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "Stock Market Crash Or Rally? Plan For Both",
-   "date": "2026-11-05",
-   "url": "https://www.trefis.com/stock/spy/articles/622741/stock-market-crash-or-rally-plan-for-both/2026-11-05"
+   "url": "https://247wallst.com/investing/2026/11/05/redwire-plunges-21-as-revenue-miss-overshadows-record-margins-and-backlog-intuitive-machines-sinks-15-planet-labs-tumbles-12/"
   }
  ],
  "errors": [
