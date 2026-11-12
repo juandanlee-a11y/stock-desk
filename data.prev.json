@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-12 06:30",
+ "generated_at": "2026-11-12 13:04",
  "demo": false,
  "market": {
-  "kr": "개장 전",
+  "kr": "장중",
   "us": "개장 전"
  },
  "thermometer": {
@@ -78,9 +78,9 @@
     }
    },
    "dxy": {
-    "value": 102.94,
-    "change": 0.71,
-    "change_m1": 0.36,
+    "value": 103.0,
+    "change": 0.77,
+    "change_m1": 0.42,
     "sparkline": [
      102.0,
      101.84,
@@ -101,7 +101,7 @@
      102.3,
      101.65,
      102.23,
-     102.94
+     103.0
     ],
     "asof": "2026-11-11",
     "label": "달러인덱스",
@@ -113,11 +113,10 @@
     }
    },
    "usdkrw": {
-    "value": 1338.9,
-    "change": -4.9,
-    "change_m1": -1.9,
+    "value": 1330.8,
+    "change": -11.1,
+    "change_m1": -3.3,
     "sparkline": [
-     1339.3,
      1340.9,
      1333.4,
      1330.0,
@@ -136,9 +135,10 @@
      1356.3,
      1362.7,
      1343.8,
-     1338.9
+     1341.9,
+     1330.8
     ],
-    "asof": "2026-11-11",
+    "asof": "2026-11-12",
     "label": "원/달러",
     "unit": "원",
     "source": "Yahoo",
@@ -148,9 +148,9 @@
     }
    },
    "buffett": {
-    "value": 227.5,
+    "value": 230.4,
     "source": "Wilshire 5000 × 1 / FRED GDP(2026-07)",
-    "asof": "2026-11-10",
+    "asof": "2026-11-11",
     "approx": true,
     "label": "버핏 지수",
     "unit": "%",
@@ -160,7 +160,7 @@
     }
    },
    "cape": {
-    "value": 39.7,
+    "value": 40.24,
     "source": "multpl.com",
     "asof": "2026-11-12",
     "approx": false,
@@ -346,7 +346,7 @@
     168.89,
     173.73
    ],
-   "per": 22.0,
+   "per": 21.3,
    "market_cap": 4195058188288,
    "target": {
     "mean": 319.99,
@@ -564,7 +564,7 @@
     287.38,
     293.45
    ],
-   "per": 15.3,
+   "per": 15.0,
    "market_cap": 3607674224640,
    "target": {
     "mean": 400.37,
@@ -916,30 +916,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 198900.0,
-   "change_abs": 9000.0,
-   "change_pct": 4.74,
+   "price": 210000.0,
+   "change_abs": 4000.0,
+   "change_pct": 1.94,
    "returns": {
-    "d1": 4.74,
-    "w1": -9.38,
-    "m1": -24.08,
-    "m3": -16.95,
-    "ytd": 54.79
+    "d1": 1.94,
+    "w1": 4.22,
+    "m1": -9.48,
+    "m3": -21.64,
+    "ytd": 63.42
    },
    "week52": {
     "low": 94800.0,
     "high": 362500.0,
-    "position": 38.9
+    "position": 43.0
    },
-   "rsi14": 37.8,
+   "rsi14": 43.9,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    232000.0,
-    210000.0,
     215500.0,
     218000.0,
     211500.0,
@@ -957,13 +955,15 @@
     201500.0,
     188700.0,
     189900.0,
-    198900.0
+    198900.0,
+    206000.0,
+    210000.0
    ],
    "per": null,
-   "market_cap": 1341457067671552,
+   "market_cap": 1367504702144512,
    "target": {
     "mean": 475628.56,
-    "upside": 139.1,
+    "upside": 126.5,
     "buy": 36,
     "hold": 0,
     "sell": 0,
@@ -988,30 +988,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 193000.0,
-   "change_abs": 5900.0,
-   "change_pct": 3.15,
+   "price": 182400.0,
+   "change_abs": -11900.0,
+   "change_pct": -6.12,
    "returns": {
-    "d1": 3.15,
-    "w1": 14.2,
-    "m1": 5.01,
-    "m3": -9.81,
-    "ytd": -21.86
+    "d1": -6.12,
+    "w1": -1.35,
+    "m1": 2.47,
+    "m3": -19.47,
+    "ytd": -26.15
    },
    "week52": {
     "low": 169000.0,
     "high": 287000.0,
-    "position": 20.3
+    "position": 11.4
    },
-   "rsi14": 58.9,
+   "rsi14": 48.4,
    "above_ma20": true,
    "above_ma60": false,
    "sparkline": [
-    179400.0,
-    173600.0,
     180000.0,
     182900.0,
     178000.0,
@@ -1029,13 +1027,15 @@
     184900.0,
     190200.0,
     187100.0,
-    193000.0
+    193000.0,
+    194300.0,
+    182400.0
    ],
    "per": null,
-   "market_cap": 29056884015104,
+   "market_cap": 27277280673792,
    "target": {
     "mean": 286538.47,
-    "upside": 48.5,
+    "upside": 57.1,
     "buy": 21,
     "hold": 5,
     "sell": 0,
@@ -1060,30 +1060,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 33000.0,
-   "change_abs": 1400.0,
-   "change_pct": 4.43,
+   "price": 32350.0,
+   "change_abs": -1150.0,
+   "change_pct": -3.43,
    "returns": {
-    "d1": 4.43,
-    "w1": 3.77,
-    "m1": -14.17,
-    "m3": -26.5,
-    "ytd": -35.04
+    "d1": -3.43,
+    "w1": -2.56,
+    "m1": -13.73,
+    "m3": -27.63,
+    "ytd": -36.32
    },
    "week52": {
     "low": 31600.0,
     "high": 70900.0,
-    "position": 3.6
+    "position": 1.9
    },
-   "rsi14": 40.1,
+   "rsi14": 38.6,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    36250.0,
-    34550.0,
     35800.0,
     36950.0,
     35800.0,
@@ -1101,13 +1099,15 @@
     33200.0,
     32350.0,
     31600.0,
-    33000.0
+    33000.0,
+    33500.0,
+    32350.0
    ],
    "per": null,
-   "market_cap": 4531549110272,
+   "market_cap": 4375988666368,
    "target": {
     "mean": 47172.73,
-    "upside": 42.9,
+    "upside": 45.8,
     "buy": 6,
     "hold": 3,
     "sell": 3,
@@ -1132,30 +1132,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 20550.0,
-   "change_abs": 300.0,
-   "change_pct": 1.48,
+   "price": 20100.0,
+   "change_abs": -200.0,
+   "change_pct": -0.99,
    "returns": {
-    "d1": 1.48,
-    "w1": 6.81,
-    "m1": 5.55,
-    "m3": -7.43,
-    "ytd": -6.16
+    "d1": -0.99,
+    "w1": -3.37,
+    "m1": -0.25,
+    "m3": -9.26,
+    "ytd": -8.22
    },
    "week52": {
     "low": 19240.0,
     "high": 28700.0,
-    "position": 13.8
+    "position": 9.1
    },
-   "rsi14": 54.5,
+   "rsi14": 48.6,
    "above_ma20": true,
    "above_ma60": false,
    "sparkline": [
-    20050.0,
-    20100.0,
     20350.0,
     20600.0,
     20250.0,
@@ -1173,13 +1171,15 @@
     20800.0,
     20750.0,
     20250.0,
-    20550.0
+    20550.0,
+    20300.0,
+    20100.0
    ],
    "per": null,
-   "market_cap": 9674737844224,
+   "market_cap": 9579421237248,
    "target": {
     "mean": 25863.16,
-    "upside": 25.9,
+    "upside": 28.7,
     "buy": 10,
     "hold": 9,
     "sell": 0,
@@ -1204,30 +1204,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 38500.0,
-   "change_abs": 2300.0,
-   "change_pct": 6.35,
+   "price": 34850.0,
+   "change_abs": -3750.0,
+   "change_pct": -9.72,
    "returns": {
-    "d1": 6.35,
-    "w1": -3.99,
-    "m1": -30.51,
-    "m3": -31.98,
-    "ytd": -9.41
+    "d1": -9.72,
+    "w1": -12.11,
+    "m1": -33.24,
+    "m3": -37.43,
+    "ytd": -18.0
    },
    "week52": {
-    "low": 36100.0,
+    "low": 34850.0,
     "high": 100900.0,
-    "position": 3.7
+    "position": 0.0
    },
-   "rsi14": 33.7,
+   "rsi14": 27.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    52400.0,
-    48750.0,
     48450.0,
     49100.0,
     46500.0,
@@ -1245,13 +1243,15 @@
     39650.0,
     37000.0,
     36200.0,
-    38500.0
+    38500.0,
+    38600.0,
+    34850.0
    ],
    "per": null,
-   "market_cap": 1262234632192,
+   "market_cap": 1139608256512,
    "target": {
     "mean": 99433.4,
-    "upside": 158.3,
+    "upside": 185.3,
     "buy": 4,
     "hold": 0,
     "sell": 0,
@@ -1276,30 +1276,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 1484.0,
-   "change_abs": -3.0,
-   "change_pct": -0.2,
+   "price": 1474.0,
+   "change_abs": 0.0,
+   "change_pct": 0.0,
    "returns": {
-    "d1": -0.2,
-    "w1": -0.27,
-    "m1": -8.62,
-    "m3": -35.48,
-    "ytd": -60.86
+    "d1": 0.0,
+    "w1": -0.07,
+    "m1": -9.07,
+    "m3": -26.3,
+    "ytd": -61.13
    },
    "week52": {
     "low": 1470.0,
     "high": 3792.0,
-    "position": 0.6
+    "position": 0.2
    },
-   "rsi14": 33.5,
+   "rsi14": 31.7,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    1568.0,
-    1503.0,
     1526.0,
     1489.0,
     1475.0,
@@ -1317,13 +1315,15 @@
     1475.0,
     1488.0,
     1487.0,
-    1484.0
+    1484.0,
+    1474.0,
+    1474.0
    ],
    "per": null,
    "market_cap": 63844782080,
    "target": {
     "mean": 3000.0,
-    "upside": 102.2,
+    "upside": 103.5,
     "buy": null,
     "hold": null,
     "sell": null,
@@ -1348,30 +1348,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 2175.0,
-   "change_abs": 25.0,
-   "change_pct": 1.16,
+   "price": 2130.0,
+   "change_abs": -45.0,
+   "change_pct": -2.07,
    "returns": {
-    "d1": 1.16,
-    "w1": 2.11,
-    "m1": 0.69,
-    "m3": -19.74,
-    "ytd": -71.32
+    "d1": -2.07,
+    "w1": 2.65,
+    "m1": 3.4,
+    "m3": -17.92,
+    "ytd": -71.92
    },
    "week52": {
     "low": 1989.0,
     "high": 9925.0,
-    "position": 2.3
+    "position": 1.8
    },
-   "rsi14": 47.9,
+   "rsi14": 44.4,
    "above_ma20": true,
    "above_ma60": false,
    "sparkline": [
-    2020.0,
-    1989.0,
     1992.0,
     2075.0,
     2020.0,
@@ -1389,10 +1387,12 @@
     2075.0,
     2010.0,
     2150.0,
-    2175.0
+    2175.0,
+    2175.0,
+    2130.0
    ],
    "per": null,
-   "market_cap": 61683425280
+   "market_cap": 60407218176
   },
   {
    "id": "036620",
@@ -1411,30 +1411,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3560.0,
-   "change_abs": -70.0,
-   "change_pct": -1.93,
+   "price": 3510.0,
+   "change_abs": -75.0,
+   "change_pct": -2.09,
    "returns": {
-    "d1": -1.93,
-    "w1": 0.0,
-    "m1": -5.07,
-    "m3": -24.01,
-    "ytd": -38.19
+    "d1": -2.09,
+    "w1": -2.77,
+    "m1": -3.31,
+    "m3": -21.03,
+    "ytd": -39.06
    },
    "week52": {
     "low": 3445.0,
     "high": 7370.0,
-    "position": 2.9
+    "position": 1.7
    },
-   "rsi14": 46.6,
-   "above_ma20": true,
+   "rsi14": 43.3,
+   "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    3560.0,
-    3545.0,
     3540.0,
     3720.0,
     3665.0,
@@ -1452,13 +1450,15 @@
     3610.0,
     3600.0,
     3630.0,
-    3560.0
+    3560.0,
+    3585.0,
+    3510.0
    ],
    "per": null,
-   "market_cap": 321047298048,
+   "market_cap": 314330841088,
    "target": {
     "mean": 6550.0,
-    "upside": 84.0,
+    "upside": 86.6,
     "buy": 2,
     "hold": 0,
     "sell": 0,
@@ -1483,30 +1483,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 3020.0,
-   "change_abs": 25.0,
-   "change_pct": 0.83,
+   "price": 2960.0,
+   "change_abs": 100.0,
+   "change_pct": 3.5,
    "returns": {
-    "d1": 0.83,
-    "w1": 12.06,
-    "m1": -7.93,
-    "m3": -16.11,
-    "ytd": -15.05
+    "d1": 3.5,
+    "w1": -0.5,
+    "m1": 2.07,
+    "m3": -23.32,
+    "ytd": -16.74
    },
    "week52": {
     "low": 2190.0,
     "high": 7120.0,
-    "position": 16.8
+    "position": 15.6
    },
-   "rsi14": 49.0,
+   "rsi14": 47.5,
    "above_ma20": true,
    "above_ma60": false,
    "sparkline": [
-    3030.0,
-    3100.0,
     3165.0,
     3225.0,
     3100.0,
@@ -1524,10 +1522,12 @@
     2975.0,
     2850.0,
     2995.0,
-    3020.0
+    3020.0,
+    2860.0,
+    2960.0
    ],
    "per": null,
-   "market_cap": 238838579200
+   "market_cap": 247189569536
   },
   {
    "id": "364980",
@@ -1546,29 +1546,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 9040.0,
-   "change_abs": 280.0,
-   "change_pct": 3.2,
+   "price": 8915.0,
+   "change_abs": -125.0,
+   "change_pct": -1.38,
    "returns": {
-    "d1": 3.2,
-    "w1": -5.74,
-    "m1": -14.07,
-    "m3": -8.5,
-    "ytd": 5.61
+    "d1": -1.38,
+    "w1": -3.15,
+    "m1": -16.29,
+    "m3": -10.18,
+    "ytd": 4.15
    },
    "week52": {
     "low": 8040.0,
     "high": 14900.0,
-    "position": 14.6
+    "position": 12.8
    },
-   "rsi14": 44.5,
+   "rsi14": 43.4,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    10275.0,
     10255.0,
     11130.0,
     10490.0,
@@ -1587,7 +1586,8 @@
     8735.0,
     8190.0,
     8760.0,
-    9040.0
+    9040.0,
+    8915.0
    ],
    "per": null,
    "market_cap": null
@@ -1609,29 +1609,28 @@
     "entry_price": null,
     "review_on": null
    },
-   "history_from": "2025-11-11",
+   "history_from": "2025-11-12",
    "is_new_listing": false,
    "range_label": "52주",
-   "price": 13605.0,
-   "change_abs": -30.0,
-   "change_pct": -0.22,
+   "price": 13520.0,
+   "change_abs": -85.0,
+   "change_pct": -0.62,
    "returns": {
-    "d1": -0.22,
-    "w1": -0.04,
-    "m1": -3.34,
-    "m3": -3.44,
-    "ytd": -3.3
+    "d1": -0.62,
+    "w1": -1.67,
+    "m1": -4.11,
+    "m3": -4.01,
+    "ytd": -3.91
    },
    "week52": {
     "low": 13060.0,
     "high": 14840.0,
-    "position": 30.6
+    "position": 25.8
    },
-   "rsi14": 43.2,
+   "rsi14": 40.3,
    "above_ma20": false,
    "above_ma60": false,
    "sparkline": [
-    13975.0,
     13990.0,
     13910.0,
     13895.0,
@@ -1650,7 +1649,8 @@
     13510.0,
     13505.0,
     13635.0,
-    13605.0
+    13605.0,
+    13520.0
    ],
    "per": null,
    "market_cap": null
@@ -1660,29 +1660,146 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "엔비디아",
-   "stock_id": "nvda",
-   "title": "Tech round-up: A closer look at Anthropic, Nvidia, CoreWeave, and next week",
-   "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/video/tech-round-up-a-closer-look-at-anthropic-nvidia-coreweave-and-next-week-211955539.html"
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "If SpaceX and Tesla Merge, Here's What a $10,000 Investment in the Combined Company Could Be Worth by 2030",
+   "date": "2026-11-12",
+   "url": "https://www.fool.com/investing/2026/11/11/if-spacex-and-tesla-merge-heres-what-a-10000-inves/"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "테슬라",
+   "stock_id": "tsla",
+   "title": "Nasdaq 100 Futures Drop As Reports Relating To Jensen Huang’s Ousting Outweigh CoreWeave’s Strong Outlook —  NVDA, TSLA, SNDK, CAPR, CRWV In Focus",
+   "date": "2026-11-12",
+   "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-100-futures-drop-as-reports-relating-to-jensen-huang-s-ousting/cNGzQslR997"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Big Tech Wants Everyone to Use an AI Agent. But Who Shoulders the Cost?",
+   "date": "2026-11-12",
+   "url": "https://www.wsj.com/tech/ai/ai-agent-users-compute-costs-41a5db30?siteid=yhoof2&yptr=yahoo"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Nvidia Turmoil Lifts AMD, Broadcom on Bets for Business Gains",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/technology/articles/nvidia-turmoil-lifts-amd-broadcom-025615324.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "알파벳 A",
+   "stock_id": "googl",
+   "title": "Alphabet Kicks Off Asia Bond Sale as AI Firms Face Scrutiny",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/technology/ai/articles/alphabet-kicks-off-asia-bond-011249415.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "팔란티어",
+   "stock_id": "pltr",
+   "title": "3 Growth Stocks With Earnings Growth Over 20%",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/3-growth-stocks-earnings-growth-011311704.html"
+  },
+  {
+   "kind": "dart",
+   "source": "DART 공시",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "date": "2026-11-12",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000017"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Asian stocks extend gains but traders keep eye on Nvidia crisis",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-extend-gains-traders-025559054.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "Nvidia board meets to decide CEO Huang's future as leadership crisis deepens",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/news/nvidia-preparing-oust-ceo-jensen-223546395.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "삼성전자",
+   "stock_id": "005930",
+   "title": "South Korea's Lee says Samsung chip packaging expansion to spur $30 billion additional investment",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/technology/articles/south-koreas-lee-says-samsung-014233172.html"
+  },
+  {
+   "kind": "dart",
+   "source": "DART 공시",
+   "who": "NAVER",
+   "stock_id": "035420",
+   "title": "영업(잠정)실적(공정공시)",
+   "date": "2026-11-12",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800028"
+  },
+  {
+   "kind": "dart",
+   "source": "DART 공시",
+   "who": "NAVER",
+   "stock_id": "035420",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "date": "2026-11-12",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800027"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "NAVER",
+   "stock_id": "035420",
+   "title": "Naver Corp Q3 profit falls 21% on AI, marketing spending",
+   "date": "2026-11-12",
+   "url": "https://finance.yahoo.com/technology/ai/articles/naver-corp-q3-profit-falls-035150993.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Nvidia stock is pricing in 2 major risks as CEO Jensen Huang's affair fallout plays out",
+   "title": "Who is Nvidia executive Kimberly Powell?",
    "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-pricing-in-2-major-risks-as-ceo-jensen-huangs-affair-fallout-plays-out-190743109.html"
+   "url": "https://finance.yahoo.com/markets/stocks/article/who-is-nvidia-executive-kimberly-powell-231652963.html"
   },
   {
    "kind": "news",
    "source": "뉴스",
    "who": "엔비디아",
    "stock_id": "nvda",
-   "title": "Market rally offers a much-needed boost for investors, CoreWeave beats third-quarter estimates",
+   "title": "Nvidia reportedly preparing to oust CEO Huang after alleged affairs with spy, Nvidia exec",
    "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/video/market-rally-offers-a-much-needed-boost-for-investors-coreweave-beats-third-quarter-estimates-184231615.html"
+   "url": "https://finance.yahoo.com/technology/article/nvidia-reportedly-preparing-to-oust-ceo-huang-after-alleged-affairs-with-spy-nvidia-exec-231315876.html"
+  },
+  {
+   "kind": "news",
+   "source": "뉴스",
+   "who": "엔비디아",
+   "stock_id": "nvda",
+   "title": "Anthropic's Mythos claim may put Nvidia’s CUDA moat in a vulnerable spot",
+   "date": "2026-11-11",
+   "url": "https://finance.yahoo.com/video/anthropics-mythos-claim-may-put-nvidias-cuda-moat-in-a-vulnerable-spot-214346380.html"
   },
   {
    "kind": "news",
@@ -1696,20 +1813,11 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla extends Cybertruck production to clear backlog, Musk says",
+   "who": "SpaceX",
+   "stock_id": "spacex",
+   "title": "Big Tech's expected big payday with Anthropic IPO, and Nintendo's big week with Zelda",
    "date": "2026-11-11",
-   "url": "https://www.cbsnews.com/news/tesla-extend-cybertruck-production-backlog/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "테슬라",
-   "stock_id": "tsla",
-   "title": "Tesla Extends Cybertruck’s Run. Its Driving Software Matters More.",
-   "date": "2026-11-11",
-   "url": "https://www.barrons.com/articles/tesla-stock-cybertruck-production-fsd-finland-007503ae?siteid=yhoof2&yptr=yahoo"
+   "url": "https://finance.yahoo.com/video/big-techs-expected-big-payday-with-anthropic-ipo-and-nintendos-big-week-with-zelda-222911332.html"
   },
   {
    "kind": "news",
@@ -1723,119 +1831,11 @@
   {
    "kind": "news",
    "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "Cathie Wood's ARK Pares Amazon, Adds These Aerospace Stocks",
-   "date": "2026-11-11",
-   "url": "https://www.investors.com/news/cathie-wood-ark-buys-aerospace-space-stocks-rocket-lab-archer-mercury/?src=A00220&yptr=yahoo"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "SpaceX",
-   "stock_id": "spacex",
-   "title": "CalPERS Doubles $500 Million Bet Thanks to Elon Musk’s SpaceX Deal",
-   "date": "2026-11-11",
-   "url": "https://www.benzinga.com/markets/private-markets/26/11/63165904/calpers-doubles-500-million-bet-thanks-to-elon-musks-spacex-deal?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
    "who": "알파벳 A",
    "stock_id": "googl",
-   "title": "Tech round-up: A closer look at Anthropic, Nvidia, CoreWeave, and next week",
+   "title": "Q3 Earnings Results Reconfirm Broad-Based Strength as Outlook Improves",
    "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/video/tech-round-up-a-closer-look-at-anthropic-nvidia-coreweave-and-next-week-211955539.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Amazon and Google Are Sitting on a $411 Billion Anthropic Windfall",
-   "date": "2026-11-11",
-   "url": "https://247wallst.com/investing/2026/11/11/amazon-and-google-are-sitting-on-a-411-billion-anthropic-windfall/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "알파벳 A",
-   "stock_id": "googl",
-   "title": "Marvell Acquires Lumentum in Blockbuster $80 Billion Deal",
-   "date": "2026-11-11",
-   "url": "https://247wallst.com/videos/marvell-acquires-lumentum-in-blockbuster-80-billion-deal/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "3 Possible Paths Forward for AI Stocks (Bull Case, Bear Case, Base Case) -- and How to Invest for Each",
-   "date": "2026-11-11",
-   "url": "https://www.fool.com/investing/2026/11/11/3-possible-paths-forward-for-ai-stocks-bull-case-b/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "Helsing debuts Clarity military AI to challenge Palantir in Europe",
-   "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/technology/ai/articles/helsing-debuts-clarity-military-ai-161625762.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "팔란티어",
-   "stock_id": "pltr",
-   "title": "One Investor Says Anthropic Would Cost “Less Than Palantir on Sales.” That’s a Problem for Palantir",
-   "date": "2026-11-11",
-   "url": "https://www.tikr.com/blog/one-investor-says-anthropic-would-cost-less-than-palantir-on-sales-thats-a-problem-for-palantir?ref=yahoofinance&tlnk=yf-261111-pwg7jvj8"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "Bitmine Reports $6 Billion Net Loss",
-   "date": "2026-11-11",
-   "url": "https://www.cryptoprowl.com/releases/bitmine-reports-6-billion-net-loss-7832"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "Bitmine Says Its Controls Are Still Not Effective as ETH Ended the Year $5.4 Billion Below Cost",
-   "date": "2026-11-11",
-   "url": "https://unchainedcrypto.com/bitmine-says-its-controls-are-still-not-effective-as-eth-ended-the-year-5-4-billion-below-cost/"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "비트마인 이머전",
-   "stock_id": "bmnr",
-   "title": "Tom Lee’s Ethereum Bet Is Costing Bitmine Billions On Paper, And He’s Still Buying",
-   "date": "2026-11-11",
-   "url": "https://stocktwits.com/news-articles/markets/equity/tom-lee-s-ethereum-bet-is-costing-bitmine-billions-on-paper-and-he-s-still-buying/cNGDkxfR9Be"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "Apple Shares (AAPL) Look Expensive Heading into 2027",
-   "date": "2026-11-11",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/apple-shares-aapl-look-expensive-211500629.html"
-  },
-  {
-   "kind": "news",
-   "source": "뉴스",
-   "who": "QQQ 나스닥100",
-   "stock_id": "qqq",
-   "title": "OKXICE Gets Ready for 24/7 Markets",
-   "date": "2026-11-11",
-   "url": "https://app.moby.co/home/news/news-okxice-gets-ready-for-247-markets?utm_source=yahoo_finance&utm_medium=rss"
+   "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-results-reconfirm-broad-233700093.html"
   }
  ],
  "errors": [
